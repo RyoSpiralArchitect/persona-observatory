@@ -1,0 +1,47 @@
+{
+  "schema_version": "persona-observatory-study-lock-v1",
+  "locked_utc": "2026-11-03T08:56:53.883845+00:00",
+  "status": "FROZEN_BEFORE_FIRST_EVALUATION_ATTEMPT",
+  "subject_samples": 1152,
+  "maximum_generated_tokens": 110592,
+  "source_commit": "108bed137c3c03a60e69f272a8a398b09ef28169",
+  "records": {
+    "protocol": {
+      "path": "research/experiment_10_mps_20261103/protocol.json",
+      "sha256": "9f6c36b662c689e81197d3f30744dc8a8a76779ef7aa7ec9920f76463d1e1bd9"
+    },
+    "fit_lock": {
+      "path": "runs/exp10-mps-forecast-design-20261103-001/fit_lock.json",
+      "sha256": "fcf532ddee78b9e96994ae76a12930e983194459e44791c63c90a597bcb2e6d9"
+    },
+    "fit_audit": {
+      "path": "runs/exp10-mps-forecast-design-20261103-001/arithmetic_audit.json",
+      "sha256": "f8c5b5c8009afc5a78e75b624c1a2bedbf68bee4a010230168e1993d0f7ecbc9"
+    },
+    "run_lock": {
+      "path": "runs/exp10-mps-gate-20261103-001/run_lock.json",
+      "sha256": "39d345903441d433d9d1d56849d5f0785a54d76ede679673178295ba6da330a3"
+    },
+    "forecast_lock": {
+      "path": "runs/exp10-mps-gate-20261103-001/forecast_lock.json",
+      "sha256": "d9a7ab0c3ef199e8603626806e7124e8f396a102aec3f70504f7aafb2c3cc5db"
+    },
+    "observer_assignment": {
+      "path": "research/experiment_10_mps_20261103/observer_assignment_20261103.json",
+      "sha256": "bedb6d9a112e752e5628032ab20d0d1d4ae576af4ec6f64d9c2126ca020009ff"
+    },
+    "environment": {
+      "path": "research/experiment_10_mps_20261103/mps_environment_20261103.json",
+      "sha256": "137d9734a865714a2ee76a757210abc22a574c30bfa8e6a4b96c60ba20031c0e"
+    },
+    "summary_script": {
+      "path": "scripts/summarize_gate_study.py",
+      "sha256": "36c5be2020b438a068cf1f9077b856087ba59d94281fcbc1ed62b6b30eb57f35"
+    }
+  },
+  "run_dir": "runs/exp10-mps-gate-20261103-001",
+  "generation_absent": true,
+  "supersession_scope": "Completes only the pending observer assignment in the unchanged protocol. Predictors, development roles, questions, rubric, forecasts, primary comparisons, thresholds and runtime are unchanged.",
+  "authorization": "The user requested the larger same-model MPS study and explicitly approved two inspection agents. This JSON records that instruction; it is not itself execution authority.",
+  "scope": "Local chronology and integrity. No independent timestamp certificate or guarantee of semantic validity."
+}

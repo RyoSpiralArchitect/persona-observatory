@@ -1,0 +1,36 @@
+{
+  "schema_version": "persona-observatory-blind-packet-dispatch-v1",
+  "recorded_utc": "2026-11-03T09:06:54.764540+00:00",
+  "generation_sha256": "28b66491030a608cc424ade7d6ed507bc7a783207944a12eb744a322efe8505a",
+  "observer_assignment_sha256": "bedb6d9a112e752e5628032ab20d0d1d4ae576af4ec6f64d9c2126ca020009ff",
+  "observer_packets": {
+    "observer_a": {
+      "records": 1152,
+      "unique_triples": 1076,
+      "export_manifest_sha256": "054e16d1fb16377e1f0bcd7d9793600af78f045900f07d7d3bebc9580755b35e",
+      "agent_packet_manifest_sha256": "0ec5bae1b6575d7eb513a15b18badf8061d0106e354be125577be844e860cc8e",
+      "input_sha256": {
+        "rubric.md": "7a28b5f7101c3e9de0367c064bec34f60154b7e7a4c9934c4685eff381d601a6",
+        "discovery_blind.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_blind.jsonl": "0d45b1ca0b211586ad3b1eaff6a8938ac8531d5a0adcd78eb23a1630313e9382",
+        "unique_blind.jsonl": "f8aa49e9b9100cd352affff2b8f9b64316392c79f3b57ace02388d8ef4f4c655",
+        "duplicate_map.json": "c380922c7996a867f5a6063dc001327af6129ca05b09d3974db5c135870a4206",
+        "packet_helper.py": "417125fb36a72c34eceef5d8aaa8b87052ceaeca81d2342eb686287857b4a508"
+      }
+    },
+    "observer_b": {
+      "records": 1152,
+      "unique_triples": 1076,
+      "export_manifest_sha256": "1e3c4c235be654a1e809e142220927033666648ce24f4c9423931ed79661668f",
+      "agent_packet_manifest_sha256": "35b49869c87a11395861be8a608d07e969b725ab88d36d2dd33953427a4ef3da",
+      "input_sha256": {
+        "rubric.md": "7a28b5f7101c3e9de0367c064bec34f60154b7e7a4c9934c4685eff381d601a6",
+        "discovery_blind.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_blind.jsonl": "6dd8f299ecff3e00f2c62f6037445cb221fdd74e540d6db64854f86f9cb6199b",
+        "unique_blind.jsonl": "e0b3af24801e8a194383fb93d0c5e55355bec0678879123e5903779e39253824",
+        "duplicate_map.json": "7cfcc696565598f98da33e39480e7013d79d42366e38ec3e3d8ae0e7f2999984",
+        "packet_helper.py": "417125fb36a72c34eceef5d8aaa8b87052ceaeca81d2342eb686287857b4a508"
+      }
+    }
+  }
+}

@@ -108,7 +108,12 @@ See [measurement](docs/measurement.md), [configuration](docs/configuration.md),
 and [contribution boundaries](CONTRIBUTING.md). The
 [next experiment proposal](docs/next_experiment.md) compares global,
 evidence-only, setting-only, and joint forecasts of direct judgment D, holding
-judgment composition pooled. It is a proposal, not a frozen or executed study.
+judgment composition pooled. That initial proposal remains a historical design
+note. Its [96-question MPS implementation](research/experiment_10_mps_20261103/README.md)
+has completed 1,152 generations with forecasts and comparisons fixed beforehand.
+Two fresh agent contexts are reading separately shuffled blind packets; labels
+and scores are not yet complete. These are two measurements of the same outputs,
+not human raters or twice as many subject generations.
 
 ## Repository layout
 
