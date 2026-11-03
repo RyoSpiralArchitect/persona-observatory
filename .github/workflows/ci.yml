@@ -28,5 +28,7 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Verify immutable research archive
         run: python scripts/verify_archive.py
+      - name: Recompute published MPS study evidence without inference
+        run: python scripts/verify_gate_evidence.py --archive research/experiment_10_mps_20261103/evidence_20261103.zip --receipt research/experiment_10_mps_20261103/public_evidence_receipt_20261103.json
       - name: CLI entry point
         run: pobs --help

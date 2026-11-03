@@ -111,9 +111,13 @@ evidence-only, setting-only, and joint forecasts of direct judgment D, holding
 judgment composition pooled. That initial proposal remains a historical design
 note. Its [96-question MPS implementation](research/experiment_10_mps_20261103/README.md)
 has completed 1,152 generations with forecasts and comparisons fixed beforehand.
-Two fresh agent contexts are reading separately shuffled blind packets; labels
-and scores are not yet complete. These are two measurements of the same outputs,
-not human raters or twice as many subject generations.
+Both agent observations are locked and scores are complete: the primary
+Joint−Evidence D Brier difference is **+0.000749**, and all four advance gates
+failed. Setting ranked best as a secondary finding. Initial environment context
+exposed both annotators to historical study information, so they were not
+study-history-naive; current condition metadata and forecasts were withheld.
+These are two measurements of the same outputs, not human raters or twice as
+many subject generations. See the [report and evidence](research/experiment_10_mps_20261103/REPORT_JA.md).
 
 ## Repository layout
 

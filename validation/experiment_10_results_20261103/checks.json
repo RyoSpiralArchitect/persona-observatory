@@ -1,0 +1,14 @@
+[
+  {
+    "check": "unit",
+    "exit_code": 0
+  },
+  {
+    "check": "archive",
+    "exit_code": 0
+  },
+  {
+    "check": "compile",
+    "exit_code": 0
+  }
+]
