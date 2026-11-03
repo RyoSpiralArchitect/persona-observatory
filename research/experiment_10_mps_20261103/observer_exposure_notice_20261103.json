@@ -1,0 +1,16 @@
+{
+  "schema_version": "persona-observatory-observer-exposure-notice-v1",
+  "recorded_utc": "2026-11-03T09:28:56.219972+00:00",
+  "status": "INITIAL_CONTEXT_EXPOSURE_DECLARED_BEFORE_SCORING",
+  "assignment_sha256": "bedb6d9a112e752e5628032ab20d0d1d4ae576af4ec6f64d9c2126ca020009ff",
+  "intended_context_boundary": "Both agents were spawned with fork_turns=none; coordinator supplied only the assigned blind-packet task.",
+  "reported_initial_context": {
+    "observer_a": "Reported automatically supplied general instructions, memory summary and project boundaries; promised to distinguish these from files actually opened in own observations.md.",
+    "observer_b": "Reported user-supplied repository boundaries at startup, including preservation of archives, portable runtime and historical co-primary criterion failed. Reported no access to current conditions, forecasts, source generations or observer A work."
+  },
+  "correction": "fork_turns=none did not establish a study-history-naive context. Frozen assignment wording must be read as intended dispatch settings, not proof that environment-level context was absent.",
+  "action": "Preserve assignment, first manual batches and this separate notice. No reset, replacement, relabeling or post-score adjudication. Each observer records its exposure in the final notes; neither is shown other labels or current forecasts.",
+  "remaining_masking": "Export packets still omit explicit setting metadata, seeds and forecasts and use separate shuffled order. Questions themselves can reveal evidence structure.",
+  "interpretive_limit": "Report descriptive forecast scores conditional on these model-based annotations. Do not claim fully history-naive or independently human observation. Numeric prespecified gates remain unchanged; protocol exposure is a separate limitation.",
+  "scoring_absent_at_notice": true
+}
