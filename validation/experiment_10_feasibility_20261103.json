@@ -1,0 +1,159 @@
+{
+  "status": "READ_ONLY_FEASIBILITY_VERIFIED",
+  "scope": "Archived record counts, unique IDs, exact label coverage, balanced question/setting cells and a deterministic prospective development fold map. No fitting, prediction, semantic reannotation, question authoring or subject inference. This is not the experiment 10 lock.",
+  "archive_sha256": "65b7927bde72ec225acff1540bec2d88725ca810d1b58b82b79749b2d2a19909",
+  "source_inputs": {
+    "development/records.jsonl": {
+      "sha256": "223e69a12cc288feb37ff6f8c62baab6144bd8ba4f5d681a272d7aff7f268425",
+      "bytes": 1247204
+    },
+    "data/target_generations.jsonl": {
+      "sha256": "6e898c134a007a05f179cb4c65caf64a3aed5c50bd46d89f119a1a8842873441",
+      "bytes": 1182600
+    },
+    "development/source_question_bank.json": {
+      "sha256": "abed838438f4752b44e51cc625c7c045918312a05cba0bc5615a5849284da818",
+      "bytes": 17157
+    },
+    "question_bank.json": {
+      "sha256": "0922edd10ec964e51fce3b4a45dcc728a152f0834be0375e623aa348bf2c49c9",
+      "bytes": 14428
+    },
+    "development/labels_observer_a.jsonl": {
+      "sha256": "41a61ee28541dab7acbb82634bc8bfe43d32457b5febe25fa9bf6ab92ebc61d9",
+      "bytes": 107611
+    },
+    "observers/target/observer_a/labels.jsonl": {
+      "sha256": "99dbc2a8c03356a78e9d11204c450faa33f850bc8943d9bf774358b3c5cee3bd",
+      "bytes": 93707
+    },
+    "development/labels_observer_b.jsonl": {
+      "sha256": "2e20c1382bb2bb726de5a46421d6bf5a43889bcf0bd9cf9ba231b935ddeb5d0a",
+      "bytes": 106181
+    },
+    "observers/target/observer_b/labels.jsonl": {
+      "sha256": "0c716251c341b985745feb9d1ecba5574a19bc9ee28b628a4fa0e24604c511d8",
+      "bytes": 86338
+    }
+  },
+  "proposed_development": {
+    "questions": 52,
+    "generations": 624,
+    "label_coverage": {
+      "a": {
+        "old_development": 336,
+        "former_evaluation": 288,
+        "exact_id_coverage": true
+      },
+      "b": {
+        "old_development": 336,
+        "former_evaluation": 288,
+        "exact_id_coverage": true
+      }
+    },
+    "questions_by_stratum": {
+      "limited": 13,
+      "contradictory": 13,
+      "supportive": 13,
+      "confounded": 13
+    },
+    "joint_cell_sizes": [
+      26
+    ],
+    "evidence_group_sizes": [
+      156
+    ],
+    "setting_group_sizes": [
+      104
+    ]
+  },
+  "proposed_cv": {
+    "rule": "Retain v9 development_fold 0..6; former v9 target topic_index + 7 gives 7..12.",
+    "fold_questions": {
+      "0": [
+        "S01",
+        "S05",
+        "S09",
+        "S13"
+      ],
+      "1": [
+        "S02",
+        "S06",
+        "S10",
+        "S14"
+      ],
+      "2": [
+        "S03",
+        "S07",
+        "S11",
+        "S15"
+      ],
+      "3": [
+        "S04",
+        "S08",
+        "S12",
+        "S16"
+      ],
+      "4": [
+        "T01",
+        "T04",
+        "T07",
+        "T10"
+      ],
+      "5": [
+        "T02",
+        "T05",
+        "T08",
+        "T11"
+      ],
+      "6": [
+        "T03",
+        "T06",
+        "T09",
+        "T12"
+      ],
+      "7": [
+        "N01",
+        "N07",
+        "N13",
+        "N19"
+      ],
+      "8": [
+        "N02",
+        "N08",
+        "N14",
+        "N20"
+      ],
+      "9": [
+        "N03",
+        "N09",
+        "N15",
+        "N21"
+      ],
+      "10": [
+        "N04",
+        "N10",
+        "N16",
+        "N22"
+      ],
+      "11": [
+        "N05",
+        "N11",
+        "N17",
+        "N23"
+      ],
+      "12": [
+        "N06",
+        "N12",
+        "N18",
+        "N24"
+      ]
+    },
+    "generations_per_fold": 48
+  },
+  "novelty_review_reference": {
+    "previous_questions": 60,
+    "distinct_topic_strings": 60,
+    "semantic_novelty_of_future_questions": "NOT_REVIEWED_NO_NEW_QUESTION_BANK"
+  }
+}
