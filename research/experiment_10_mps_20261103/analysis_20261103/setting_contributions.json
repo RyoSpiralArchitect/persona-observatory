@@ -1,0 +1,38 @@
+{
+  "status": "POST_HOC_FIXED_SETTING_BREAKDOWN",
+  "diagnostics_sha256": "32631844ac65f557be50e9e577ab5fa2c50d6cad3ea51112ff4f2c998bedf8f4",
+  "method": "Equal mean of the eight observer-by-evidence cell deltas per setting, then weight each of six settings by 1/6. No fitting or omitted settings.",
+  "rows": [
+    {
+      "setting": "eval_cautious_instruction_p0",
+      "setting_minus_global_brier": -0.014419702233727807,
+      "contribution_to_overall_mean": -0.0024032837056213014
+    },
+    {
+      "setting": "eval_cautious_instruction_p1",
+      "setting_minus_global_brier": -0.0002021079289940969,
+      "contribution_to_overall_mean": -3.368465483234948e-05
+    },
+    {
+      "setting": "eval_confident_instruction_p0",
+      "setting_minus_global_brier": 0.0002222202268244572,
+      "contribution_to_overall_mean": 3.7036704470742865e-05
+    },
+    {
+      "setting": "eval_confident_instruction_p1",
+      "setting_minus_global_brier": 8.376793392503648e-05,
+      "contribution_to_overall_mean": 1.3961322320839414e-05
+    },
+    {
+      "setting": "eval_neutral_instruction_p0",
+      "setting_minus_global_brier": -0.0007087585700197366,
+      "contribution_to_overall_mean": -0.00011812642833662276
+    },
+    {
+      "setting": "eval_neutral_instruction_p1",
+      "setting_minus_global_brier": -0.004743626666666674,
+      "contribution_to_overall_mean": -0.0007906044444444456
+    }
+  ],
+  "overall_delta": -0.003294701206443137
+}

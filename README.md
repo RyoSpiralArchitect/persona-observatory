@@ -118,6 +118,9 @@ exposed both annotators to historical study information, so they were not
 study-history-naive; current condition metadata and forecasts were withheld.
 These are two measurements of the same outputs, not human raters or twice as
 many subject generations. See the [report and evidence](research/experiment_10_mps_20261103/REPORT_JA.md).
+Separate [post-hoc diagnostics (日本語)](research/experiment_10_mps_20261103/analysis_20261103/ANALYSIS_JA.md)
+decompose the fixed forecast differences and examine annotation sensitivity;
+they do not revise the primary result or refit predictors.
 
 ## Repository layout
 

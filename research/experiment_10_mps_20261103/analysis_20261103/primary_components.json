@@ -1,0 +1,41 @@
+{
+  "status": "ADDITIONAL_POST_HOC_ALGEBRA_NO_REFIT",
+  "diagnostics_sha256": "32631844ac65f557be50e9e577ab5fa2c50d6cad3ea51112ff4f2c998bedf8f4",
+  "script_sha256": "07104ab558f5701821e12c4d59faceca9ce5be2d9f4aebc8037666ac717ace5b",
+  "identity": "Joint - Evidence Brier = setting-main increment + interaction increment, on the balanced grid with all local shrinkage rho=1.",
+  "branches": {
+    "observer_a": {
+      "setting_main": {
+        "squared_change_cost": 0.0008995161489151879,
+        "twice_outcome_alignment": 0.004223424145299146,
+        "brier_increment": -0.003323907996383958
+      },
+      "interaction": {
+        "squared_change_cost": 0.002446863699868508,
+        "twice_outcome_alignment": -0.0019141737891737903,
+        "brier_increment": 0.004361037489042298,
+        "development_evaluation_correlation": -0.3511997746555101
+      },
+      "primary_reconstructed": 0.0010371294926583398
+    },
+    "observer_b": {
+      "setting_main": {
+        "squared_change_cost": 0.0008892433021038783,
+        "twice_outcome_alignment": 0.00415108618233618,
+        "brier_increment": -0.0032618428802323016
+      },
+      "interaction": {
+        "squared_change_cost": 0.0025547285913872456,
+        "twice_outcome_alignment": -0.0011685363247863243,
+        "brier_increment": 0.0037232649161735697,
+        "development_evaluation_correlation": -0.21904146487544385
+      },
+      "primary_reconstructed": 0.00046142203594126815
+    }
+  },
+  "ab_mean": {
+    "setting_main": -0.00329287543830813,
+    "interaction": 0.004042151202607934
+  },
+  "scope": "Algebraic accounting after the outcome was known. No causal effect, new predictor, or replacement primary test."
+}

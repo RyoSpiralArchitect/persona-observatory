@@ -1,0 +1,28 @@
+{
+  "status": "POST_HOC_EXPLORATORY_ANALYSIS",
+  "recorded_utc": "2026-11-03T10:05:20.609552+00:00",
+  "prior_knowledge": "Published aggregate outcomes, selected development CV scores, profiles and predictor equations have been read. This is not prospective confirmation.",
+  "inputs": {
+    "research/experiment_10_mps_20261103/fit.json": "3a53912d2abba3966f642b552726d7c0fc48bb64744f99a0b2a20e704cbd0c53",
+    "research/experiment_10_mps_20261103/results_20261103.json": "d74b87a86a77971f91898b5c296539d49f7dffa95169c366e31ab211b1a229a8",
+    "research/experiment_10_mps_20261103/evidence_20261103.zip": "7bf3a69c9e503634c0a738fb99e7aea991527942a83d9ad092f053aab9e4a7bd",
+    "research/experiment_10_mps_20261103/observer_exposure_notice_20261103.json": "bb7626df9f13eeeef2e093e89e97e76a21c77e19e3b6db15477cafd4bef0ff0e"
+  },
+  "units": "All 1152 existing generations, 96 question blocks, separate A/B measurement branches. Original predictions and labels remain unchanged.",
+  "diagnostics": [
+    "Development versus evaluation D rates at global, evidence, setting and 24 joint-cell levels; all cells reported.",
+    "Exact binary Brier increment = prediction-change squared minus twice prediction-change times prior residual. Split Joint-minus-Setting into balanced-design evidence-main and interaction components. No parameter fitting.",
+    "Compare development CV ordering with evaluation ordering; do not attribute differences uniquely to finite sampling, model runtime, questions or raters.",
+    "Report all six-code agreement, derived category and strict-event agreement, and mode/category distributions; agreement is not semantic truth.",
+    "Exact common-D sensitivity envelope on the 28 A/B-discordant outputs only, keeping agreed labels fixed. No adjudication or relabeling. Apply to all five prespecified contrasts.",
+    "Question leave-one-out and removal of the three length-stop cases as explicitly secondary sensitivity descriptions; primary score unchanged.",
+    "Read every D-disagreement case with full question/completion and both original codes/notes to describe interpretation boundaries; do not produce corrected labels."
+  ],
+  "excluded": [
+    "No model inference",
+    "No predictor refit or new shrinkage selection",
+    "No significance or population interval claim",
+    "No historical score, label or archive changes"
+  ],
+  "next_use": "Hypothesis generation and measurement/design choices for a separate future protocol."
+}
