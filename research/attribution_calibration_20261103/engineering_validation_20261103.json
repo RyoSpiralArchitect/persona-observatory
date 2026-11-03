@@ -1,0 +1,41 @@
+{
+  "checked_utc": "2026-11-03T11:39:27.809645+00:00",
+  "status": "ENGINEERING_CHECKS_PASSED_HUMAN_JUDGMENTS_PENDING",
+  "source_hashes": {
+    "src/persona_observatory/calibration.py": "f0f387aaddd68e6f5e6a09e4ca7cea74c59ff77cb53d2c7c6ecc4230d414e8ad",
+    "src/persona_observatory/component_predictors.py": "8094e449a6c71899054f1d655e58da2a30ca82c606fdf6682b033f07df3ba3b2",
+    "scripts/human_calibration.py": "a498f7dabf6b4a2abdb1eaf586f0252897444eb2972a6c426daee450b461474c",
+    "tests/test_calibration.py": "a7f97c6d5a988a1d7bb49aee170651f93a8878394ebf4d99da46aea54868cdfc",
+    "tests/test_component_predictors.py": "f6cc17e8b165699bac19806d6ad896683bbc59001922d8c832d7f54b9a7b7eb2",
+    "research/attribution_calibration_20261103/selection_plan.json": "3583c060326c726d396a99478ba95ce7d658631599ed374d4f31ad2a724252d0",
+    "docs/next_study_after_exp10.md": "6b68088c7356be0117bd8ad402a2e6bbe394e80f2a18408de85c54e8542e808c"
+  },
+  "stdlib_suite": {
+    "tests": 88,
+    "passed": 82,
+    "optional_skipped": 6
+  },
+  "original_archive": "VERIFIED including nested v8 and 19 browsable copies",
+  "experiment_10_public_evidence": "PUBLIC_EVIDENCE_VERIFIED: 191 members, 1152 generations, 9216 forecast rows, advance=false",
+  "packet_test": {
+    "cases": 52,
+    "batches": 9,
+    "source_archive_sha256": "7bf3a69c9e503634c0a738fb99e7aea991527942a83d9ad092f053aab9e4a7bd",
+    "checks": [
+      "source hashes",
+      "exact-triple uniqueness",
+      "masked case schema",
+      "preserved builder snapshot",
+      "exclusive output directory",
+      "submission raw retention",
+      "accepted batch overwrite refusal",
+      "verbatim quote validation",
+      "set-valued D preservation"
+    ]
+  },
+  "component_predictor": "synthetic counts only; probability bounds, normalization, Setting limit, cell limit, unseen-cell fallback, training-row isolation",
+  "real_data_predictor_fit": false,
+  "new_subject_generation": false,
+  "human_semantic_validation": false,
+  "limitations": "Schema and hashes do not verify human identity or semantic validity. Source data are public and not study-history-naive. Human judgments and current packet instance are local and excluded from git."
+}

@@ -122,6 +122,12 @@ Separate [post-hoc diagnostics (日本語)](research/experiment_10_mps_20261103/
 decompose the fixed forecast differences and examine annotation sensitivity;
 they do not revise the primary result or refit predictors.
 
+The [next staged work](docs/next_study_after_exp10.md) begins with
+[human attribution calibration](research/attribution_calibration_20261103/README.md).
+The answer-masked packet is ready; human judgments are pending. A separate
+component-shrinkage calculation is tested on synthetic counts only. Fresh model
+selection and evaluation wait for calibration and a new measurement/protocol lock.
+
 ## Repository layout
 
 | Path | Contents |
