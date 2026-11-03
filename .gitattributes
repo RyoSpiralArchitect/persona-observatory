@@ -1,0 +1,12 @@
+# Evidence must survive checkout without line-ending normalization.
+archives/*.zip -text
+research/experiment_09/** -text
+validation/backend_smoke_20261103/** -text
+validation/cli_smoke_20261103/** -text
+
+# Preserve original generated SVG whitespace and CSV CRLF bytes.
+# These exact files are independently hash-checked by verify_archive.py.
+research/experiment_09/figures/persona_shrinkage_summary_20261103.svg -whitespace
+research/experiment_09/results/nll_decomposition.csv -whitespace
+research/experiment_09/results/paired_summary.csv -whitespace
+research/experiment_09/results/score_summary.csv -whitespace

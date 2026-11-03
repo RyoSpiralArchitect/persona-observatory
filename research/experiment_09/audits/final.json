@@ -1,0 +1,333 @@
+{
+  "schema_version": "persona-shrinkage-independent-audit-v9",
+  "stage": "final",
+  "started_utc": "2026-11-03T01:47:28.777566+00:00",
+  "audited_utc": "2026-11-03T01:47:40.899504+00:00",
+  "status": "ALL_MATCH",
+  "assertions": 1670614,
+  "failure_count": 0,
+  "failures": [],
+  "sections": [
+    {
+      "section": "invented-count identities and boundary conditions",
+      "assertions_before": 0,
+      "failure_count_before": 0
+    },
+    {
+      "section": "immutable source and balanced development provenance",
+      "assertions_before": 571,
+      "failure_count_before": 0
+    },
+    {
+      "section": "configuration, pinned model, authored bank and tokenizer-only target plan",
+      "assertions_before": 9191,
+      "failure_count_before": 0
+    },
+    {
+      "section": "source completeness and frozen design integrity",
+      "assertions_before": 9805,
+      "failure_count_before": 0
+    },
+    {
+      "section": "forecast lock provenance and pre-target ordering",
+      "assertions_before": 9968,
+      "failure_count_before": 0
+    },
+    {
+      "section": "independent blocked cross-validation and declared selection",
+      "assertions_before": 10060,
+      "failure_count_before": 0
+    },
+    {
+      "section": "complete compact profiles and all prospective target vectors",
+      "assertions_before": 15418,
+      "failure_count_before": 0
+    },
+    {
+      "section": "all-count algebra identities, nesting and certificate",
+      "assertions_before": 76051,
+      "failure_count_before": 0
+    },
+    {
+      "section": "immutable generation attempt, snapshots, events and chronology",
+      "assertions_before": 89527,
+      "failure_count_before": 0
+    },
+    {
+      "section": "complete blinded observation exports, schema and immutable labels",
+      "assertions_before": 92407,
+      "failure_count_before": 0
+    },
+    {
+      "section": "independent every-output scoring and fixed paired comparisons",
+      "assertions_before": 98285,
+      "failure_count_before": 0
+    },
+    {
+      "section": "question/setting/stratum/family summaries and A/B averaging",
+      "assertions_before": 913332,
+      "failure_count_before": 0
+    },
+    {
+      "section": "weighted NLL decomposition, outcomes and measurement agreement",
+      "assertions_before": 1043310,
+      "failure_count_before": 0
+    },
+    {
+      "section": "canonical CSV mirrors and final scoring lock",
+      "assertions_before": 1051121,
+      "failure_count_before": 0
+    }
+  ],
+  "input_hashes": {
+    "audit_shrinkage.py": "5776770350f55a3f0b8e3b5fa339ba2003222406ec5a237525bf2cb24583573d",
+    "provenance/source_v8.zip": "0538ed94a04a2fa5f51195c56b66a4eabeb2ae56c0aa1cddb12787d0db8b77c8",
+    "development/source_question_bank.json": "abed838438f4752b44e51cc625c7c045918312a05cba0bc5615a5849284da818",
+    "runtime.py": "d164d92a51dfa436a59f330dc91e9977ce6f8b583e7271c0967cb790d37901f1",
+    "rubric.md": "7a28b5f7101c3e9de0367c064bec34f60154b7e7a4c9934c4685eff381d601a6",
+    "development/records.jsonl": "223e69a12cc288feb37ff6f8c62baab6144bd8ba4f5d681a272d7aff7f268425",
+    "development/labels_observer_a.jsonl": "41a61ee28541dab7acbb82634bc8bfe43d32457b5febe25fa9bf6ab92ebc61d9",
+    "development/labels_observer_b.jsonl": "2e20c1382bb2bb726de5a46421d6bf5a43889bcf0bd9cf9ba231b935ddeb5d0a",
+    "development_manifest.json": "aea0a4bea46f3545248eec7f7c0048481c235cf445bb4c8fb459d65290ca4606",
+    "study_config.json": "7b297fa66991a078fd2e120754067ad94b1c978a1180b2f43e8606910c456ec9",
+    "settings.json": "704da0f0fda6a048116dcced85d9b83cac32168c153656312383b9216417d7a5",
+    "question_bank.json": "0922edd10ec964e51fce3b4a45dcc728a152f0834be0375e623aa348bf2c49c9",
+    "model_manifest.json": "7b33b285a2ebcda77f72bb67e30c4d70b653c8651d332a3b119acd92a45b9c67",
+    "expected_model_manifest.json": "7b33b285a2ebcda77f72bb67e30c4d70b653c8651d332a3b119acd92a45b9c67",
+    "model/config.json": "224f72354f10d617a359cc82ad15a3c96e866b9b2ffadb81997eeea9e88e22ee",
+    "model/generation_config.json": "87b916edaaab66b3899b9d0dd0752727dff6666686da0504d89ae0a6e055a013",
+    "model/tokenizer_config.json": "4ec77d44f62efeb38d7e044a1db318f6a939438425312dfa333b8382dbad98df",
+    "model/tokenizer.json": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+    "model/special_tokens_map.json": "2b7379f3ae813529281a5c602bc5a11c1d4e0a99107aaa597fe936c1e813ca52",
+    "model/model.safetensors": "e6bffe7435d7ddc10fd3b9a9efd429dafbacb1cb17015fb5562664e7532bf86e",
+    "data/target_plan.jsonl": "6647252d9f0e18ddfa82d887fdc8aaa988bf1f3ce21039cb84b524f0a7d08b40",
+    "metadata/target_plan.json": "ff7f49fb99d229384622b8bef63ca052dafcdb41ee1b7221765372b5dec655dd",
+    "PROTOCOL.md": "a6fdd57289294bdd1619c8a970c8d77459b6960568f3704a0b0f8a57a31898b6",
+    "SCHEMA.md": "bdfff40e60237327a8f8fbf64ccbf5f666bb18e65dbb937c85e420a2ae2db7a5",
+    "QUESTION_BANK_REVIEW.md": "41ea7d8d3f0081e63003f83431d570b53b23596951385cf5df0b8347fd1ca32f",
+    "DEVELOPMENT_REVIEW.md": "b6e16793127012346bfe23f226368fa099c071e5bb33d075336c3c85e1c88c34",
+    "prepare_development.py": "fecf66fa620180779534af67947d58860381ffac664f6f6cfa1609915dc15d95",
+    "experiment_config.py": "883f4ed8b528fc6f8d9b49f73bc98a2e73f93f7f8384566b65c8952d1047c5ec",
+    "run_experiment.py": "dfeda74126fd87ea988c374e4163c26098a5b95aa704ce8af5500f477d49b9b1",
+    "validate_observation.py": "cbb099d286bc13dac52c8c67d96b5a22269a4819927fa1c9d11865c7c1fbb19a",
+    "predict.py": "ca3e855aa6d7c7ab2461c5de1abfb0cd87c290c52b1361fa9f5a3bdc02a4c769",
+    "prediction_math_audit.md": "4dc559688c1e3bf50065313f015927c7b032cb44097e0425614676886bb5fd44",
+    "AUDIT_PLAN.md": "bca46dfe3fb9fef2724565c6535d3adb0a0f456de64646cc97c4b532abce13c6",
+    "environment.json": "1d0b2cb6c208d55522f6b3e6db073267538b1e2050f9f3267a5408e51910d55d",
+    "preflight.json": "ec5dc3584af4fbf860d07ea5c761e4db383c0fb57735f10fa3c9a86dc33dfd56",
+    "audits/design_prelock.json": "5212c058180f0ebbd9f562b29a946d350d91b01a0fdce298f3ad62dbc3dd9e04",
+    "design_lock.json": "973dbcd5ef6a15e60b473ff9a4567208eae5a1d951a5cd7c8131ee1786c2d833",
+    "predictions/forecast_lock.json": "e04cb6f14610d6b5f047f86d997db41acc07df96f8f6ee82913ecd2fe7708fb6",
+    "predictions/cv_scores.csv": "5177d47f5b44ac1a056494494626e619fcd163f2347cbc59eb3f045b1af6b3ef",
+    "predictions/cv_candidate_summary.csv": "9700f0810225d1641a70894d7fb18f55bcaea1f58962da2813d96d26b5d2a49d",
+    "predictions/selection.json": "a23628e03fea273cca649a8cd15b7116b3cfd308b807c60447fa7cf4bdf33f24",
+    "predictions/counts.json": "04563f1678fcffd576782652a3224ce6daa492adf37a69510f18e5ec751f62bf",
+    "predictions/profiles.json": "c33f1ef025a773875a8ac591c3fc3a533ef117a2543030771e884389ceb92556",
+    "predictions/forecasts.jsonl": "2ed026403ae8f71349143eda4c7828aebf395105aaf45fb9d7a3b1c165660706",
+    "predictions/identity_certificate.json": "4955f14c02f5e4abe06dac1b5bbfce7f9338f3a4f28b3dcea89fa28a6172d480",
+    "FORECAST_NOTE.md": "85dc9ad20b89670e746d9d57743242c7609bc9d459385b327d7741da3aaf4bce",
+    "audits/forecast.json": "a20e9cf995cbaf6308749635765bcff6d007a7b9bd7f8cd4da1ac264394b5793",
+    "metadata/target_attempt.json": "1c0ee7c0887329e148c22bbdc1d78669af25d97bcf930e0c46768c039401ed95",
+    "metadata/target.json": "d5463ad972c43360daefd015bb2981192144930251179e88b80bea2b8744f623",
+    "metadata/target_events.jsonl": "12d68116594f3119f743969c3d539f352fcb0028a3425457200ac29263edcd00",
+    "source_snapshots/target/SNAPSHOT_MANIFEST.json": "5aabf39afb10c4213977aced32f03abaa48e7fd012e6cafedc496af17cda34d5",
+    "source_snapshots/target/PROTOCOL.md": "a6fdd57289294bdd1619c8a970c8d77459b6960568f3704a0b0f8a57a31898b6",
+    "source_snapshots/target/SCHEMA.md": "bdfff40e60237327a8f8fbf64ccbf5f666bb18e65dbb937c85e420a2ae2db7a5",
+    "source_snapshots/target/study_config.json": "7b297fa66991a078fd2e120754067ad94b1c978a1180b2f43e8606910c456ec9",
+    "source_snapshots/target/settings.json": "704da0f0fda6a048116dcced85d9b83cac32168c153656312383b9216417d7a5",
+    "source_snapshots/target/question_bank.json": "0922edd10ec964e51fce3b4a45dcc728a152f0834be0375e623aa348bf2c49c9",
+    "source_snapshots/target/QUESTION_BANK_REVIEW.md": "41ea7d8d3f0081e63003f83431d570b53b23596951385cf5df0b8347fd1ca32f",
+    "source_snapshots/target/DEVELOPMENT_REVIEW.md": "b6e16793127012346bfe23f226368fa099c071e5bb33d075336c3c85e1c88c34",
+    "source_snapshots/target/prepare_development.py": "fecf66fa620180779534af67947d58860381ffac664f6f6cfa1609915dc15d95",
+    "source_snapshots/target/development_manifest.json": "aea0a4bea46f3545248eec7f7c0048481c235cf445bb4c8fb459d65290ca4606",
+    "source_snapshots/target/development/records.jsonl": "223e69a12cc288feb37ff6f8c62baab6144bd8ba4f5d681a272d7aff7f268425",
+    "source_snapshots/target/development/labels_observer_a.jsonl": "41a61ee28541dab7acbb82634bc8bfe43d32457b5febe25fa9bf6ab92ebc61d9",
+    "source_snapshots/target/development/labels_observer_b.jsonl": "2e20c1382bb2bb726de5a46421d6bf5a43889bcf0bd9cf9ba231b935ddeb5d0a",
+    "source_snapshots/target/development/source_question_bank.json": "abed838438f4752b44e51cc625c7c045918312a05cba0bc5615a5849284da818",
+    "source_snapshots/target/provenance/source_v8.zip": "0538ed94a04a2fa5f51195c56b66a4eabeb2ae56c0aa1cddb12787d0db8b77c8",
+    "source_snapshots/target/experiment_config.py": "883f4ed8b528fc6f8d9b49f73bc98a2e73f93f7f8384566b65c8952d1047c5ec",
+    "source_snapshots/target/runtime.py": "d164d92a51dfa436a59f330dc91e9977ce6f8b583e7271c0967cb790d37901f1",
+    "source_snapshots/target/run_experiment.py": "dfeda74126fd87ea988c374e4163c26098a5b95aa704ce8af5500f477d49b9b1",
+    "source_snapshots/target/rubric.md": "7a28b5f7101c3e9de0367c064bec34f60154b7e7a4c9934c4685eff381d601a6",
+    "source_snapshots/target/validate_observation.py": "cbb099d286bc13dac52c8c67d96b5a22269a4819927fa1c9d11865c7c1fbb19a",
+    "source_snapshots/target/predict.py": "ca3e855aa6d7c7ab2461c5de1abfb0cd87c290c52b1361fa9f5a3bdc02a4c769",
+    "source_snapshots/target/audit_shrinkage.py": "5776770350f55a3f0b8e3b5fa339ba2003222406ec5a237525bf2cb24583573d",
+    "source_snapshots/target/prediction_math_audit.md": "4dc559688c1e3bf50065313f015927c7b032cb44097e0425614676886bb5fd44",
+    "source_snapshots/target/AUDIT_PLAN.md": "bca46dfe3fb9fef2724565c6535d3adb0a0f456de64646cc97c4b532abce13c6",
+    "source_snapshots/target/model_manifest.json": "7b33b285a2ebcda77f72bb67e30c4d70b653c8651d332a3b119acd92a45b9c67",
+    "source_snapshots/target/expected_model_manifest.json": "7b33b285a2ebcda77f72bb67e30c4d70b653c8651d332a3b119acd92a45b9c67",
+    "source_snapshots/target/environment.json": "1d0b2cb6c208d55522f6b3e6db073267538b1e2050f9f3267a5408e51910d55d",
+    "source_snapshots/target/preflight.json": "ec5dc3584af4fbf860d07ea5c761e4db383c0fb57735f10fa3c9a86dc33dfd56",
+    "source_snapshots/target/data/target_plan.jsonl": "6647252d9f0e18ddfa82d887fdc8aaa988bf1f3ce21039cb84b524f0a7d08b40",
+    "source_snapshots/target/metadata/target_plan.json": "ff7f49fb99d229384622b8bef63ca052dafcdb41ee1b7221765372b5dec655dd",
+    "source_snapshots/target/audits/design_prelock.json": "5212c058180f0ebbd9f562b29a946d350d91b01a0fdce298f3ad62dbc3dd9e04",
+    "source_snapshots/target/design_lock.json": "973dbcd5ef6a15e60b473ff9a4567208eae5a1d951a5cd7c8131ee1786c2d833",
+    "source_snapshots/target/predictions/cv_scores.csv": "5177d47f5b44ac1a056494494626e619fcd163f2347cbc59eb3f045b1af6b3ef",
+    "source_snapshots/target/predictions/cv_candidate_summary.csv": "9700f0810225d1641a70894d7fb18f55bcaea1f58962da2813d96d26b5d2a49d",
+    "source_snapshots/target/predictions/selection.json": "a23628e03fea273cca649a8cd15b7116b3cfd308b807c60447fa7cf4bdf33f24",
+    "source_snapshots/target/predictions/counts.json": "04563f1678fcffd576782652a3224ce6daa492adf37a69510f18e5ec751f62bf",
+    "source_snapshots/target/predictions/profiles.json": "c33f1ef025a773875a8ac591c3fc3a533ef117a2543030771e884389ceb92556",
+    "source_snapshots/target/predictions/forecasts.jsonl": "2ed026403ae8f71349143eda4c7828aebf395105aaf45fb9d7a3b1c165660706",
+    "source_snapshots/target/predictions/identity_certificate.json": "4955f14c02f5e4abe06dac1b5bbfce7f9338f3a4f28b3dcea89fa28a6172d480",
+    "source_snapshots/target/FORECAST_NOTE.md": "85dc9ad20b89670e746d9d57743242c7609bc9d459385b327d7741da3aaf4bce",
+    "source_snapshots/target/predictions/forecast_lock.json": "e04cb6f14610d6b5f047f86d997db41acc07df96f8f6ee82913ecd2fe7708fb6",
+    "source_snapshots/target/audits/forecast.json": "a20e9cf995cbaf6308749635765bcff6d007a7b9bd7f8cd4da1ac264394b5793",
+    "data/target_generations.jsonl": "6e898c134a007a05f179cb4c65caf64a3aed5c50bd46d89f119a1a8842873441",
+    "observer_exports/target.json": "cf66c842dc017430e130611cb123ac5bad7f3c9ec530fa2ab65436cb357ad0f4",
+    "observers/target/observer_a/validation_blind.jsonl": "ecf3d000f13282f69cf8d2996b28bfad684380fef3800ce66160edb26dfd81b7",
+    "observers/target/observer_a/discovery_blind.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "observers/target/observer_a/rubric.md": "7a28b5f7101c3e9de0367c064bec34f60154b7e7a4c9934c4685eff381d601a6",
+    "observers/target/observer_a/labels.jsonl": "99dbc2a8c03356a78e9d11204c450faa33f850bc8943d9bf774358b3c5cee3bd",
+    "observers/target/observer_a/observation_lock.json": "d6fe63a089ba53e8932e9073f79d652dedd33eb14294d00bbd5828b6cb877f37",
+    "observers/target/observer_a/observations.md": "e31b941acf749d910442b270855b9e79ce67ff6559094010e2a5ac83fa06e101",
+    "observers/target/observer_b/validation_blind.jsonl": "e05ab64e80a1f4ff19294d0a8437b0d9c1189b878045cd36bc8398a32b3a9acb",
+    "observers/target/observer_b/discovery_blind.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "observers/target/observer_b/rubric.md": "7a28b5f7101c3e9de0367c064bec34f60154b7e7a4c9934c4685eff381d601a6",
+    "observers/target/observer_b/labels.jsonl": "0c716251c341b985745feb9d1ecba5574a19bc9ee28b628a4fa0e24604c511d8",
+    "observers/target/observer_b/observation_lock.json": "4a5eb331f56638ab2b6f798d9cb5d212ff4cec448f2bff83a27f550f35d04c6f",
+    "observers/target/observer_b/observations.md": "6e8cbf193dbe0259fa6a1ca6e4c0923bd080f20b68d925575b0200aff3de22a9",
+    "results/per_sample_scores.jsonl": "6055a6917acbc92b692611c91ddb57a9cdf9689037f9ce41d0eee5ac0984db16",
+    "results/paired_differences.jsonl": "ae23c81bf6d61b78f4aa1498804d0c8e9e01efd629c906fd5e0cddf63c349fe4",
+    "results/scalar_scores.jsonl": "b5839b509666401b78fcfb204d7da16e047a36bdd86c5b2024e1caaaabc6a95f",
+    "results/tables.json": "48b9d3167bf0fa479bd2b794691b19f3334b0eb55a47d24541d539cdddde80bf",
+    "results/agreement_summary.json": "c2a1f0bfda9d8a2fa1f86890d64dafd6c8d9ad07ccf8ae67597e66b2811567f2",
+    "results/primary_criterion.json": "89a96d4d832605c81916f55a6c237e569d33193fdd7122a76eddb09cbbff5782",
+    "results/per_sample_scores.csv": "d3d2730a64d5c74a79ff19695bf6b77f9e0c374d991a483813b4095d85e9b686",
+    "results/paired_differences.csv": "201316128d3cd9c42a892182a66d98d19785a85ccc7ca9dc3cca1b352d2d7d10",
+    "results/score_summary.csv": "5858eb36a5cced0f695306de1fbae3cfaadcb9278c89e27d9aaeb5abf50c7651",
+    "results/paired_summary.csv": "d1a6a29b8f7179b370266d5f9ae864e787dc15c5b75c89e097b974dee8b78986",
+    "results/score_question_values.csv": "8531c1a07ddbd94ed91c5d53dae7d05a3988e825cdba1575f5cb10cc517ff435",
+    "results/paired_question_values.csv": "46a387229b77871add0739ca025c0c1a6583040ee8c799a44917ae2bb0d49bde",
+    "results/paired_question_summary.csv": "722749d6446aaf8856600e9b8631d2dd6a9e8fc7edb1d2285459ec2cf1c06de6",
+    "results/score_setting_values.csv": "86f838b772cc2a714973b6e974359e61f48a42c4b0c2c445e1d33478b1d96706",
+    "results/paired_setting_values.csv": "e60cfcbfb9ef345edeebdbae8d45836c103ef73543f4529f5f81499587690d20",
+    "results/paired_setting_summary.csv": "90650da668f2a8956375f1a0d4a96513c552f0ad635532214eed8ee6a3f7a7b7",
+    "results/score_stratum_values.csv": "566de5089176b6bf503837a3ee2965be9844a522d4a9c952cb57313ec1c64b28",
+    "results/paired_stratum_values.csv": "029e003801795c8ae87a67fbdb7aaa666669f4e031f95647bc9446093873be6f",
+    "results/paired_stratum_summary.csv": "de515573c5b9a667cb7d653e6f330d7ccaf04c4da0abf3167d0cfcd65a3033c8",
+    "results/score_family_values.csv": "4e2357a0fa597a75a54beae7cef1781893c3b26f44404f6e82e3b35e37025535",
+    "results/paired_family_values.csv": "057b3795a03ecacab785a72aac84ceac690749da5c953d89dfcac15545c1a6e4",
+    "results/paired_family_summary.csv": "db9f684d3ab48931d0916b2418b0036743753f9d00bde8865279780c2757a3c4",
+    "results/nll_decomposition.csv": "b37becc4a066e4d3d57130a4c073dc1d38a000fa7a99eb889df7740cc2ea5011",
+    "results/outcome_counts.csv": "2640fc9636f4faf6b0d6c4c10cd005af144cf7314b2c0044b74696a94e8b9818",
+    "results/observer_agreement.csv": "79cb32b39d4d51e85cc4e4d49f9c5a5658d85eed0e1065ebf0a5a8b4d8ac162f",
+    "results/observer_disagreements.csv": "d20e8f2907ff281ea279d40c870914510c75ce66c8608e333055f1c44f76dd46",
+    "results/scoring_integrity.json": "f9b1e3a91ef171f7e67e4300e711a837700589817ba9bb6b044a529de348cee9",
+    "results/score_lock.json": "bbb5cdb4c23640d4299ea5792e7fc5004cea7c7c880d097e2e65d89a54322d09"
+  },
+  "additional_verified_hashes": {},
+  "synthetic_max_diagonal_error": 1.1102230246251565e-16,
+  "development_records": 336,
+  "old_target_records_reused_for_development": 144,
+  "target_plan_rows": 288,
+  "new_questions": 24,
+  "distinct_seed_streams": 48,
+  "design_lock_sha256": "973dbcd5ef6a15e60b473ff9a4567208eae5a1d951a5cd7c8131ee1786c2d833",
+  "forecast_lock_sha256": "e04cb6f14610d6b5f047f86d997db41acc07df96f8f6ee82913ecd2fe7708fb6",
+  "forecast_rows": 4032,
+  "profile_rows": 48,
+  "cv_candidate_fold_rows": 448,
+  "selected_parameters": {
+    "G": [
+      "inf",
+      "inf"
+    ],
+    "F": [
+      "1",
+      "1"
+    ],
+    "H_gate": [
+      "1",
+      "inf"
+    ],
+    "H_content": [
+      "inf",
+      "1"
+    ],
+    "H": [
+      "4",
+      "1"
+    ],
+    "H_evidence": [
+      "inf",
+      "1"
+    ],
+    "Hswap": [
+      "4",
+      "1"
+    ]
+  },
+  "global_forecast_collapse": {
+    "G": true,
+    "F": false,
+    "H_gate": false,
+    "H_content": false,
+    "H": false,
+    "H_evidence": false,
+    "Hswap": false
+  },
+  "target_generation_rows": 288,
+  "target_length_stops": 3,
+  "target_eos_stops": 285,
+  "observer_label_rows": {
+    "observer_a": 288,
+    "observer_b": 288
+  },
+  "chronology_utc": {
+    "design_locked": "2026-11-03T01:19:20.701621+00:00",
+    "forecast_locked": "2026-11-03T01:19:22.614538+00:00",
+    "forecasts_audited": "2026-11-03T01:19:33.248277+00:00",
+    "attempt_started": "2026-11-03T01:19:49.198714+00:00",
+    "inference_started": "2026-11-03T01:19:50.089567+00:00",
+    "generation_completed": "2026-11-03T01:39:51.174069+00:00",
+    "observer_a_locked": "2026-11-03T01:47:06.228114+00:00",
+    "observer_b_locked": "2026-11-03T01:46:05.181221+00:00"
+  },
+  "per_sample_score_rows": 4608,
+  "scalar_score_rows": 19008,
+  "paired_difference_rows": 19584,
+  "same_foundation_model_observer_branches": true,
+  "independent_model_replications": false,
+  "category_agreement": {
+    "n": 284,
+    "fraction": 0.9861111111111112
+  },
+  "direct_event_agreement": {
+    "n": 285,
+    "fraction": 0.9895833333333334
+  },
+  "strict_event_agreement": {
+    "n": 283,
+    "fraction": 0.9826388888888888
+  },
+  "descriptive_pilot_support": false,
+  "primary_comparisons": {
+    "ab_mean:H-F": {
+      "difference": 0.001560511899573625,
+      "sign": "positive"
+    },
+    "ab_mean:H-G": {
+      "difference": -0.001445498586442635,
+      "sign": "negative"
+    },
+    "observer_a:H-F": {
+      "difference": 0.0018230401020662454,
+      "sign": "positive"
+    },
+    "observer_a:H-G": {
+      "difference": -0.001358612659904982,
+      "sign": "negative"
+    },
+    "observer_b:H-F": {
+      "difference": 0.001297983697081004,
+      "sign": "positive"
+    },
+    "observer_b:H-G": {
+      "difference": -0.0015323845129802886,
+      "sign": "negative"
+    }
+  },
+  "score_lock_sha256": "bbb5cdb4c23640d4299ea5792e7fc5004cea7c7c880d097e2e65d89a54322d09",
+  "independence": "No imports from predictor, runner, experiment_config or observer validator; no subject model inference.",
+  "limitations": "Internal consistency audit, not an independent timestamp or independent scientific replication."
+}

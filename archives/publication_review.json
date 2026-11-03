@@ -1,0 +1,35 @@
+{
+  "schema_version": "persona-observatory-publication-review-v1",
+  "reviewed_utc": "2026-11-03T02:09:29.518812+00:00",
+  "scope": "Bounded credential-format and signed-URL scan of UTF-8 archive members, with nested unique archives examined; not proof of the absence of all private information. Binary images are not OCR-scanned. No archive member is edited or redacted.",
+  "archives": [
+    {
+      "label": "experiment_09_20261103.zip",
+      "sha256": "65b7927bde72ec225acff1540bec2d88725ca810d1b58b82b79749b2d2a19909",
+      "members": 177
+    },
+    {
+      "label": "experiment_09_20261103.zip!persona_shrinkage_pilot/provenance/source_v8.zip",
+      "sha256": "0538ed94a04a2fa5f51195c56b66a4eabeb2ae56c0aa1cddb12787d0db8b77c8",
+      "members": 175
+    }
+  ],
+  "counts": {
+    "member_visits": 352,
+    "utf8_text_members_scanned": 345,
+    "binary_members_skipped": 5
+  },
+  "patterns": {
+    "github_token": "\\b(?:gh[pousr]_[A-Za-z0-9]{25,}|github_pat_[A-Za-z0-9_]{35,})\\b",
+    "hf_token": "\\bhf_[A-Za-z0-9]{25,}\\b",
+    "openai_token": "\\bsk-(?:proj-|svcacct-)?[A-Za-z0-9_-]{30,}\\b",
+    "aws_access_id": "\\b(?:AKIA|ASIA)[A-Z0-9]{16}\\b",
+    "private_key": "-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----",
+    "signed_url": "https?://[^\\s\\\"<>]+[?&](?:sig|X-Amz-Signature|X-Goog-Signature|access_token|token)=[^\\s\\\"<>]+",
+    "url_password": "https?://[^\\s/:]+:[^\\s/@]+@",
+    "auth_header_value": "(?:Authorization|authorization)[\\\"\\x27]?\\s*[:=]\\s*[\\\"\\x27]?(?:Bearer|token)\\s+[A-Za-z0-9._-]{20,}"
+  },
+  "findings": [],
+  "status": "NO_MATCHES_IN_BOUNDED_SCAN",
+  "manual_review": "Experiment 9 setup command log and setup README inspected: public package/model sources and transient workspace paths; no authentication material observed."
+}

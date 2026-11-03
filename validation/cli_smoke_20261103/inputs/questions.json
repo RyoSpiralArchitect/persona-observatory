@@ -1,0 +1,16 @@
+[
+  {
+    "question_id": "N01",
+    "topic": "automatic_transcription",
+    "evidence_stratum": "limited",
+    "question": "A volunteer tried a new automatic transcription tool on one twenty-second recording made in a quiet room. It wrote every spoken word correctly for a single speaker reading slowly. The volunteer did not try overlapping voices, background chatter, unfamiliar accents, or longer recordings, and no other speakers took part.\n\nWhat can be concluded about whether the tool reliably transcribes ordinary group conversations accurately from the stated evidence?",
+    "source": "Experiment 9: already observed; replay material, not a fresh held-out question."
+  },
+  {
+    "question_id": "N19",
+    "topic": "cable_comb",
+    "evidence_stratum": "contradictory",
+    "question": "Matching bundles of six charging cables were arranged with or without a proposed anti-tangle comb in randomized trials. Each bundle underwent the same timed shaking and storage routine. Separating the cables took longer with the comb in 37 of 40 matched trials. A second operator repeated the routine with fresh bundles and found the same pattern.\n\nWhat can be concluded about whether the comb reduces the time needed to separate these cables after the tested storage routine from the stated evidence?",
+    "source": "Experiment 9: already observed; replay material, not a fresh held-out question."
+  }
+]

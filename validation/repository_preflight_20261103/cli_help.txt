@@ -1,0 +1,26 @@
+usage: pobs [-h] [--version]
+            {doctor,fetch-model,design,prepare,generate,verify-run,export-observer,validate-observer,score}
+            ...
+
+Observable persona research: frozen evidence and portable local runs
+
+positional arguments:
+  {doctor,fetch-model,design,prepare,generate,verify-run,export-observer,validate-observer,score}
+    doctor              Check backend availability without loading model
+                        weights
+    fetch-model         Download public pinned files and verify their
+                        checksums
+    design              Export target IDs/prompts before inference, for
+                        externally prepared forecasts
+    prepare             Freeze a new run: config, tokens, seeds, source and
+                        optional forecasts
+    generate            Make exactly one generation attempt for a prepared run
+    verify-run          Read-only run integrity and completion check
+    export-observer     Create a new blinded semantic-coding workspace
+    validate-observer   Validate all semantic codes and optionally lock them
+    score               Score only prelocked external forecasts against locked
+                        observations
+
+options:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit

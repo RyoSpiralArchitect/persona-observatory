@@ -1,0 +1,56 @@
+{
+  "environment": "Isolated Python 3.12 venv; core package installed editable; no Torch or model downloads.",
+  "earlier_attempt": {
+    "command": "python3.12 -m unittest discover -s tests -v",
+    "result": "FAILED: 55 discovered including one failed import of test_backend; persona_observatory had not been installed in that interpreter.",
+    "resolution": "Created isolated venv and installed the core package using the documented installation step. No tests or runtime source changed."
+  },
+  "checks": [
+    {
+      "check": "unit_tests",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output": "unit_tests.txt"
+    },
+    {
+      "check": "archive",
+      "command": [
+        ".venv/bin/python",
+        "scripts/verify_archive.py"
+      ],
+      "exit_code": 0,
+      "output": "archive.txt"
+    },
+    {
+      "check": "cli_help",
+      "command": [
+        ".venv/bin/pobs",
+        "--help"
+      ],
+      "exit_code": 0,
+      "output": "cli_help.txt"
+    },
+    {
+      "check": "compile",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "compileall",
+        "-q",
+        "src",
+        "scripts",
+        "tests"
+      ],
+      "exit_code": 0,
+      "output": "compile.txt"
+    }
+  ]
+}

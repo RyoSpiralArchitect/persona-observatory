@@ -1,0 +1,60 @@
+{
+  "purpose": "engineering_smoke_not_new_scientific_evidence",
+  "started_utc": "2026-11-03T02:13:13.890211+00:00",
+  "seed_namespace": "persona-observatory/backend-engineering-smoke/20261103",
+  "new_scientific_evidence": false,
+  "semantic_labels_assigned": false,
+  "source_archive": "experiment_09_20261103.zip",
+  "source_archive_sha256": "65b7927bde72ec225acff1540bec2d88725ca810d1b58b82b79749b2d2a19909",
+  "source_plan_member": "persona_shrinkage_pilot/data/target_plan.jsonl",
+  "source_plan_sha256": "6647252d9f0e18ddfa82d887fdc8aaa988bf1f3ce21039cb84b524f0a7d08b40",
+  "source_question_id": "N01",
+  "retokenized_prompt_matches_frozen_ids": true,
+  "model_id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "revision": "a10cc1512eabd3dde888204e902eca88bddb4951",
+  "model_files": [
+    {
+      "name": "config.json",
+      "size_bytes": 846,
+      "sha256": "224f72354f10d617a359cc82ad15a3c96e866b9b2ffadb81997eeea9e88e22ee"
+    },
+    {
+      "name": "generation_config.json",
+      "size_bytes": 132,
+      "sha256": "87b916edaaab66b3899b9d0dd0752727dff6666686da0504d89ae0a6e055a013"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size_bytes": 3764,
+      "sha256": "4ec77d44f62efeb38d7e044a1db318f6a939438425312dfa333b8382dbad98df"
+    },
+    {
+      "name": "tokenizer.json",
+      "size_bytes": 2104556,
+      "sha256": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size_bytes": 655,
+      "sha256": "2b7379f3ae813529281a5c602bc5a11c1d4e0a99107aaa597fe936c1e813ca52"
+    },
+    {
+      "name": "model.safetensors",
+      "size_bytes": 723674912,
+      "sha256": "e6bffe7435d7ddc10fd3b9a9efd429dafbacb1cb17015fb5562664e7532bf86e"
+    }
+  ],
+  "model_manifest_sha256": "7b33b285a2ebcda77f72bb67e30c4d70b653c8651d332a3b119acd92a45b9c67",
+  "backend_sha256": "4434f89f04ddd7940804543bc3257ec0b52dfc052dead9902d4aac3d406739fd",
+  "smoke_script_sha256": "e9e3511c0c0d0befb92b82b6b7a1fba17c91979a521dfc76c2893da8aa0a6257",
+  "plan_sha256": "4f0689e641a276b24d62a6dd8f07403983c23b4ad06cf32526ddff5f1f3a1c51",
+  "runtime": {
+    "device": "cpu",
+    "dtype": "float32",
+    "max_new_tokens": 4,
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "cpu_threads": 4,
+    "batch_size": 2
+  }
+}

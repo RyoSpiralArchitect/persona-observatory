@@ -1,0 +1,138 @@
+{
+  "schema_version": "persona-observatory-archive-index-v1",
+  "recorded_date": "2026-11-03",
+  "archive": {
+    "path": "archives/experiment_09_20261103.zip",
+    "source_deliverable_name": "persona_shrinkage_pilot_20261103.zip",
+    "sha256": "65b7927bde72ec225acff1540bec2d88725ca810d1b58b82b79749b2d2a19909",
+    "bytes": 6574553,
+    "root": "persona_shrinkage_pilot",
+    "members": 177
+  },
+  "embedded_archives": [
+    {
+      "archive_member": "persona_shrinkage_pilot/provenance/source_v8.zip",
+      "sha256": "0538ed94a04a2fa5f51195c56b66a4eabeb2ae56c0aa1cddb12787d0db8b77c8",
+      "bytes": 1867282,
+      "root": "persona_topic_budget_pilot",
+      "members": 175
+    }
+  ],
+  "browsable_copies": [
+    {
+      "path": "research/experiment_09/REPORT_JA.md",
+      "archive_member": "persona_shrinkage_pilot/REPORT_JA.md",
+      "bytes": 14246,
+      "sha256": "e785d4e06c311eb199e129517a7f8ede118862a29be71dd964e7fffec64f3835"
+    },
+    {
+      "path": "research/experiment_09/METHODS_JA.md",
+      "archive_member": "persona_shrinkage_pilot/METHODS_JA.md",
+      "bytes": 11002,
+      "sha256": "556fee735ef979aa67cd20c0f3e1a0aef455d844ae444fb5e30559b5c838b58e"
+    },
+    {
+      "path": "research/experiment_09/CONCEPT_NOTES_JA.md",
+      "archive_member": "persona_shrinkage_pilot/CONCEPT_NOTES_JA.md",
+      "bytes": 4314,
+      "sha256": "f2a547cd2bdceda431cd204fc8d139ae1c63510ce5afb472e6085dd707a37418"
+    },
+    {
+      "path": "research/experiment_09/PROTOCOL.md",
+      "archive_member": "persona_shrinkage_pilot/PROTOCOL.md",
+      "bytes": 10147,
+      "sha256": "a6fdd57289294bdd1619c8a970c8d77459b6960568f3704a0b0f8a57a31898b6"
+    },
+    {
+      "path": "research/experiment_09/SCHEMA.md",
+      "archive_member": "persona_shrinkage_pilot/SCHEMA.md",
+      "bytes": 9153,
+      "sha256": "bdfff40e60237327a8f8fbf64ccbf5f666bb18e65dbb937c85e420a2ae2db7a5"
+    },
+    {
+      "path": "research/experiment_09/rubric.md",
+      "archive_member": "persona_shrinkage_pilot/rubric.md",
+      "bytes": 8749,
+      "sha256": "7a28b5f7101c3e9de0367c064bec34f60154b7e7a4c9934c4685eff381d601a6"
+    },
+    {
+      "path": "research/experiment_09/question_bank.json",
+      "archive_member": "persona_shrinkage_pilot/question_bank.json",
+      "bytes": 14428,
+      "sha256": "0922edd10ec964e51fce3b4a45dcc728a152f0834be0375e623aa348bf2c49c9"
+    },
+    {
+      "path": "research/experiment_09/settings.json",
+      "archive_member": "persona_shrinkage_pilot/settings.json",
+      "bytes": 1840,
+      "sha256": "704da0f0fda6a048116dcced85d9b83cac32168c153656312383b9216417d7a5"
+    },
+    {
+      "path": "research/experiment_09/environment.json",
+      "archive_member": "persona_shrinkage_pilot/environment.json",
+      "bytes": 300,
+      "sha256": "1d0b2cb6c208d55522f6b3e6db073267538b1e2050f9f3267a5408e51910d55d"
+    },
+    {
+      "path": "research/experiment_09/model_manifest.json",
+      "archive_member": "persona_shrinkage_pilot/model_manifest.json",
+      "bytes": 1084,
+      "sha256": "7b33b285a2ebcda77f72bb67e30c4d70b653c8651d332a3b119acd92a45b9c67"
+    },
+    {
+      "path": "research/experiment_09/persona_shrinkage_report_20261103.html",
+      "archive_member": "persona_shrinkage_pilot/persona_shrinkage_report_20261103.html",
+      "bytes": 987189,
+      "sha256": "ad23e4f8c8dea852d185a4e9e2f0a228f88b6c23fdb17b50fbee316cdb12ba3c"
+    },
+    {
+      "path": "research/experiment_09/figures/persona_shrinkage_summary_20261103.png",
+      "archive_member": "persona_shrinkage_pilot/figures/persona_shrinkage_summary_20261103.png",
+      "bytes": 235269,
+      "sha256": "083b1a2512d93502223f962f7d156fe4ab51782cab2e92858442b6a23dd078b8"
+    },
+    {
+      "path": "research/experiment_09/figures/persona_shrinkage_summary_20261103.svg",
+      "archive_member": "persona_shrinkage_pilot/figures/persona_shrinkage_summary_20261103.svg",
+      "bytes": 170343,
+      "sha256": "413285b2185c03f3022aea41328ce49040f9cd42cb1e879463e12c7a65b6f8cb"
+    },
+    {
+      "path": "research/experiment_09/results/score_summary.csv",
+      "archive_member": "persona_shrinkage_pilot/results/score_summary.csv",
+      "bytes": 10920,
+      "sha256": "5858eb36a5cced0f695306de1fbae3cfaadcb9278c89e27d9aaeb5abf50c7651"
+    },
+    {
+      "path": "research/experiment_09/results/paired_summary.csv",
+      "archive_member": "persona_shrinkage_pilot/results/paired_summary.csv",
+      "bytes": 14877,
+      "sha256": "d1a6a29b8f7179b370266d5f9ae864e787dc15c5b75c89e097b974dee8b78986"
+    },
+    {
+      "path": "research/experiment_09/results/nll_decomposition.csv",
+      "archive_member": "persona_shrinkage_pilot/results/nll_decomposition.csv",
+      "bytes": 3526,
+      "sha256": "b37becc4a066e4d3d57130a4c073dc1d38a000fa7a99eb889df7740cc2ea5011"
+    },
+    {
+      "path": "research/experiment_09/results/primary_criterion.json",
+      "archive_member": "persona_shrinkage_pilot/results/primary_criterion.json",
+      "bytes": 962,
+      "sha256": "89a96d4d832605c81916f55a6c237e569d33193fdd7122a76eddb09cbbff5782"
+    },
+    {
+      "path": "research/experiment_09/results/agreement_summary.json",
+      "archive_member": "persona_shrinkage_pilot/results/agreement_summary.json",
+      "bytes": 1086,
+      "sha256": "c2a1f0bfda9d8a2fa1f86890d64dafd6c8d9ad07ccf8ae67597e66b2811567f2"
+    },
+    {
+      "path": "research/experiment_09/audits/final.json",
+      "archive_member": "persona_shrinkage_pilot/audits/final.json",
+      "bytes": 20307,
+      "sha256": "fa4fadcfd66f322fdcc840eb3e1808734e40d379369958c8bc63ecb931f527cb"
+    }
+  ],
+  "scope": "Exact archived evidence and byte-identical browsable copies; hashes are local integrity records, not an external timestamp or semantic validation."
+}

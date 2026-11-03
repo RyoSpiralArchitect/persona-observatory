@@ -1,0 +1,77 @@
+{
+  "n_targets": 288,
+  "same_foundation_model_and_rubric": true,
+  "independent_model_replications": false,
+  "category_agrees": {
+    "n": 284,
+    "fraction": 0.9861111111111112
+  },
+  "direct_event_agrees": {
+    "n": 285,
+    "fraction": 0.9895833333333334
+  },
+  "strict_event_agrees": {
+    "n": 283,
+    "fraction": 0.9826388888888888
+  },
+  "six_codes_agree": {
+    "n": 254,
+    "fraction": 0.8819444444444444
+  },
+  "category_confusion_matrix": [
+    [
+      146,
+      0,
+      0,
+      0,
+      3
+    ],
+    [
+      1,
+      50,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      13,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      75
+    ]
+  ],
+  "category_order": [
+    "support",
+    "reject",
+    "withhold",
+    "mixed",
+    "no_direct"
+  ],
+  "direct_event_counts": {
+    "both_positive": 210,
+    "a_only": 3,
+    "b_only": 0,
+    "both_negative": 75
+  },
+  "strict_event_counts": {
+    "both_positive": 27,
+    "a_only": 4,
+    "b_only": 1,
+    "both_negative": 256
+  }
+}

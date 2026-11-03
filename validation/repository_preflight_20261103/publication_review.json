@@ -1,0 +1,30 @@
+{
+  "status": "NO_MATCHES_IN_BOUNDED_SCAN",
+  "scope": "Full candidate tree and unique nested ZIP UTF-8 members. Binary files listed, not OCR scanned. Path and email matches require manual classification.",
+  "initial_tree_files": 105,
+  "initial_utf8_items": 448,
+  "unique_archives": 2,
+  "initial_findings": [],
+  "binary_files": [
+    "archives/experiment_09_20261103.zip!persona_shrinkage_pilot/figures/persona_shrinkage_summary_20261103.png",
+    "archives/experiment_09_20261103.zip!persona_shrinkage_pilot/provenance/source_v8.zip!persona_topic_budget_pilot/figures/01_predictor_scores.png",
+    "archives/experiment_09_20261103.zip!persona_shrinkage_pilot/provenance/source_v8.zip!persona_topic_budget_pilot/figures/02_primary_forecasts.png",
+    "archives/experiment_09_20261103.zip!persona_shrinkage_pilot/provenance/source_v8.zip!persona_topic_budget_pilot/figures/03_limit_event_scores.png",
+    "archives/experiment_09_20261103.zip!persona_shrinkage_pilot/provenance/source_v8.zip!persona_topic_budget_pilot/figures/04_conditional_profiles.png",
+    "research/experiment_09/figures/persona_shrinkage_summary_20261103.png"
+  ],
+  "reviewed_changes": [
+    ".gitattributes",
+    "README.md",
+    "README_JA.md",
+    "validation/repository_preflight_20261103/archive.txt",
+    "validation/repository_preflight_20261103/checks.json",
+    "validation/repository_preflight_20261103/cli_help.txt",
+    "validation/repository_preflight_20261103/compile.txt",
+    "validation/repository_preflight_20261103/unit_tests.txt"
+  ],
+  "change_findings": [],
+  "historical_records": "Archive and all 19 browsable copies verified. Original Japanese README preserved byte-for-byte as README_JA.md. Runtime and tests unchanged.",
+  "whitespace_check": "Initial full check flagged original SVG whitespace (2005 lines) and original CRLF in three CSV files (225 lines). These four byte-fixed files receive narrow -whitespace attributes; -text preserves evidence bytes. No historical file was repaired. Full staged diff check then passed.",
+  "limits": "Pattern scan does not prove absence of arbitrary private information. Binary figures were not OCR scanned. Existing generic transient workspace paths in historical evidence are retained."
+}

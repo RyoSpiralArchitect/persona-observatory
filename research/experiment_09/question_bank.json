@@ -1,0 +1,218 @@
+[
+  {
+    "phase": "target",
+    "question_id": "N01",
+    "topic": "automatic_transcription",
+    "topic_index": 0,
+    "evidence_stratum": "limited",
+    "evidence": "A volunteer tried a new automatic transcription tool on one twenty-second recording made in a quiet room. It wrote every spoken word correctly for a single speaker reading slowly. The volunteer did not try overlapping voices, background chatter, unfamiliar accents, or longer recordings, and no other speakers took part.",
+    "claim": "the tool reliably transcribes ordinary group conversations accurately"
+  },
+  {
+    "phase": "target",
+    "question_id": "N02",
+    "topic": "puzzle_progress_sync",
+    "topic_index": 1,
+    "evidence_stratum": "limited",
+    "evidence": "A puzzle app's new cloud save feature restored one player's progress after the player closed and reopened the app once on a tablet. The tablet stayed connected to the same wireless network throughout. Progress after a lost connection, a device change, several days away, or many repeated saves was not checked.",
+    "claim": "the new save feature reliably preserves puzzle progress across everyday changes of device and connection"
+  },
+  {
+    "phase": "target",
+    "question_id": "N03",
+    "topic": "photo_cropper",
+    "topic_index": 2,
+    "evidence_stratum": "limited",
+    "evidence": "A new automatic cropping option kept the face visible when it resized one centered portrait into a square image. The portrait had a plain background and showed only one person. The photographer did not try group pictures, subjects near an edge, unusual image sizes, or pictures containing important objects rather than faces.",
+    "claim": "the cropping option reliably keeps the important subjects visible across varied photographs"
+  },
+  {
+    "phase": "target",
+    "question_id": "N04",
+    "topic": "pencil_eraser",
+    "topic_index": 3,
+    "evidence_stratum": "limited",
+    "evidence": "One new eraser removed a short, lightly drawn pencil line from a sheet of smooth white paper without leaving a visible tear. The check used one pencil and a single gentle pass. Darker marks, repeated rubbing, colored paper, rough paper, and other pencil types were not examined.",
+    "claim": "the eraser reliably removes ordinary pencil marks without damaging different kinds of paper"
+  },
+  {
+    "phase": "target",
+    "question_id": "N05",
+    "topic": "game_rule_index",
+    "topic_index": 4,
+    "evidence_stratum": "limited",
+    "evidence": "One experienced board-game player used a new rulebook index to locate the setup instructions in under ten seconds. The player already knew the game and searched for just that section. Nobody unfamiliar with the game tried the index, and questions about unusual moves or scoring disputes were not included.",
+    "claim": "the index reliably helps new players find the rules they need during play"
+  },
+  {
+    "phase": "target",
+    "question_id": "N06",
+    "topic": "rug_crumb_brush",
+    "topic_index": 5,
+    "evidence_stratum": "limited",
+    "evidence": "A new hand brush swept a few dry cracker crumbs from one short patch of a smooth rug in a single demonstration. The rug was lying flat, and the demonstrator used a new brush. Long fibers, larger dirty areas, fine dust, and brushes worn down by repeated use were not examined.",
+    "claim": "the hand brush reliably clears common household debris from a variety of rugs"
+  },
+  {
+    "phase": "target",
+    "question_id": "N07",
+    "topic": "booking_progress_bar",
+    "topic_index": 0,
+    "evidence_stratum": "confounded",
+    "evidence": "A pottery studio added a progress bar to its online booking form, and a larger share of visitors completed a booking that month. At the same time, the studio removed six required questions and allowed guests to book without creating an account. No version of the shorter form was tested without the progress bar.",
+    "claim": "the progress bar caused the rise in the share of visitors completing bookings"
+  },
+  {
+    "phase": "target",
+    "question_id": "N08",
+    "topic": "library_due_reminders",
+    "topic_index": 1,
+    "evidence_stratum": "confounded",
+    "evidence": "A neighborhood library sent new reminder messages three days before books were due, and fewer loans were recorded as overdue during the next month. The library also extended the borrowing period from two weeks to four weeks. Every borrower received both changes, so no group kept the old loan length while receiving the reminders.",
+    "claim": "the reminder messages caused the observed decline in overdue loans"
+  },
+  {
+    "phase": "target",
+    "question_id": "N09",
+    "topic": "planter_rotation",
+    "topic_index": 2,
+    "evidence_stratum": "confounded",
+    "evidence": "A gardener began turning a windowsill planter a quarter-turn each morning, and its bean seedlings added more height over the next fortnight than during the previous fortnight. The gardener also moved the planter to a brighter window that day. No similar planter stayed in the original light while being turned on the new schedule.",
+    "claim": "turning the planter each morning caused the observed increase in seedling growth"
+  },
+  {
+    "phase": "target",
+    "question_id": "N10",
+    "topic": "print_queue_setting",
+    "topic_index": 3,
+    "evidence_stratum": "confounded",
+    "evidence": "A shared office printer completed a standard batch of jobs sooner after a new queue setting was enabled. On the same morning, the office replaced its old wireless connection with a faster wired connection. The records compared the old setup with the new combined setup, without trying either change on its own.",
+    "claim": "the new queue setting caused the shorter completion time for the standard batch of print jobs"
+  },
+  {
+    "phase": "target",
+    "question_id": "N11",
+    "topic": "feeder_perch",
+    "topic_index": 4,
+    "evidence_stratum": "confounded",
+    "evidence": "More finches visited a garden feeder after a wider perch was attached. When fitting the perch, the owner also replaced the usual mixed seed with sunflower seeds. Visits were counted for a week before and a week after these changes, but there was no feeder offering the new seed with the old perch.",
+    "claim": "the wider perch caused the observed increase in finch visits"
+  },
+  {
+    "phase": "target",
+    "question_id": "N12",
+    "topic": "crossword_type_size",
+    "topic_index": 5,
+    "evidence_stratum": "confounded",
+    "evidence": "A hobby newsletter printed its weekly crossword in larger type, and a larger share of responding readers reported finishing it. The editor also began choosing puzzles from an easier set during those weeks. Responses were compared with earlier editions, but no editions paired the larger type with puzzles of the previous difficulty.",
+    "claim": "the larger type caused the increase in reported crossword completion"
+  },
+  {
+    "phase": "target",
+    "question_id": "N13",
+    "topic": "zipper_pull_tab",
+    "topic_index": 0,
+    "evidence_stratum": "supportive",
+    "evidence": "Each of thirty identical tool cases was opened with both a standard zipper pull and a larger pull tab, in randomized order. Volunteers opened each case along the same marked length, with contents and starting position fixed. The larger tab gave shorter opening times in 27 of 30 paired trials, and two further sessions showed similar differences.",
+    "claim": "the larger pull tab reduces opening time for the tested tool cases"
+  },
+  {
+    "phase": "target",
+    "question_id": "N14",
+    "topic": "scale_zero_adjustment",
+    "topic_index": 1,
+    "evidence_stratum": "supportive",
+    "evidence": "An electronic kitchen scale was tested with its new automatic zero adjustment on or off. The same known weights were measured on the same stable surface, with setting order randomized for each pair of measurements. With the adjustment, readings were closer to the known weights in all 100 paired comparisons. Three matching scales produced similar results.",
+    "claim": "the automatic zero adjustment reduces weighing error for the tested scales and weights"
+  },
+  {
+    "phase": "target",
+    "question_id": "N15",
+    "topic": "ice_mold_bottom",
+    "topic_index": 2,
+    "evidence_stratum": "supportive",
+    "evidence": "Equal amounts of water were frozen in matching cube molds, half fitted with a removable flexible bottom and half with a rigid bottom. Mold positions were assigned at random, and freezing time and temperature were fixed. The flexible bottoms required less measured force to release the cubes in each of 36 matched trials; three fresh batches reproduced the difference.",
+    "claim": "the flexible bottom reduces the force needed to release ice cubes under the tested conditions"
+  },
+  {
+    "phase": "target",
+    "question_id": "N16",
+    "topic": "doormat_ridges",
+    "topic_index": 3,
+    "evidence_stratum": "supportive",
+    "evidence": "Door mats made from the same material had either smooth or ridged surfaces. A weighted rig pressed identical soles carrying equal amounts of dry soil onto each mat ten times, with order randomized. Ridged mats removed more soil from the soles in each of 40 paired trials. Fresh mats reproduced the difference in a second session.",
+    "claim": "the ridged surface increases soil removal under the tested door-mat procedure"
+  },
+  {
+    "phase": "target",
+    "question_id": "N17",
+    "topic": "kite_reel_grip",
+    "topic_index": 4,
+    "evidence_stratum": "supportive",
+    "evidence": "Volunteers wound equal lengths of the same kite line onto a reel using its standard crank grip or a wider grip in randomized order. Reel resistance and starting line position were held fixed. Winding took less time with the wider grip in 38 of 40 paired attempts, and three additional volunteers obtained similar results.",
+    "claim": "the wider grip reduces the time needed to wind the tested kite line onto this reel"
+  },
+  {
+    "phase": "target",
+    "question_id": "N18",
+    "topic": "accent_text_export",
+    "topic_index": 5,
+    "evidence_stratum": "supportive",
+    "evidence": "A new text-export setting was compared with the standard setting on 80 short documents containing accented letters. Each document was exported both ways, with all other settings fixed, and the results were checked against the originals. The new setting preserved every accented letter; the standard setting altered letters in 29 documents. Two repeated runs gave the same results.",
+    "claim": "the new export setting preserves accented letters more accurately in the tested documents"
+  },
+  {
+    "phase": "target",
+    "question_id": "N19",
+    "topic": "cable_comb",
+    "topic_index": 0,
+    "evidence_stratum": "contradictory",
+    "evidence": "Matching bundles of six charging cables were arranged with or without a proposed anti-tangle comb in randomized trials. Each bundle underwent the same timed shaking and storage routine. Separating the cables took longer with the comb in 37 of 40 matched trials. A second operator repeated the routine with fresh bundles and found the same pattern.",
+    "claim": "the comb reduces the time needed to separate these cables after the tested storage routine"
+  },
+  {
+    "phase": "target",
+    "question_id": "N20",
+    "topic": "paintbrush_reservoir",
+    "topic_index": 1,
+    "evidence_stratum": "contradictory",
+    "evidence": "Two paintbrush designs, one with a standard handle and one with a proposed water reservoir, were compared on identical paper. Each started with the same total amount of water and paint and was moved at a fixed speed. The reservoir brush covered a shorter continuous distance before the line broke in all 30 paired trials; fresh brushes repeated the pattern.",
+    "claim": "the reservoir design increases the length of uninterrupted painted lines under the tested conditions"
+  },
+  {
+    "phase": "target",
+    "question_id": "N21",
+    "topic": "webpage_animation",
+    "topic_index": 2,
+    "evidence_stratum": "contradictory",
+    "evidence": "A demo webpage was tested with a proposed introductory animation switched on or off, while its text, images, and network speed stayed fixed. Fresh browser sessions were used for 50 comparisons, with order randomized. The page became ready for input later with the animation in every comparison. Repeating the test on a second matching device gave the same pattern.",
+    "claim": "the introductory animation shortens the time until this webpage is ready for input under the tested conditions"
+  },
+  {
+    "phase": "target",
+    "question_id": "N22",
+    "topic": "sandcastle_mold_vents",
+    "topic_index": 3,
+    "evidence_stratum": "contradictory",
+    "evidence": "Sandcastle molds of the same shape had a plain surface or a proposed pattern of release vents. Equal weights of equally damp sand were packed using the same pressure, and mold order was randomized. Castles lost more sand during release with the vented molds in 34 of 40 paired trials. Two fresh batches showed a similar difference.",
+    "claim": "the release vents reduce sand loss when releasing castles under the tested conditions"
+  },
+  {
+    "phase": "target",
+    "question_id": "N23",
+    "topic": "suitcase_wheel_size",
+    "topic_index": 4,
+    "evidence_stratum": "contradictory",
+    "evidence": "The same test suitcase was fitted with standard wheels or larger replacement wheels in randomized order. A motor pulled it along one level indoor track at a fixed speed and load. The larger wheels required greater measured pulling force in every one of 40 paired runs. Another test session on the same track reproduced the result.",
+    "claim": "the larger wheels reduce pulling force for this suitcase on this track at the tested speed and load"
+  },
+  {
+    "phase": "target",
+    "question_id": "N24",
+    "topic": "rake_tine_spacing",
+    "topic_index": 5,
+    "evidence_stratum": "contradictory",
+    "evidence": "Two rakes differed only in the spacing between their tines. On matched trays holding equal numbers of similar dry leaves over the same artificial grass, a rig pulled each rake over the same distance at the same speed in randomized order. The wider spacing collected fewer leaves in 45 of 50 paired trials. Fresh leaf batches reproduced this pattern.",
+    "claim": "the wider tine spacing increases the number of leaves collected in the tested rake pass"
+  }
+]

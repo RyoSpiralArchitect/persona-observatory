@@ -1,0 +1,23 @@
+{
+  "schema_version": "persona-observatory-observer-export-v1",
+  "observer": "observer_a",
+  "exported_utc": "2026-11-03T02:18:21.617929+00:00",
+  "generation_file": "generations.jsonl",
+  "generations_sha256": "ea3e0ad18cd215bdda4649220057437a3651015bfd31d6dd480aef696cacad7f",
+  "records": 4,
+  "blind_fields": [
+    "sample_id",
+    "requested_answerer",
+    "question",
+    "completion",
+    "stop_reason"
+  ],
+  "shuffle_algorithm": "sha256-ranked-v1",
+  "input_hashes": {
+    "validation_blind.jsonl": "8a141e872cf8d896520bad4e8fd6aa729702ac343f9aa1f045e56922ce8115d1",
+    "discovery_blind.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rubric.md": "7a28b5f7101c3e9de0367c064bec34f60154b7e7a4c9934c4685eff381d601a6",
+    "labels.template.jsonl": "76d5be6edee144e7acf2d6910e43d2710c4c5796e450d42c743b97ffe3796fcb"
+  },
+  "notes_template_sha256": "77d59bf0567c9c97e3bd69f8b202ba976d23ced077e826777a7e3d58ba13cf0b"
+}

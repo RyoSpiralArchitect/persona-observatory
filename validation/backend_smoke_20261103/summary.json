@@ -1,0 +1,64 @@
+{
+  "purpose": "engineering_smoke_not_new_scientific_evidence",
+  "completed_utc": "2026-11-03T02:13:16.943611+00:00",
+  "status": "PASS",
+  "new_scientific_evidence": false,
+  "semantic_labels_assigned": false,
+  "attempt_sha256": "f8605382c449a73e17b91ca06dfdc3f370f29bd6aa4bda957c891faa2226c82e",
+  "plan_sha256": "4f0689e641a276b24d62a6dd8f07403983c23b4ad06cf32526ddff5f1f3a1c51",
+  "records_sha256": "a200681ac52047d4016ce42d077602a860b62c9fed1aaf92358f75e180c54d69",
+  "generation": {
+    "status": "completed",
+    "records": 2,
+    "stop_reasons": {
+      "length": 2
+    },
+    "elapsed_seconds": 3.011297242999717,
+    "backend": {
+      "available": true,
+      "requested_device": "cpu",
+      "requested_dtype": "float32",
+      "device": "cpu",
+      "dtype": "float32",
+      "python": "3.12.14",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+      "torch_version": "2.15.0+cpu",
+      "transformers_version": "4.57.6",
+      "sampling_device": "cpu",
+      "attention_implementation": "eager",
+      "cross_device_token_equality_guaranteed": false,
+      "cuda_available": false,
+      "mps_available": false,
+      "cuda_runtime_version": null,
+      "device_name": "cpu"
+    },
+    "runtime": {
+      "device": "cpu",
+      "dtype": "float32",
+      "max_new_tokens": 4,
+      "temperature": 0.8,
+      "top_p": 0.95,
+      "cpu_threads": 4,
+      "batch_size": 2
+    },
+    "actual_dtype": "float32",
+    "model_class": "LlamaForCausalLM",
+    "model_type": "llama",
+    "eos_token_ids": [
+      2
+    ],
+    "pad_token_id": 2,
+    "cpu_threads": 4,
+    "cpu_interop_threads": 9,
+    "float32_matmul_precision": "highest"
+  },
+  "checks": {
+    "all_six_model_files_match_pinned_snapshot": true,
+    "old_prompt_retokenized_exactly": true,
+    "two_samples_retained": true,
+    "four_token_budget_enforced": true,
+    "cpu_float32": true,
+    "eager_attention": true,
+    "kv_decode_exercised": true
+  }
+}

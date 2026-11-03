@@ -1,0 +1,11 @@
+Persona Observatory
+Copyright 2026 Ryō / RyoSpiralArchitect
+
+This project contains research code, authored evaluation materials, and
+experiment records developed with assistance from OpenAI ChatGPT/Codex.
+
+The pretrained model and external dependencies are not distributed in this
+repository. Their licenses and notices remain separate; see THIRD_PARTY_NOTICES.md.
+
+Archived experiment files retain their original bytes and provenance. The
+repository-wide Apache License, Version 2.0 applies to original project material.

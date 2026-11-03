@@ -1,0 +1,53 @@
+{
+  "schema_version": "persona-observatory-completion-v1",
+  "completed_utc": "2026-11-03T02:18:16.994981+00:00",
+  "samples": 4,
+  "run_lock_sha256": "edd2f134bb58609b4d906e6267602642b1dc67cfa1d1928c410162b5696774c0",
+  "attempt_sha256": "e9a4cd00af6e447813e403d470b4d3627a8c3400c3b70729172fe49b98e633d6",
+  "generations_sha256": "ea3e0ad18cd215bdda4649220057437a3651015bfd31d6dd480aef696cacad7f",
+  "runtime": {
+    "status": "completed",
+    "records": 4,
+    "stop_reasons": {
+      "length": 4
+    },
+    "elapsed_seconds": 10.22351178200006,
+    "backend": {
+      "available": true,
+      "requested_device": "cpu",
+      "requested_dtype": "float32",
+      "device": "cpu",
+      "dtype": "float32",
+      "python": "3.12.14",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+      "torch_version": "2.15.0+cpu",
+      "transformers_version": "4.57.6",
+      "sampling_device": "cpu",
+      "attention_implementation": "eager",
+      "cross_device_token_equality_guaranteed": false,
+      "cuda_available": false,
+      "mps_available": false,
+      "cuda_runtime_version": null,
+      "device_name": "cpu"
+    },
+    "runtime": {
+      "device": "cpu",
+      "dtype": "float32",
+      "max_new_tokens": 16,
+      "temperature": 0.8,
+      "top_p": 0.95,
+      "cpu_threads": 4,
+      "batch_size": 2
+    },
+    "actual_dtype": "float32",
+    "model_class": "LlamaForCausalLM",
+    "model_type": "llama",
+    "eos_token_ids": [
+      2
+    ],
+    "pad_token_id": 2,
+    "cpu_threads": 4,
+    "cpu_interop_threads": 9,
+    "float32_matmul_precision": "highest"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "wheel": "persona_observatory-0.1.0-py3-none-any.whl",
+  "bytes": 40847,
+  "sha256": "5fc7be3484908403035c88efa4714f9bacd26f9a0275d7b85515ac61fd5eb987",
+  "packaged_frozen_rubric": true,
+  "packaged_apache_license": true,
+  "no_model_weights_or_research_archives_in_wheel": true
+}

@@ -1,0 +1,35 @@
+{
+  "criterion": "Both A/B-mean five-category Brier contrasts H-G and H-F are negative with tolerance 1e-12.",
+  "descriptive_pilot_support": false,
+  "all_four_branch_comparison_signs_agree": false,
+  "all_four_branch_comparisons_negative": false,
+  "values": {
+    "ab_mean:H-F": {
+      "difference": 0.001560511899573625,
+      "sign": "positive"
+    },
+    "ab_mean:H-G": {
+      "difference": -0.001445498586442635,
+      "sign": "negative"
+    },
+    "observer_a:H-F": {
+      "difference": 0.0018230401020662454,
+      "sign": "positive"
+    },
+    "observer_a:H-G": {
+      "difference": -0.001358612659904982,
+      "sign": "negative"
+    },
+    "observer_b:H-F": {
+      "difference": 0.001297983697081004,
+      "sign": "positive"
+    },
+    "observer_b:H-G": {
+      "difference": -0.0015323845129802886,
+      "sign": "negative"
+    }
+  },
+  "sign_zero_tolerance": 1e-12,
+  "significance_claim": false,
+  "population_confidence_intervals": false
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": "persona-observatory-attempt-v1",
+  "started_utc": "2026-11-03T02:17:46.537556+00:00",
+  "run_lock_sha256": "edd2f134bb58609b4d906e6267602642b1dc67cfa1d1928c410162b5696774c0",
+  "model_path": "/workspace/scratch/28c9744e42fe/persona_shrinkage_pilot/model",
+  "model_verified": true,
+  "backend": {
+    "available": true,
+    "requested_device": "cpu",
+    "requested_dtype": "float32",
+    "device": "cpu",
+    "dtype": "float32",
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "torch_version": "2.15.0+cpu",
+    "transformers_version": "4.57.6",
+    "sampling_device": "cpu",
+    "attention_implementation": "eager",
+    "cross_device_token_equality_guaranteed": false,
+    "cuda_available": false,
+    "mps_available": false,
+    "cuda_runtime_version": null,
+    "device_name": "cpu"
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "setting_id": "eval_neutral_instruction_p0",
+    "family": "neutral",
+    "paraphrase_id": 0,
+    "frame": "instruction",
+    "requested_answerer": "Morgan",
+    "policy_text": "Weigh the information presented and give your assessment of the claim. Explain the connection to the observations."
+  },
+  {
+    "setting_id": "eval_cautious_instruction_p0",
+    "family": "cautious",
+    "paraphrase_id": 0,
+    "frame": "instruction",
+    "requested_answerer": "Morgan",
+    "policy_text": "Inspect the support for the claim and identify what remains unknown. Withhold a definite judgment if the evidence is inadequate."
+  }
+]

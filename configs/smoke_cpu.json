@@ -1,0 +1,20 @@
+{
+  "schema_version": "persona-observatory-study-v1",
+  "experiment_id": "portable-smoke",
+  "purpose": "smoke_replay",
+  "seed_namespace": "pobs-smoke-20261103",
+  "replicates": 1,
+  "question_bank": "../examples/smoke_questions.json",
+  "settings": "../examples/smoke_settings.json",
+  "model_manifest": "../manifests/smollm2-360m-instruct.json",
+  "runtime": {
+    "device": "cpu",
+    "dtype": "float32",
+    "max_new_tokens": 16,
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "cpu_threads": 4,
+    "batch_size": 2
+  },
+  "notes": "Engineering smoke or known-question replay using a new portable runner and new seeds. Not new scientific holdout evidence; does not replace archived Experiment 9."
+}
