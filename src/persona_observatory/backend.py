@@ -20,6 +20,7 @@ from typing import Any, Callable
 
 
 DEFAULT_RUNTIME = {
+    "engine": "transformers",
     "device": "auto",
     "dtype": "auto",
     "max_new_tokens": 96,
@@ -40,8 +41,11 @@ def validate_runtime(runtime: dict[str, Any]) -> dict[str, Any]:
         raise ValueError("Unknown runtime options: " + ", ".join(sorted(unknown)))
     result = {**DEFAULT_RUNTIME, **runtime}
     device, dtype = result["device"], result["dtype"]
-    if not isinstance(device, str) or not re.fullmatch(r"auto|cpu|mps|cuda(?::[0-9]+)?", device):
-        raise ValueError("device must be auto, cpu, mps, cuda, or cuda:N")
+    if result["engine"] not in ("transformers", "mlx"):
+        raise ValueError("engine must be transformers or mlx")
+    pattern = r"auto|cpu|metal" if result["engine"] == "mlx" else r"auto|cpu|mps|cuda(?::[0-9]+)?"
+    if not isinstance(device, str) or not re.fullmatch(pattern, device):
+        raise ValueError("device is not supported by the requested engine")
     if not isinstance(dtype, str) or dtype not in _DTYPES | {"auto"}:
         raise ValueError("dtype must be auto, float32, float16, or bfloat16")
     for key in ("max_new_tokens", "cpu_threads", "batch_size"):
@@ -56,6 +60,8 @@ def validate_runtime(runtime: dict[str, Any]) -> dict[str, Any]:
         raise ValueError("temperature must be nonnegative; zero selects greedy decoding")
     if not 0 < result["top_p"] <= 1:
         raise ValueError("top_p must be in (0, 1]")
+    if result["engine"] == "mlx" and (result["batch_size"] != 1 or result["cpu_threads"] != 4):
+        raise ValueError("MLX adapter supports batch_size=1; cpu_threads must remain the unused default 4")
     return result
 
 
@@ -94,6 +100,7 @@ def inspect_backend(device: str = "auto", dtype: str = "auto") -> dict[str, Any]
     """
     validate_runtime({"device": device, "dtype": dtype})
     result: dict[str, Any] = {
+        "engine": "transformers",
         "available": False,
         "requested_device": device,
         "requested_dtype": dtype,
@@ -105,6 +112,8 @@ def inspect_backend(device: str = "auto", dtype: str = "auto") -> dict[str, Any]
         "transformers_version": _package_version("transformers"),
         "sampling_device": "cpu",
         "attention_implementation": "eager",
+        "sampler": "torch-cpu-float32-multinomial",
+        "mps_fallback": os.environ.get("PYTORCH_ENABLE_MPS_FALLBACK", "0"),
         "cross_device_token_equality_guaranteed": False,
     }
     try:
@@ -115,6 +124,8 @@ def inspect_backend(device: str = "auto", dtype: str = "auto") -> dict[str, Any]
         result["mps_available"] = bool(mps is not None and mps.is_available())
         result["cuda_runtime_version"] = getattr(torch.version, "cuda", None)
         resolved_device, resolved_dtype = _resolve_backend(torch, device, dtype)
+        if resolved_device == "mps" and result["mps_fallback"] != "0":
+            raise RuntimeError("Disable PYTORCH_ENABLE_MPS_FALLBACK for an explicit MPS run")
         result.update(device=resolved_device, dtype=resolved_dtype)
         # A runtime capability check is more accurate than an OS-version guess.
         torch.empty(1, device=resolved_device, dtype=getattr(torch, resolved_dtype))
@@ -256,6 +267,8 @@ def generate_records(
     never retries a sample, changes precision/device, or overwrites a result.
     """
     runtime = validate_runtime(runtime)
+    if runtime["engine"] != "transformers":
+        raise ValueError("Use the adapter dispatcher for a non-Transformers engine")
     _validate_plan(plan)
     model_path = Path(model_path)
     if not model_path.is_dir():

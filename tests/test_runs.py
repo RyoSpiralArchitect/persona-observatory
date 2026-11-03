@@ -19,7 +19,9 @@ class TokenizerFixture:
     eos_token_id = 2
     pad_token_id = 0
 
-    def apply_chat_template(self, messages, tokenize, add_generation_prompt):
+    def apply_chat_template(self, messages, tokenize, add_generation_prompt, return_dict=None):
+        if tokenize and return_dict is not False:
+            raise AssertionError("Tokenization must explicitly request a list on Transformers 4 and 5")
         return [1, 3, 4] if tokenize else "fixture prompt"
 
     def __call__(self, text, add_special_tokens=False):

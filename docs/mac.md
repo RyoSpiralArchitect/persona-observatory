@@ -4,8 +4,10 @@ Apple Silicon の Mac で、まず短い生成を確認し、その後に別の 
 追加実験を行う手順。リポジトリ直下でコマンドを実行する。
 
 MPS は PyTorch が提供する Metal 向けバックエンドである。
-この移植では MPS の実機実行はまだ確認していない。CPU での確認と
-Mac での実行結果は、別々の環境記録として扱う。
+同じ固定モデルを使った4出力の MPS / MLX Metal 動作確認は完了した。
+[検証記録](../validation/adapters_20261103/summary.json)と
+[MLX adapter の環境分離](adapters.md)も参照する。CPU と Mac の実行結果は、
+別々の環境記録として扱う。大規模な研究結果はこの短い確認から推定しない。
 参照：[PyTorch MPS documentation](https://docs.pytorch.org/docs/2.15/notes/mps.html)。
 
 ## 1. Python 環境を作る

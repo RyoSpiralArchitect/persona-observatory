@@ -1,0 +1,21 @@
+{
+  "schema_version": "persona-observatory-study-v1",
+  "experiment_id": "exp10-mps-gate",
+  "purpose": "prospective",
+  "seed_namespace": "pobs-exp10-mps-gate-20261103",
+  "replicates": 2,
+  "question_bank": "../research/experiment_10_mps_20261103/questions.json",
+  "settings": "../examples/replay_v9_settings.json",
+  "model_manifest": "../manifests/smollm2-360m-instruct.json",
+  "runtime": {
+    "device": "mps",
+    "dtype": "float32",
+    "max_new_tokens": 96,
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "cpu_threads": 4,
+    "batch_size": 8,
+    "engine": "transformers"
+  },
+  "notes": "Prospective 96-question MPS gate study. 1152 subject outputs; previous v9 development and evaluation are development only. Requires frozen external forecasts and blinded semantic A/B observations."
+}

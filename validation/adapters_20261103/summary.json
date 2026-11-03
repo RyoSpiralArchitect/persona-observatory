@@ -1,0 +1,143 @@
+{
+  "status": "ENGINEERING_SMOKES_VERIFIED",
+  "scope": "Four known-question 16-token outputs per adapter. No fresh scientific evaluation, semantic labels, throughput benchmark or token-identity guarantee.",
+  "model_revision": "a10cc1512eabd3dde888204e902eca88bddb4951",
+  "model_weights_sha256": "e6bffe7435d7ddc10fd3b9a9efd429dafbacb1cb17015fb5562664e7532bf86e",
+  "same_prompt_ids_and_seeds": true,
+  "smokes": {
+    "mlx": {
+      "status": "COMPLETE",
+      "local_run": "runs/mlx-adapter-smoke-20261103-003",
+      "samples": 4,
+      "run_lock_sha256": "7d15bde66c15b1919e8661bb13abcd6cd99c2f5e35e959ee32f241f2e82db8c2",
+      "generation_sha256": "6f6de792ece0422785e54f43a33c4f2708e3a25605c50a0012c31e27ad5866bc",
+      "backend": {
+        "available": true,
+        "engine": "mlx",
+        "requested_device": "metal",
+        "requested_dtype": "float32",
+        "device": "metal",
+        "dtype": "float32",
+        "python": "3.12.6",
+        "platform": "macOS-26.4.1-arm64-arm-64bit",
+        "mlx_version": "0.32.2",
+        "mlx_lm_version": "0.32.2",
+        "numpy_version": "2.2.3",
+        "transformers_version": "5.13.0",
+        "sampling_device": "cpu",
+        "sampler": "numpy-pcg64-float32-nucleus-float64-draw",
+        "attention_implementation": "mlx-lm-native",
+        "cross_device_token_equality_guaranteed": false,
+        "device_name": "mlx:metal",
+        "metal_available": true
+      },
+      "runtime": {
+        "engine": "mlx",
+        "device": "metal",
+        "dtype": "float32",
+        "max_new_tokens": 16,
+        "temperature": 0.8,
+        "top_p": 0.95,
+        "cpu_threads": 4,
+        "batch_size": 1
+      },
+      "elapsed_seconds": 2.2223374170025636,
+      "stop_reasons": {
+        "length": 3,
+        "eos": 1
+      },
+      "source_hashes": {
+        "__init__.py": "829cc5d3d96ded8e3b3454558c2b72125306a2fc2ff3062a1d947b97502a9e22",
+        "__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+        "adapters.py": "79e9c86e52357fbeef58770cb3984e1bdd223c15527f07282e94f4a4c1c9ca08",
+        "backend.py": "b6b8029e8f759b2b74a5b8b5657e84931637a3fe9622a82a493012481e281749",
+        "cli.py": "5f21b2373f7977309054c74d4d8f37aa4bb645ce7a9653bfa6e905c11e70b7aa",
+        "evaluation.py": "3aedcc51f361fcd5b84c7f7d81f0763a7c180b57ef8a8dec5f3d2a43e5bd4c81",
+        "mlx_backend.py": "d7b029137e0bc9f497edda855f15cdfd2470c4c2f88e7eab2cdba8ea903a0687",
+        "models.py": "69945b42604ca5193c6479d8aa6e2ea68c8f21a953ae57d9816d8553bd0e77b1",
+        "observations.py": "109f965611df5d0b20d74af53c41c8acab3ea1f54afddd765395f8aed0dce627",
+        "resources/rubric.md": "7a28b5f7101c3e9de0367c064bec34f60154b7e7a4c9934c4685eff381d601a6",
+        "runs.py": "edabe03547406d52689b4477f80c0a585996ed41c52985746eb99972222cb90d",
+        "storage.py": "59a2bffd3ce45860c0938230afbf2c65208242759b94a7d0635e60a586e737b9",
+        "study.py": "9633a888cfdfb741584fc380b65633bef68da611a4c1443a205b8206da25751b"
+      }
+    },
+    "mps": {
+      "status": "COMPLETE",
+      "local_run": "runs/mps-adapter-smoke-20261103-001",
+      "samples": 4,
+      "run_lock_sha256": "a8347427952008edd56d713f6148e184e3c6a939340b2ef400dcef7a746bcb1a",
+      "generation_sha256": "ea3e0ad18cd215bdda4649220057437a3651015bfd31d6dd480aef696cacad7f",
+      "backend": {
+        "engine": "transformers",
+        "available": true,
+        "requested_device": "mps",
+        "requested_dtype": "float32",
+        "device": "mps",
+        "dtype": "float32",
+        "python": "3.12.6",
+        "platform": "macOS-26.4.1-arm64-arm-64bit",
+        "torch_version": "2.15.0",
+        "transformers_version": "4.57.6",
+        "sampling_device": "cpu",
+        "attention_implementation": "eager",
+        "sampler": "torch-cpu-float32-multinomial",
+        "mps_fallback": "0",
+        "cross_device_token_equality_guaranteed": false,
+        "cuda_available": false,
+        "mps_available": true,
+        "cuda_runtime_version": null,
+        "device_name": "mps"
+      },
+      "runtime": {
+        "engine": "transformers",
+        "device": "mps",
+        "dtype": "float32",
+        "max_new_tokens": 16,
+        "temperature": 0.8,
+        "top_p": 0.95,
+        "cpu_threads": 4,
+        "batch_size": 2
+      },
+      "elapsed_seconds": 3.0389272499996878,
+      "stop_reasons": {
+        "length": 4
+      },
+      "source_hashes": {
+        "__init__.py": "829cc5d3d96ded8e3b3454558c2b72125306a2fc2ff3062a1d947b97502a9e22",
+        "__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+        "adapters.py": "79e9c86e52357fbeef58770cb3984e1bdd223c15527f07282e94f4a4c1c9ca08",
+        "backend.py": "b6b8029e8f759b2b74a5b8b5657e84931637a3fe9622a82a493012481e281749",
+        "cli.py": "5f21b2373f7977309054c74d4d8f37aa4bb645ce7a9653bfa6e905c11e70b7aa",
+        "evaluation.py": "3aedcc51f361fcd5b84c7f7d81f0763a7c180b57ef8a8dec5f3d2a43e5bd4c81",
+        "mlx_backend.py": "d7b029137e0bc9f497edda855f15cdfd2470c4c2f88e7eab2cdba8ea903a0687",
+        "models.py": "69945b42604ca5193c6479d8aa6e2ea68c8f21a953ae57d9816d8553bd0e77b1",
+        "observations.py": "109f965611df5d0b20d74af53c41c8acab3ea1f54afddd765395f8aed0dce627",
+        "resources/rubric.md": "7a28b5f7101c3e9de0367c064bec34f60154b7e7a4c9934c4685eff381d601a6",
+        "runs.py": "edabe03547406d52689b4477f80c0a585996ed41c52985746eb99972222cb90d",
+        "storage.py": "59a2bffd3ce45860c0938230afbf2c65208242759b94a7d0635e60a586e737b9",
+        "study.py": "9633a888cfdfb741584fc380b65633bef68da611a4c1443a205b8206da25751b"
+      }
+    }
+  },
+  "preserved_failures": [
+    {
+      "stage": "dependency_resolution",
+      "detail": "Trying the existing inference and MLX-LM 0.31.3 requirements together conflicted at Transformers 4 versus 5. Split isolated environments; no shared environment changed."
+    },
+    {
+      "stage": "mlx_prepare_001",
+      "detail": "Transformers 5 returned a mapping by default; no run directory or model forward was created. Explicit return_dict=False now preserves the list contract."
+    },
+    {
+      "stage": "mlx_generate_002",
+      "detail": "MLX-LM 0.31.3 tokenizer registration was incompatible with Transformers 5.13.0. Failed attempt retained with zero output records. MLX/MLX-LM 0.32.2 fixes the upstream call; preflight now imports the library before an attempt."
+    }
+  ],
+  "tests": {
+    "core": "75 discovered, 69 passed, 6 optional skips",
+    "torch_environment": "75 passed"
+  },
+  "archive": "v9, nested v8 and 19 browsable copies verified unchanged",
+  "scientific_generation": "NOT_STARTED_OBSERVER_ASSIGNMENT_PENDING"
+}

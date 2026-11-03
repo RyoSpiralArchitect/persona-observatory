@@ -9,6 +9,7 @@ pretrained weights or installed third-party libraries.
 | SmolLM2-360M-Instruct | Optional local subject model; six file hashes and a revision are recorded | [Pinned model card](https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md) |
 | PyTorch | Optional inference on CPU/MPS/CUDA | [PyTorch license](https://github.com/pytorch/pytorch/blob/main/LICENSE) |
 | Transformers | Optional local tokenizer and causal model loader | [Transformers license](https://github.com/huggingface/transformers/blob/v4.57.6/LICENSE) |
+| MLX / MLX-LM | Optional native Apple GPU forward adapter; not bundled | [MLX](https://github.com/ml-explore/mlx), [MLX-LM](https://github.com/ml-explore/mlx-lm) |
 | Hugging Face Hub / safetensors | Optional inference dependencies | [Hub](https://github.com/huggingface/huggingface_hub), [safetensors](https://github.com/huggingface/safetensors) |
 | Apache License 2.0 | License text for original project material | [Canonical text](https://www.apache.org/licenses/LICENSE-2.0.txt) |
 

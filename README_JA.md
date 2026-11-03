@@ -89,7 +89,8 @@ CPU/MPS/CUDA 間の同じ seed による出力一致も保証しない。
 CPU の RNG を各サンプルに一つずつ割り当て、同じ質問・反復の系列を条件間で
 対応させる。forward は指定した backend、nucleus sampling は CPU float32。
 推論はローカルの Transformers causal LM を使い、`trust_remote_code=False`。
-量子化、MLX、複数 GPU 分割、学習、内部状態 hook はこの版には含めていない。
+別の [MLX adapter](docs/adapters.md)も選べる。同じ固定版の重みを読み込み、
+NumPy の独立した乱数系列で sampling する。量子化、複数 GPU 分割、学習、内部状態 hook は含めていない。
 
 `prepare` 後にコードや設定、モデル、指定 backend が変わった場合は新しい run を
 作る。試行開始後の自動再試行・黙った resume・既存結果の上書きは行わない。
@@ -126,13 +127,18 @@ pobs --help
 Torch を使う backend tests は、Torch がない環境では skip される。
 CI は Ubuntu/macOS 上のこの core 検証を対象とする。CI の macOS job が成功しても
 MPS 推論を検証したことにはならない。CPU の実モデル確認は `validation/` に記録。
-Mac MPS と furnace CUDA での実機生成は、各機でこれから確認する。
+Mac MPS と MLX Metal は同じモデルで各4出力の短い動作確認を完了した。
+[検証記録](validation/adapters_20261103/summary.json)には失敗した試行も残している。
+furnace CUDA の実機生成は未確認。
 
 ## 次の研究
 
 [次回の設計案](docs/next_experiment.md)では、判断内訳を全体分布に固定し、
 D の条件づけを全体・証拠種類・指示条件・両者の組合せで比較する。
-これは設計案であり、未実行・未選択・未採点。
+初期案は未実行の設計メモとして保持する。
+[MPS での具体化](research/experiment_10_mps_20261103/README.md)では、
+新規96題・1,152生成への予測を旧データだけから固定した。盲検観察担当の確定を待ち、
+新規評価生成と採点はまだ行っていない。
 
 追加実験では、新しい問題群とデータの役割を決め、予測と採点基準を生成前に固定し、
 観察者へ条件情報を渡さず、元の結果と新しい結果を区別して保存する。

@@ -1,0 +1,49 @@
+{
+  "checks": [
+    {
+      "environment": "core",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output": "core_tests.txt"
+    },
+    {
+      "environment": "torch",
+      "command": [
+        ".local/venvs/inference/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output": "torch_tests.txt"
+    },
+    {
+      "environment": "mlx",
+      "command": [
+        ".local/venvs/mlx/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output": "mlx_tests.txt"
+    }
+  ],
+  "archive_check": "archive_check.json",
+  "scientific_generation": "NOT_STARTED",
+  "unit_test_scope": "Includes invented-count forecasting and 96-question synthetic paired-summary cases. Does not supply semantic labels."
+}

@@ -12,14 +12,16 @@ import os
 from pathlib import Path
 
 from . import __version__
-from .backend import generate_records, inspect_backend
+from .adapters import generate_records, inspect_backend
+from .backend import validate_runtime
 from .models import verify_model
 from .storage import (check_hashes, checked_file, now, read_json, read_jsonl, require,
                       sha_file, write_json_exclusive, write_jsonl_exclusive)
 from .study import design_rows, load_study
 
 _ENV_KEYS = ("device", "dtype", "python", "torch_version", "transformers_version", "cuda_runtime_version",
-             "platform", "device_name", "device_capability")
+             "platform", "device_name", "device_capability", "engine", "mlx_version", "mlx_lm_version",
+             "numpy_version", "sampler", "mps_fallback")
 
 
 def _timestamp(value):
@@ -59,7 +61,7 @@ def prepare(config_path, run_dir, model_path, forecasts_path=None):
         validate_forecasts(forecasts, [row["sample_id"] for row in rows])
     model_path = Path(model_path).resolve()
     verify_model(model_path, manifest)
-    backend = inspect_backend(config["runtime"]["device"], config["runtime"]["dtype"])
+    backend = inspect_backend(config["runtime"]["device"], config["runtime"]["dtype"], config["runtime"]["engine"])
     require(backend["available"], backend.get("error", "Backend unavailable"))
     requested_runtime = dict(config["runtime"])
     config["runtime"].update(device=backend["device"], dtype=backend["dtype"])
@@ -77,7 +79,8 @@ def prepare(config_path, run_dir, model_path, forecasts_path=None):
     effective_pad = tokenizer.pad_token_id if tokenizer.pad_token_id is not None else min(eos, default=0)
     for row in rows:
         prompt = tokenizer.apply_chat_template(row["messages"], tokenize=False, add_generation_prompt=True)
-        ids = tokenizer.apply_chat_template(row["messages"], tokenize=True, add_generation_prompt=True)
+        # Transformers 5 defaults to a mapping; explicitly preserve the token-list contract.
+        ids = tokenizer.apply_chat_template(row["messages"], tokenize=True, add_generation_prompt=True, return_dict=False)
         require(isinstance(ids, list) and ids and all(type(i) is int and i >= 0 for i in ids), "Invalid tokenizer IDs")
         require(tokenizer(prompt, add_special_tokens=False)["input_ids"] == ids, "Chat-template tokenization mismatch")
         row.update(prompt=prompt, prompt_ids=ids, prompt_tokens=len(ids))
@@ -180,7 +183,7 @@ def generate(run_dir, model_path=None):
         require(not (run / name).exists(), "Run already has a generation attempt; no overwrite/resume: " + name)
     model_path = Path(model_path or lock["model_path"]).resolve()
     verify_model(model_path, manifest)
-    backend = inspect_backend(config["runtime"]["device"], config["runtime"]["dtype"])
+    backend = inspect_backend(config["runtime"]["device"], config["runtime"]["dtype"], config["runtime"]["engine"])
     require(backend["available"], backend.get("error", "Backend unavailable"))
     preflight = read_json(run / "backend_preflight.json")
     require(all(backend.get(k) == preflight.get(k) for k in _ENV_KEYS),
@@ -254,7 +257,7 @@ def verify_run(run_dir, require_complete=False):
     preflight = read_json(run / "backend_preflight.json")
     require(all(attempt["backend"].get(k) == preflight.get(k) == completion["runtime"]["backend"].get(k)
                 for k in _ENV_KEYS), "Recorded generation backend differs from preparation")
-    require(completion["runtime"]["runtime"] == config["runtime"]
+    require(validate_runtime(completion["runtime"]["runtime"]) == config["runtime"]
             and completion["runtime"]["actual_dtype"] == config["runtime"]["dtype"], "Recorded runtime differs")
     for expected, record in zip(plan, records):
         require(set(record) == set(expected) | {"completion", "generated_token_ids", "generated_tokens", "stop_reason"},

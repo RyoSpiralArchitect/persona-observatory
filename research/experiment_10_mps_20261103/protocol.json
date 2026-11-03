@@ -1,0 +1,120 @@
+{
+  "schema_version": "persona-observatory-gate-protocol-v1",
+  "status": "PREDICTOR_FROZEN_OBSERVER_ASSIGNMENT_PENDING",
+  "experiment_id": "exp10-mps-gate",
+  "questions": 96,
+  "evidence_strata": [
+    "limited",
+    "confounded",
+    "supportive",
+    "contradictory"
+  ],
+  "questions_per_stratum": 24,
+  "settings": 6,
+  "replicates": 2,
+  "subject_generations": 1152,
+  "max_new_tokens": 96,
+  "maximum_generated_tokens": 110592,
+  "development": {
+    "samples": 624,
+    "questions": 52,
+    "v9_development": 336,
+    "v9_former_evaluation": 288,
+    "roles": "development_only",
+    "labels": "original_A_and_B_unchanged",
+    "folds": 13,
+    "fold_rule": "v9 development_fold 0..6; former v9 target topic_index+7 gives 7..12"
+  },
+  "model_manifest": "manifests/smollm2-360m-instruct.json",
+  "model_revision": "a10cc1512eabd3dde888204e902eca88bddb4951",
+  "runtime": {
+    "engine": "transformers",
+    "device": "mps",
+    "dtype": "float32",
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "batch_size": 8,
+    "cpu_threads": 4
+  },
+  "predictors": [
+    "Global",
+    "Evidence",
+    "Setting",
+    "Joint"
+  ],
+  "rho_grid": [
+    0.25,
+    1,
+    4,
+    "inf"
+  ],
+  "cv_metric": "gate_brier",
+  "selection_weighting": "equal questions within observer, equal A/B",
+  "tie_tolerance": 1e-12,
+  "tie_rule": "stronger shrinkage first: inf,4,1,0.25",
+  "global_gate": "(N_D+0.5)/(N+1)",
+  "global_composition": "(N_k+0.5)/(N_D+2)",
+  "local_gate": "(d_c+rho*n_c*g_D)/(n_c*(1+rho))",
+  "empty_or_infinite_rho": "global_gate",
+  "primary_contrast": [
+    "Joint",
+    "Evidence"
+  ],
+  "primary_metric": "gate_brier",
+  "primary_support": "A/B mean question-block delta < -1e-12; descriptive only",
+  "secondary_contrasts": [
+    [
+      "Setting",
+      "Global"
+    ],
+    [
+      "Joint",
+      "Setting"
+    ],
+    [
+      "Joint",
+      "Global"
+    ],
+    [
+      "Evidence",
+      "Global"
+    ]
+  ],
+  "metrics": [
+    "gate_brier",
+    "gate_nll",
+    "category_brier",
+    "category_nll"
+  ],
+  "advance": {
+    "primary_brier_delta_at_most": -0.005,
+    "each_observer_primary_brier_delta_below": -1e-12,
+    "joint_minus_global_brier_at_most": 1e-12,
+    "primary_gate_nll_delta_at_most": 1e-12
+  },
+  "advance_threshold_scope": "Pragmatic next-study threshold; not derived from power or promised by past results.",
+  "observation": {
+    "branches": [
+      "observer_a",
+      "observer_b"
+    ],
+    "method": "Read full blinded text and manually supply rubric codes; no keyword labels. Separate contexts; no post-score adjudication.",
+    "rubric_sha256": "7a28b5f7101c3e9de0367c064bec34f60154b7e7a4c9934c4685eff381d601a6",
+    "assignment": "PENDING_USER_CHOICE_BEFORE_EVALUATION_GENERATION",
+    "same_generated_outputs": true
+  },
+  "question_authorship": "Assistant in the design context; no subject-model forward pass used.",
+  "novelty_review": "96 distinct topic strings, checked against all 60 old topic strings. Assistant reviewed task subject/mechanism; no independent human novelty review claimed. Shared authored evidence templates intentionally remain.",
+  "stopping": "One generation attempt. Preserve failure and partial records; no same-run retry/resume. Incomplete labels/data mean no primary judgment. No adding observations until a desired sign appears.",
+  "limitations": [
+    "v9 co-primary failed; H_gate rank is descriptive.",
+    "MPS plus new question bank differs from historical CPU; no causal attribution to backend.",
+    "No significance or population interval claim.",
+    "No personality mechanism, persistent persona, semantic correctness or cross-device token-identity claim."
+  ],
+  "generation_authorized_by_protocol": false,
+  "pending_before_generation": [
+    "Record the chosen blinded-observer arrangement in a separate hashed assignment record.",
+    "Bind fit lock, prepared run lock, observer assignment and this protocol in a study lock before dispatch."
+  ]
+}

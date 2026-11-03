@@ -5,6 +5,8 @@
 [日本語の詳しい説明](README_JA.md) · [Apache-2.0](LICENSE) ·
 [Research history](docs/research_history.md) · [Next experiment proposal (日本語)](docs/next_experiment.md)
 
+[Inference adapters: PyTorch and native MLX](docs/adapters.md)
+
 Persona Observatory asks whether profiles built from observable model responses
 help forecast responses to new questions. Semantic observers read complete
 outputs; separate code fits or evaluates probability forecasts. Hidden states
@@ -79,12 +81,12 @@ new tokens. `configs/replay_v9_*.json` reuses known Experiment 9 questions. Thes
 are engineering checks, not fresh scientific holdouts. Models, environments,
 and local runs are excluded from Git.
 
-The portable runner uses Transformers with `trust_remote_code=False`, CPU
+The default adapter uses Transformers with `trust_remote_code=False`, CPU
 float32 sampling, and a separate CPU random stream for each question/replicate,
 paired across settings. The selected device performs model forward passes.
 Equal seeds do not guarantee equal text across devices, numerical stacks, or the
-archived runtime. Existing CPU smoke evidence is retained; actual MPS and CUDA
-generation have not yet been validated by this repository's records.
+archived runtime. The optional native MLX adapter uses the same model files and
+tokenizer with its separately recorded NumPy sampler; see [adapter setup](docs/adapters.md).
 
 ## A prospective study
 

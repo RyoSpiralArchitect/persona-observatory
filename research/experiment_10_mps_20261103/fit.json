@@ -1,0 +1,820 @@
+{
+  "schema_version": "persona-observatory-gate-fit-v1",
+  "development_samples": 624,
+  "selection": {
+    "Global": "inf",
+    "Evidence": 1.0,
+    "Setting": 1.0,
+    "Joint": 1.0
+  },
+  "cv": [
+    {
+      "algorithm": "Global",
+      "rho": "inf",
+      "gate_brier": 0.22469126203931522,
+      "observers": {
+        "observer_a": 0.2236465139907015,
+        "observer_b": 0.22573601008792896
+      },
+      "folds": 13,
+      "question_blocks": 52
+    },
+    {
+      "algorithm": "Evidence",
+      "rho": 0.25,
+      "gate_brier": 0.22432184563415308,
+      "observers": {
+        "observer_a": 0.22292365940455575,
+        "observer_b": 0.22572003186375042
+      },
+      "folds": 13,
+      "question_blocks": 52
+    },
+    {
+      "algorithm": "Evidence",
+      "rho": 1.0,
+      "gate_brier": 0.2238965456939267,
+      "observers": {
+        "observer_a": 0.22259479887948455,
+        "observer_b": 0.22519829250836884
+      },
+      "folds": 13,
+      "question_blocks": 52
+    },
+    {
+      "algorithm": "Evidence",
+      "rho": 4.0,
+      "gate_brier": 0.22414784306429492,
+      "observers": {
+        "observer_a": 0.22298585554826436,
+        "observer_b": 0.2253098305803255
+      },
+      "folds": 13,
+      "question_blocks": 52
+    },
+    {
+      "algorithm": "Evidence",
+      "rho": "inf",
+      "gate_brier": 0.22469126203931522,
+      "observers": {
+        "observer_a": 0.2236465139907015,
+        "observer_b": 0.22573601008792896
+      },
+      "folds": 13,
+      "question_blocks": 52
+    },
+    {
+      "algorithm": "Setting",
+      "rho": 0.25,
+      "gate_brier": 0.2232736500026241,
+      "observers": {
+        "observer_a": 0.2222155634881265,
+        "observer_b": 0.22433173651712177
+      },
+      "folds": 13,
+      "question_blocks": 52
+    },
+    {
+      "algorithm": "Setting",
+      "rho": 1.0,
+      "gate_brier": 0.22325338701040343,
+      "observers": {
+        "observer_a": 0.22219717193563365,
+        "observer_b": 0.2243096020851732
+      },
+      "folds": 13,
+      "question_blocks": 52
+    },
+    {
+      "algorithm": "Setting",
+      "rho": 4.0,
+      "gate_brier": 0.22389536502535856,
+      "observers": {
+        "observer_a": 0.22284477797229096,
+        "observer_b": 0.22494595207842616
+      },
+      "folds": 13,
+      "question_blocks": 52
+    },
+    {
+      "algorithm": "Setting",
+      "rho": "inf",
+      "gate_brier": 0.22469126203931522,
+      "observers": {
+        "observer_a": 0.2236465139907015,
+        "observer_b": 0.22573601008792896
+      },
+      "folds": 13,
+      "question_blocks": 52
+    },
+    {
+      "algorithm": "Joint",
+      "rho": 0.25,
+      "gate_brier": 0.22017714003111416,
+      "observers": {
+        "observer_a": 0.21880922445678747,
+        "observer_b": 0.22154505560544085
+      },
+      "folds": 13,
+      "question_blocks": 52
+    },
+    {
+      "algorithm": "Joint",
+      "rho": 1.0,
+      "gate_brier": 0.21920176552714132,
+      "observers": {
+        "observer_a": 0.21794940328356813,
+        "observer_b": 0.2204541277707145
+      },
+      "folds": 13,
+      "question_blocks": 52
+    },
+    {
+      "algorithm": "Joint",
+      "rho": 4.0,
+      "gate_brier": 0.22142819533162633,
+      "observers": {
+        "observer_a": 0.2202981478084733,
+        "observer_b": 0.2225582428547794
+      },
+      "folds": 13,
+      "question_blocks": 52
+    },
+    {
+      "algorithm": "Joint",
+      "rho": "inf",
+      "gate_brier": 0.22469126203931522,
+      "observers": {
+        "observer_a": 0.2236465139907015,
+        "observer_b": 0.22573601008792896
+      },
+      "folds": 13,
+      "question_blocks": 52
+    }
+  ],
+  "profiles": {
+    "Global": {
+      "observer_a": {
+        "algorithm": "Global",
+        "rho": "inf",
+        "n": 624,
+        "n_direct": 417,
+        "global_d": 0.668,
+        "composition": [
+          0.7124105011933174,
+          0.20883054892601433,
+          0.07279236276849642,
+          0.0059665871121718375
+        ],
+        "cells": [
+          {
+            "key": [],
+            "n": 624,
+            "d": 417
+          }
+        ]
+      },
+      "observer_b": {
+        "algorithm": "Global",
+        "rho": "inf",
+        "n": 624,
+        "n_direct": 413,
+        "global_d": 0.6616,
+        "composition": [
+          0.7120481927710843,
+          0.20843373493975903,
+          0.07349397590361446,
+          0.006024096385542169
+        ],
+        "cells": [
+          {
+            "key": [],
+            "n": 624,
+            "d": 413
+          }
+        ]
+      }
+    },
+    "Evidence": {
+      "observer_a": {
+        "algorithm": "Evidence",
+        "rho": 1.0,
+        "n": 624,
+        "n_direct": 417,
+        "global_d": 0.668,
+        "composition": [
+          0.7124105011933174,
+          0.20883054892601433,
+          0.07279236276849642,
+          0.0059665871121718375
+        ],
+        "cells": [
+          {
+            "key": [
+              "confounded"
+            ],
+            "n": 156,
+            "d": 114
+          },
+          {
+            "key": [
+              "contradictory"
+            ],
+            "n": 156,
+            "d": 111
+          },
+          {
+            "key": [
+              "limited"
+            ],
+            "n": 156,
+            "d": 89
+          },
+          {
+            "key": [
+              "supportive"
+            ],
+            "n": 156,
+            "d": 103
+          }
+        ]
+      },
+      "observer_b": {
+        "algorithm": "Evidence",
+        "rho": 1.0,
+        "n": 624,
+        "n_direct": 413,
+        "global_d": 0.6616,
+        "composition": [
+          0.7120481927710843,
+          0.20843373493975903,
+          0.07349397590361446,
+          0.006024096385542169
+        ],
+        "cells": [
+          {
+            "key": [
+              "confounded"
+            ],
+            "n": 156,
+            "d": 112
+          },
+          {
+            "key": [
+              "contradictory"
+            ],
+            "n": 156,
+            "d": 110
+          },
+          {
+            "key": [
+              "limited"
+            ],
+            "n": 156,
+            "d": 89
+          },
+          {
+            "key": [
+              "supportive"
+            ],
+            "n": 156,
+            "d": 102
+          }
+        ]
+      }
+    },
+    "Setting": {
+      "observer_a": {
+        "algorithm": "Setting",
+        "rho": 1.0,
+        "n": 624,
+        "n_direct": 417,
+        "global_d": 0.668,
+        "composition": [
+          0.7124105011933174,
+          0.20883054892601433,
+          0.07279236276849642,
+          0.0059665871121718375
+        ],
+        "cells": [
+          {
+            "key": [
+              "eval_cautious_instruction_p0"
+            ],
+            "n": 104,
+            "d": 58
+          },
+          {
+            "key": [
+              "eval_cautious_instruction_p1"
+            ],
+            "n": 104,
+            "d": 68
+          },
+          {
+            "key": [
+              "eval_confident_instruction_p0"
+            ],
+            "n": 104,
+            "d": 69
+          },
+          {
+            "key": [
+              "eval_confident_instruction_p1"
+            ],
+            "n": 104,
+            "d": 69
+          },
+          {
+            "key": [
+              "eval_neutral_instruction_p0"
+            ],
+            "n": 104,
+            "d": 77
+          },
+          {
+            "key": [
+              "eval_neutral_instruction_p1"
+            ],
+            "n": 104,
+            "d": 76
+          }
+        ]
+      },
+      "observer_b": {
+        "algorithm": "Setting",
+        "rho": 1.0,
+        "n": 624,
+        "n_direct": 413,
+        "global_d": 0.6616,
+        "composition": [
+          0.7120481927710843,
+          0.20843373493975903,
+          0.07349397590361446,
+          0.006024096385542169
+        ],
+        "cells": [
+          {
+            "key": [
+              "eval_cautious_instruction_p0"
+            ],
+            "n": 104,
+            "d": 57
+          },
+          {
+            "key": [
+              "eval_cautious_instruction_p1"
+            ],
+            "n": 104,
+            "d": 68
+          },
+          {
+            "key": [
+              "eval_confident_instruction_p0"
+            ],
+            "n": 104,
+            "d": 68
+          },
+          {
+            "key": [
+              "eval_confident_instruction_p1"
+            ],
+            "n": 104,
+            "d": 69
+          },
+          {
+            "key": [
+              "eval_neutral_instruction_p0"
+            ],
+            "n": 104,
+            "d": 76
+          },
+          {
+            "key": [
+              "eval_neutral_instruction_p1"
+            ],
+            "n": 104,
+            "d": 75
+          }
+        ]
+      }
+    },
+    "Joint": {
+      "observer_a": {
+        "algorithm": "Joint",
+        "rho": 1.0,
+        "n": 624,
+        "n_direct": 417,
+        "global_d": 0.668,
+        "composition": [
+          0.7124105011933174,
+          0.20883054892601433,
+          0.07279236276849642,
+          0.0059665871121718375
+        ],
+        "cells": [
+          {
+            "key": [
+              "eval_cautious_instruction_p0",
+              "confounded"
+            ],
+            "n": 26,
+            "d": 19
+          },
+          {
+            "key": [
+              "eval_cautious_instruction_p0",
+              "contradictory"
+            ],
+            "n": 26,
+            "d": 15
+          },
+          {
+            "key": [
+              "eval_cautious_instruction_p0",
+              "limited"
+            ],
+            "n": 26,
+            "d": 8
+          },
+          {
+            "key": [
+              "eval_cautious_instruction_p0",
+              "supportive"
+            ],
+            "n": 26,
+            "d": 16
+          },
+          {
+            "key": [
+              "eval_cautious_instruction_p1",
+              "confounded"
+            ],
+            "n": 26,
+            "d": 17
+          },
+          {
+            "key": [
+              "eval_cautious_instruction_p1",
+              "contradictory"
+            ],
+            "n": 26,
+            "d": 19
+          },
+          {
+            "key": [
+              "eval_cautious_instruction_p1",
+              "limited"
+            ],
+            "n": 26,
+            "d": 17
+          },
+          {
+            "key": [
+              "eval_cautious_instruction_p1",
+              "supportive"
+            ],
+            "n": 26,
+            "d": 15
+          },
+          {
+            "key": [
+              "eval_confident_instruction_p0",
+              "confounded"
+            ],
+            "n": 26,
+            "d": 19
+          },
+          {
+            "key": [
+              "eval_confident_instruction_p0",
+              "contradictory"
+            ],
+            "n": 26,
+            "d": 16
+          },
+          {
+            "key": [
+              "eval_confident_instruction_p0",
+              "limited"
+            ],
+            "n": 26,
+            "d": 12
+          },
+          {
+            "key": [
+              "eval_confident_instruction_p0",
+              "supportive"
+            ],
+            "n": 26,
+            "d": 22
+          },
+          {
+            "key": [
+              "eval_confident_instruction_p1",
+              "confounded"
+            ],
+            "n": 26,
+            "d": 17
+          },
+          {
+            "key": [
+              "eval_confident_instruction_p1",
+              "contradictory"
+            ],
+            "n": 26,
+            "d": 24
+          },
+          {
+            "key": [
+              "eval_confident_instruction_p1",
+              "limited"
+            ],
+            "n": 26,
+            "d": 13
+          },
+          {
+            "key": [
+              "eval_confident_instruction_p1",
+              "supportive"
+            ],
+            "n": 26,
+            "d": 15
+          },
+          {
+            "key": [
+              "eval_neutral_instruction_p0",
+              "confounded"
+            ],
+            "n": 26,
+            "d": 22
+          },
+          {
+            "key": [
+              "eval_neutral_instruction_p0",
+              "contradictory"
+            ],
+            "n": 26,
+            "d": 18
+          },
+          {
+            "key": [
+              "eval_neutral_instruction_p0",
+              "limited"
+            ],
+            "n": 26,
+            "d": 18
+          },
+          {
+            "key": [
+              "eval_neutral_instruction_p0",
+              "supportive"
+            ],
+            "n": 26,
+            "d": 19
+          },
+          {
+            "key": [
+              "eval_neutral_instruction_p1",
+              "confounded"
+            ],
+            "n": 26,
+            "d": 20
+          },
+          {
+            "key": [
+              "eval_neutral_instruction_p1",
+              "contradictory"
+            ],
+            "n": 26,
+            "d": 19
+          },
+          {
+            "key": [
+              "eval_neutral_instruction_p1",
+              "limited"
+            ],
+            "n": 26,
+            "d": 21
+          },
+          {
+            "key": [
+              "eval_neutral_instruction_p1",
+              "supportive"
+            ],
+            "n": 26,
+            "d": 16
+          }
+        ]
+      },
+      "observer_b": {
+        "algorithm": "Joint",
+        "rho": 1.0,
+        "n": 624,
+        "n_direct": 413,
+        "global_d": 0.6616,
+        "composition": [
+          0.7120481927710843,
+          0.20843373493975903,
+          0.07349397590361446,
+          0.006024096385542169
+        ],
+        "cells": [
+          {
+            "key": [
+              "eval_cautious_instruction_p0",
+              "confounded"
+            ],
+            "n": 26,
+            "d": 18
+          },
+          {
+            "key": [
+              "eval_cautious_instruction_p0",
+              "contradictory"
+            ],
+            "n": 26,
+            "d": 15
+          },
+          {
+            "key": [
+              "eval_cautious_instruction_p0",
+              "limited"
+            ],
+            "n": 26,
+            "d": 8
+          },
+          {
+            "key": [
+              "eval_cautious_instruction_p0",
+              "supportive"
+            ],
+            "n": 26,
+            "d": 16
+          },
+          {
+            "key": [
+              "eval_cautious_instruction_p1",
+              "confounded"
+            ],
+            "n": 26,
+            "d": 17
+          },
+          {
+            "key": [
+              "eval_cautious_instruction_p1",
+              "contradictory"
+            ],
+            "n": 26,
+            "d": 19
+          },
+          {
+            "key": [
+              "eval_cautious_instruction_p1",
+              "limited"
+            ],
+            "n": 26,
+            "d": 17
+          },
+          {
+            "key": [
+              "eval_cautious_instruction_p1",
+              "supportive"
+            ],
+            "n": 26,
+            "d": 15
+          },
+          {
+            "key": [
+              "eval_confident_instruction_p0",
+              "confounded"
+            ],
+            "n": 26,
+            "d": 18
+          },
+          {
+            "key": [
+              "eval_confident_instruction_p0",
+              "contradictory"
+            ],
+            "n": 26,
+            "d": 16
+          },
+          {
+            "key": [
+              "eval_confident_instruction_p0",
+              "limited"
+            ],
+            "n": 26,
+            "d": 12
+          },
+          {
+            "key": [
+              "eval_confident_instruction_p0",
+              "supportive"
+            ],
+            "n": 26,
+            "d": 22
+          },
+          {
+            "key": [
+              "eval_confident_instruction_p1",
+              "confounded"
+            ],
+            "n": 26,
+            "d": 17
+          },
+          {
+            "key": [
+              "eval_confident_instruction_p1",
+              "contradictory"
+            ],
+            "n": 26,
+            "d": 24
+          },
+          {
+            "key": [
+              "eval_confident_instruction_p1",
+              "limited"
+            ],
+            "n": 26,
+            "d": 13
+          },
+          {
+            "key": [
+              "eval_confident_instruction_p1",
+              "supportive"
+            ],
+            "n": 26,
+            "d": 15
+          },
+          {
+            "key": [
+              "eval_neutral_instruction_p0",
+              "confounded"
+            ],
+            "n": 26,
+            "d": 22
+          },
+          {
+            "key": [
+              "eval_neutral_instruction_p0",
+              "contradictory"
+            ],
+            "n": 26,
+            "d": 17
+          },
+          {
+            "key": [
+              "eval_neutral_instruction_p0",
+              "limited"
+            ],
+            "n": 26,
+            "d": 18
+          },
+          {
+            "key": [
+              "eval_neutral_instruction_p0",
+              "supportive"
+            ],
+            "n": 26,
+            "d": 19
+          },
+          {
+            "key": [
+              "eval_neutral_instruction_p1",
+              "confounded"
+            ],
+            "n": 26,
+            "d": 20
+          },
+          {
+            "key": [
+              "eval_neutral_instruction_p1",
+              "contradictory"
+            ],
+            "n": 26,
+            "d": 19
+          },
+          {
+            "key": [
+              "eval_neutral_instruction_p1",
+              "limited"
+            ],
+            "n": 26,
+            "d": 21
+          },
+          {
+            "key": [
+              "eval_neutral_instruction_p1",
+              "supportive"
+            ],
+            "n": 26,
+            "d": 15
+          }
+        ]
+      }
+    }
+  },
+  "note": "Selected on development data only. CV scores are selection quantities, not fresh evaluation."
+}
