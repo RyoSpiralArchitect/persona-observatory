@@ -1,0 +1,20 @@
+{
+  "schema_version": "persona-observatory-study-v1",
+  "experiment_id": "exp10-devpool-llama32",
+  "purpose": "exploratory",
+  "seed_namespace": "pobs-exp10-dev-llama32-20261106",
+  "replicates": 2,
+  "question_bank": "../research/experiment_10/development/dev_question_bank.json",
+  "settings": "../research/experiment_09/settings.json",
+  "model_manifest": "../manifests/llama-3.2-3b-instruct.json",
+  "runtime": {
+    "device": "cuda",
+    "dtype": "bfloat16",
+    "max_new_tokens": 96,
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "cpu_threads": 4,
+    "batch_size": 8
+  },
+  "notes": "Development-pool generation for the experiment 11 Llama-3.2-3B port: the same 52 existing questions and 6 instruction settings as the SmolLM2 development pool, regenerated under this model's own identity. Development role only; not evaluation and not fresh holdout evidence. Outputs still require blinded A/B semantic labels before predictor fitting."
+}

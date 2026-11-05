@@ -1,0 +1,20 @@
+{
+  "schema_version": "persona-observatory-study-v1",
+  "experiment_id": "exp10-gate-eval",
+  "purpose": "prospective",
+  "seed_namespace": "pobs-exp10-gate-eval-20261106",
+  "replicates": 2,
+  "question_bank": "../research/experiment_10/question_bank_draft.json",
+  "settings": "../research/experiment_09/settings.json",
+  "model_manifest": "../manifests/llama-3.2-3b-instruct.json",
+  "runtime": {
+    "device": "cuda",
+    "dtype": "bfloat16",
+    "max_new_tokens": 96,
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "cpu_threads": 4,
+    "batch_size": 8
+  },
+  "notes": "Prospective evaluation for the experiment 11 cross-model port (DRAFT question bank pending human novelty review). Same experiment_id, seed namespace, questions, settings and replicates as the SmolLM2 evaluation run give paired sample IDs; model identity, tokenizer, dtype and backend differ and are recorded per run."
+}
