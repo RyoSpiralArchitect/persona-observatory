@@ -1,0 +1,20 @@
+{
+  "schema_version": "persona-observatory-study-v1",
+  "experiment_id": "portable-smoke-llama32",
+  "purpose": "smoke_replay",
+  "seed_namespace": "pobs-smoke-llama32-20261106",
+  "replicates": 1,
+  "question_bank": "../examples/smoke_questions.json",
+  "settings": "../examples/smoke_settings.json",
+  "model_manifest": "../manifests/llama-3.2-3b-instruct.json",
+  "runtime": {
+    "device": "cuda",
+    "dtype": "bfloat16",
+    "max_new_tokens": 16,
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "cpu_threads": 4,
+    "batch_size": 2
+  },
+  "notes": "Engineering smoke of the portable runner against meta-llama/Llama-3.2-3B-Instruct at pinned revision, downloaded on the furnace node under the logged-in account's existing license acceptance. Native bf16 weights; sampling math still runs float32 on CPU. Not new scientific holdout evidence; a different model identity from archived Experiment 9."
+}
