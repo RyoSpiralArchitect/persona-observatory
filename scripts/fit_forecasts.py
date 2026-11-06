@@ -1,16 +1,16 @@
 """Fit the experiment-10 predictor family on a development pool and emit forecasts.
 
-Inputs:
-  --dev-pool     JSONL rows from extract_dev_pool.py (observer, question_id,
-                 evidence_stratum, setting_id, direct_event, category, fold)
-  --samples      JSONL/JSON rows with sample_id, evidence_stratum, setting_id
-                 (e.g. `pobs design` output or a run plan)
-  --out          predictions.jsonl in the pobs forecast schema
-  --report       selection/fit report JSON
+Usage:
+  python3 scripts/fit_forecasts.py --dev-pool POOL.jsonl --samples SAMPLES.jsonl \
+      --attempt-dir research/experiment_10/fits/<name>
 
-One rho per predictor is selected by question-blocked 13-fold CV, shared across
-cells and observer branches. Per-branch counts produce separate forecasts;
-the forecast grid covers sample x observer x predictor exactly once.
+The attempt directory is created exclusively (it must not already exist) and
+receives: dev_pool.sha256, predictions.jsonl, report.json, manifest.json.
+The manifest binds SHA-256 of the dev pool, the sample design, this script, the
+installed package source, and both outputs, so the frozen forecasts trace to
+exact inputs. One rho per predictor is selected by question-blocked 13-fold CV,
+shared across cells and observer branches; per-branch counts produce separate
+forecasts covering sample x observer x predictor exactly once.
 """
 from __future__ import annotations
 
@@ -19,9 +19,13 @@ import json
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
+REPO = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO / "src"))
+from persona_observatory import __version__  # noqa: E402
 from persona_observatory.forecasting import (  # noqa: E402
     PREDICTORS, build_forecasts, fit_predictor, select_rho)
+from persona_observatory.storage import (  # noqa: E402
+    require, sha_file, write_json_exclusive, write_jsonl_exclusive)
 
 
 def read_rows(path):
@@ -39,42 +43,38 @@ def read_rows(path):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--dev-pool", required=True)
-    ap.add_argument("--samples", required=True)
-    ap.add_argument("--out", required=True)
-    ap.add_argument("--report", required=True)
+    ap.add_argument("--dev-pool", required=True, type=Path)
+    ap.add_argument("--samples", required=True, type=Path)
+    ap.add_argument("--attempt-dir", required=True, type=Path)
     args = ap.parse_args()
 
     pool = read_rows(args.dev_pool)
     samples = read_rows(args.samples)
-    fold_of = {}
-    sample_branches = {}
+    fold_of, sample_branches = {}, {}
     for row in pool:
         q, f = row["question_id"], row["fold"]
-        if q in fold_of and fold_of[q] != f:
-            raise SystemExit("Inconsistent fold for " + q)
+        require(q not in fold_of or fold_of[q] == f, "Inconsistent fold for " + q)
         fold_of[q] = f
         branches = sample_branches.setdefault(row["sample_id"], set())
-        if row["observer"] in branches:
-            raise SystemExit("Duplicate dev row: " + row["sample_id"] + "/" + row["observer"])
+        require(row["observer"] not in branches,
+                "Duplicate dev row: " + row["sample_id"] + "/" + row["observer"])
         branches.add(row["observer"])
     expected = {"a", "b"}
     for sid, branches in sample_branches.items():
-        if branches != expected:
-            raise SystemExit(f"Unpaired observer coverage for {sid}: {sorted(branches)}")
-    if sorted({r["observer"] for r in pool}) != sorted(expected):
-        raise SystemExit("This study expects exactly observers a and b")
+        require(branches == expected, f"Unpaired observer coverage for {sid}: {sorted(branches)}")
+    require(sorted({r["observer"] for r in pool}) == sorted(expected),
+            "This study expects exactly observers a and b")
 
     selection = {p: select_rho(pool, fold_of, p) for p in PREDICTORS}
-    branches = sorted({r["observer"] for r in pool})
+    branches = sorted(expected)
     fitted = {obs: {p: fit_predictor([r for r in pool if r["observer"] == obs], p,
                                     selection[p]["rho"]) for p in PREDICTORS}
               for obs in branches}
     forecasts = build_forecasts(fitted, samples)
 
-    with open(args.out, "w") as f:
-        for row in forecasts:
-            f.write(json.dumps(row, ensure_ascii=False) + "\n")
+    # The attempt directory is the transaction boundary; nothing overwrites.
+    args.attempt_dir.mkdir(parents=True, exist_ok=False)
+    write_jsonl_exclusive(args.attempt_dir / "predictions.jsonl", forecasts)
     report = {
         "schema_version": "pobs-exp10-fit-v1",
         "dev_rows": len(pool), "observers": branches,
@@ -84,7 +84,17 @@ def main():
                       for p in PREDICTORS},
         "forecasts": len(forecasts),
     }
-    Path(args.report).write_text(json.dumps(report, indent=2) + "\n")
+    write_json_exclusive(args.attempt_dir / "report.json", report)
+    manifest = {
+        "schema_version": "pobs-exp10-fit-manifest-v1",
+        "package_version": __version__,
+        "inputs_sha256": {"dev_pool": sha_file(args.dev_pool), "samples": sha_file(args.samples),
+                          "script": sha_file(Path(__file__).resolve())},
+        "outputs_sha256": {"predictions": sha_file(args.attempt_dir / "predictions.jsonl"),
+                           "report": sha_file(args.attempt_dir / "report.json")},
+        "note": "Exclusive fit attempt binding development labels, evaluation design, code and outputs by hash. Not a prospective lock; freezing happens at pobs prepare --forecasts.",
+    }
+    write_json_exclusive(args.attempt_dir / "manifest.json", manifest)
     print(json.dumps({p: report["selection"][p]["rho"] for p in PREDICTORS}))
 
 

@@ -75,7 +75,8 @@
 - 新題ドラフト：`question_bank_draft.json`（48題・4層×12・過去60題と
   トピック非重複を機械確認。意味的重複の人による点検は未実施）
 - design 出力 `design_eval.jsonl`（576 samples）
-- SmolLM2 側 fit・rho 選択・予測 `predictions_smollm2.jsonl`（4,608行）：
+- SmolLM2 側 fit・rho 選択・予測：`fits/smollm2-v2-20261106/`
+  （predictions.jsonl 4,608行・manifest が入出力をハッシュ固定。排他書き込み）。
   global=inf, evidence=1, setting=1, joint=1。CV の最良値は選択用であり
   独立した成功証拠ではない
 - **訂正（2026-11-06、fork review 由来）**：初版の成果物は三つの実装不整合の
@@ -93,5 +94,10 @@
 - 新題の人による題材重複点検と question_bank 確定（確定時に draft を改名し
   ハッシュを固定）
 - Llama 開発出力の盲検ラベル → Llama 版 fit・予測
-- 両 predictions の forecast lock → prepare(prospective) → 各1回の生成
-- 盲検観察 → 採点 → 報告
+- 両 predictions の forecast lock → `scripts/freeze_study.py` で study_freeze.json
+  （protocol・確定題・design・開発池・両 fit manifest・両 eval config をハッシュ束縛。
+  prepare 実行を機械的には止めないが、監査時の照合基準となる）→
+  prepare(prospective) → 各1回の生成
+- 盲検観察 → 採点 → `analysis.py` の主比較レポート（paired delta・質問加重・
+  INCOMPLETE 判定・進行基準は実装済み、評価生成前に凍結）
+- 報告
