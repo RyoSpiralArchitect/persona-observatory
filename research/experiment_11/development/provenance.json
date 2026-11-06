@@ -1,0 +1,13 @@
+{
+  "generations": ".local/llama32-devpool-001/generations.jsonl",
+  "generations_sha256": "282930eb3b833b0535d828309aaf5720eb948d6be4cf466a65298fbab5129baf",
+  "labels_a": ".local/observation/observer_a/labels.jsonl",
+  "labels_a_sha256": "11763908df6c20d8bdeb5a226d2c3b4a1f6e963efa2c33790f4f8be57128e6a8",
+  "labels_b": ".local/observation/observer_b/labels.jsonl",
+  "labels_b_sha256": "7e16f4b202a625f8ec72ae3be8d5f53c2e19dd9d191e5575039a5bf4bd602223",
+  "fold_map_sha256": "0b59db1d36b17e604eca4a9f3bfe34d391c24e4a6324ccd12b5f41376b662f9e",
+  "question_bank_sha256": "9d4622a4149c6ebe0f177b7abd752c921bae040e2b7f6dde84c2ae11521e028b",
+  "rows": 1248,
+  "unique_samples": 624,
+  "questions": 52
+}
