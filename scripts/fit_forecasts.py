@@ -46,6 +46,8 @@ def main():
     ap.add_argument("--dev-pool", required=True, type=Path)
     ap.add_argument("--samples", required=True, type=Path)
     ap.add_argument("--attempt-dir", required=True, type=Path)
+    ap.add_argument("--mode", choices=("gate", "category"), default="gate",
+                    help="gate: E10 direct-rate x pooled-composition family; category: E12 per-cell five-category distribution")
     args = ap.parse_args()
 
     pool = read_rows(args.dev_pool)
@@ -65,10 +67,10 @@ def main():
     require(sorted({r["observer"] for r in pool}) == sorted(expected),
             "This study expects exactly observer_a and observer_b")
 
-    selection = {p: select_rho(pool, fold_of, p) for p in PREDICTORS}
+    selection = {p: select_rho(pool, fold_of, p, args.mode) for p in PREDICTORS}
     branches = sorted(expected)
     fitted = {obs: {p: fit_predictor([r for r in pool if r["observer"] == obs], p,
-                                    selection[p]["rho"]) for p in PREDICTORS}
+                                    selection[p]["rho"], mode=args.mode) for p in PREDICTORS}
               for obs in branches}
     forecasts = build_forecasts(fitted, samples)
 
@@ -77,10 +79,10 @@ def main():
     write_jsonl_exclusive(args.attempt_dir / "predictions.jsonl", forecasts)
     report = {
         "schema_version": "pobs-exp10-fit-v1",
-        "dev_rows": len(pool), "observers": branches,
+        "dev_rows": len(pool), "observers": branches, "mode": args.mode,
         "selection": {p: {"rho": ("inf" if selection[p]["rho"] == float("inf") else selection[p]["rho"]),
-                          "cv_gate_brier": {("inf" if k == float("inf") else k): v
-                                            for k, v in selection[p]["cv_gate_brier"].items()}}
+                          "cv_scores": {"inf" if k == float("inf") else k: v
+                              for k, v in selection[p]["cv_scores"].items()}}
                       for p in PREDICTORS},
         "forecasts": len(forecasts),
     }

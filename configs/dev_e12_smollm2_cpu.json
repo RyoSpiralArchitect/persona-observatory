@@ -1,0 +1,20 @@
+{
+  "schema_version": "persona-observatory-study-v1",
+  "experiment_id": "exp12-devpool-smollm2",
+  "purpose": "exploratory",
+  "seed_namespace": "pobs-exp12-dev-smollm2-20261106",
+  "replicates": 2,
+  "question_bank": "../research/experiment_10/development/dev_question_bank.json",
+  "settings": "../research/experiment_12/settings.json",
+  "model_manifest": "../manifests/smollm2-360m-instruct.json",
+  "runtime": {
+    "device": "cpu",
+    "dtype": "float32",
+    "max_new_tokens": 96,
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "cpu_threads": 4,
+    "batch_size": 8
+  },
+  "notes": "E12 development pool: 52 dev questions x 10 settings x 2 replicates under SmolLM2 identity; requires blinded A/B labels."
+}

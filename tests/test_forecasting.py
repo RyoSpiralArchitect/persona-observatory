@@ -1,6 +1,7 @@
 import math
 import unittest
 
+from persona_observatory.evaluation import CATEGORY_ORDER as CAT_ORDER
 from persona_observatory.forecasting import (
     PREDICTORS, RHO_CANDIDATES, base_rates, build_forecasts, cell_rate,
     category_probabilities, cv_score, fit_predictor, gate_probability,
@@ -118,3 +119,36 @@ class ForecastGridTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+class CategoryModeTest(unittest.TestCase):
+    def test_category_fit_and_predictions(self):
+        rows = [
+            {"question_id": "q1", "evidence_stratum": "supportive", "setting_id": "sA",
+             "observer": "observer_a", "direct_event": True, "category": "support"},
+            {"question_id": "q1", "evidence_stratum": "supportive", "setting_id": "sB",
+             "observer": "observer_a", "direct_event": False, "category": "no_direct"},
+            {"question_id": "q2", "evidence_stratum": "limited", "setting_id": "sA",
+             "observer": "observer_a", "direct_event": True, "category": "withhold"},
+            {"question_id": "q2", "evidence_stratum": "limited", "setting_id": "sB",
+             "observer": "observer_a", "direct_event": True, "category": "reject"},
+        ]
+        fit = fit_predictor(rows, "setting", 1.0, mode="category")
+        pa = category_probabilities(fit, {"setting_id": "sA"})
+        pb = category_probabilities(fit, {"setting_id": "sB"})
+        self.assertNotEqual(pa, pb)
+        self.assertAlmostEqual(sum(pa), 1.0)
+        # gate probability derives from no_direct mass
+        self.assertAlmostEqual(gate_probability(fit, {"setting_id": "sA"}),
+                               1.0 - pa[CAT_ORDER.index("no_direct")])
+        # inf rho collapses every cell to the pooled base
+        fit_inf = fit_predictor(rows, "setting", float("inf"), mode="category")
+        for s in ("sA", "sB"):
+            self.assertEqual(category_probabilities(fit_inf, {"setting_id": s}),
+                             category_probabilities(fit_inf, {"setting_id": "x"}))
+        # category-mode CV differentiates where gate cannot
+        g = cv_score(rows, {"q1": 0, "q2": 1}, "setting", 1.0, "gate")
+        c = cv_score(rows, {"q1": 0, "q2": 1}, "setting", 1.0, "category")
+        self.assertIsInstance(g, float) and self.assertIsInstance(c, float)
+        sel = select_rho(rows, {"q1": 0, "q2": 1}, "setting", "category")
+        self.assertEqual(sel["metric"], "category")
+        self.assertIn("cv_category_brier", sel)

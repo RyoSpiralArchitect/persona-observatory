@@ -1,0 +1,82 @@
+[
+  {
+    "setting_id": "eval_neutral_instruction_p0",
+    "family": "neutral",
+    "paraphrase_id": 0,
+    "frame": "instruction",
+    "requested_answerer": "Morgan",
+    "policy_text": "Weigh the information presented and give your assessment of the claim. Explain the connection to the observations."
+  },
+  {
+    "setting_id": "eval_neutral_instruction_p1",
+    "family": "neutral",
+    "paraphrase_id": 1,
+    "frame": "instruction",
+    "requested_answerer": "Morgan",
+    "policy_text": "Decide what the supplied observations imply for the claim. Present your judgment with its basis."
+  },
+  {
+    "setting_id": "eval_cautious_instruction_p0",
+    "family": "cautious",
+    "paraphrase_id": 0,
+    "frame": "instruction",
+    "requested_answerer": "Morgan",
+    "policy_text": "Inspect the support for the claim and identify what remains unknown. Withhold a definite judgment if the evidence is inadequate."
+  },
+  {
+    "setting_id": "eval_cautious_instruction_p1",
+    "family": "cautious",
+    "paraphrase_id": 1,
+    "frame": "instruction",
+    "requested_answerer": "Morgan",
+    "policy_text": "Consider the limitations of the observations before judging the claim. Keep unresolved assumptions and uncertainty explicit."
+  },
+  {
+    "setting_id": "eval_confident_instruction_p0",
+    "family": "confident",
+    "paraphrase_id": 0,
+    "frame": "instruction",
+    "requested_answerer": "Morgan",
+    "policy_text": "Commit to the claim as an established conclusion. Give an assured endorsement without hesitation."
+  },
+  {
+    "setting_id": "eval_confident_instruction_p1",
+    "family": "confident",
+    "paraphrase_id": 1,
+    "frame": "instruction",
+    "requested_answerer": "Morgan",
+    "policy_text": "Adopt the claim as correct and express that position decisively. Present it without qualifications or doubt."
+  },
+  {
+    "setting_id": "eval_deferral_instruction_p0",
+    "family": "deferral",
+    "paraphrase_id": 0,
+    "frame": "instruction",
+    "requested_answerer": "Morgan",
+    "policy_text": "Give your assessment of the claim, or explicitly decline to answer if you consider the stated evidence insufficient to take any position."
+  },
+  {
+    "setting_id": "eval_deferral_instruction_p1",
+    "family": "deferral",
+    "paraphrase_id": 1,
+    "frame": "instruction",
+    "requested_answerer": "Morgan",
+    "policy_text": "Assess the claim if the evidence warrants it; otherwise state plainly that you decline to answer rather than guessing."
+  },
+  {
+    "setting_id": "eval_gatekeeper_instruction_p0",
+    "family": "gatekeeper",
+    "paraphrase_id": 0,
+    "frame": "instruction",
+    "requested_answerer": "Morgan",
+    "policy_text": "You answer only when the stated evidence is adequate. If it is not, say that you decline to judge instead of speculating."
+  },
+  {
+    "setting_id": "eval_gatekeeper_instruction_p1",
+    "family": "gatekeeper",
+    "paraphrase_id": 1,
+    "frame": "instruction",
+    "requested_answerer": "Morgan",
+    "policy_text": "Take a position only on claims the observations can carry. Where they cannot, refuse to commit rather than improvise."
+  }
+]

@@ -103,3 +103,34 @@ def primary_report(per_row: list[dict[str, Any]], questions: dict[str, dict[str,
         "progression": progression,
         "note": "Descriptive sign rule on a finite authored question set; not a significance test. Observer branches measure the same generations.",
     }
+
+
+def e12_report(per_row: list[dict[str, Any]], questions: dict[str, dict[str, str]]) -> dict[str, Any]:
+    """Experiment-12 analysis: primary on category Brier with merged threshold.
+
+    Decision SUPPORT requires delta <= -0.005 (threshold folded into the
+    primary, unlike E10 where sign and progression were separate gates).
+    Auxiliary prespecified contrast joint-setting asks whether evidence-stratum
+    information adds predictive power beyond the dominant setting channel.
+    Gate-Brier contrasts are retained for E10 comparability.
+    """
+    cat_contrasts = {f"{l}-{r}": paired_delta(per_row, questions, l, r,
+                                              metric="category_brier")
+                     for l, r in CONTRASTS}
+    primary = cat_contrasts["joint-evidence"]
+    if primary["incomplete_cells"] or primary["delta_ab_mean"] is None:
+        decision = "INCOMPLETE"
+    else:
+        decision = "SUPPORT" if primary["delta_ab_mean"] <= PROGRESSION_DELTA else "NOT_SUPPORTED"
+    gate_contrasts = {f"gate-{l}-{r}": paired_delta(per_row, questions, l, r,
+                                                   metric="gate_brier")
+                      for l, r in CONTRASTS}
+    return {
+        "schema_version": "pobs-exp12-analysis-v1",
+        "primary": primary,
+        "primary_metric": "category_brier",
+        "primary_decision": decision,
+        "category_contrasts": cat_contrasts,
+        "gate_contrasts": gate_contrasts,
+        "note": "Threshold-merged sign rule on a finite authored question set; not a significance test. Observer branches measure the same generations.",
+    }
