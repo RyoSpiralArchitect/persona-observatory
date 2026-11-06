@@ -1,0 +1,482 @@
+[
+ {
+  "phase": "evaluation",
+  "question_id": "X01",
+  "topic": "ladder_stabilizer_feet",
+  "topic_index": 0,
+  "evidence_stratum": "limited",
+  "evidence": "A homeowner fitted rubber stabilizer feet to an extension ladder and climbed it twice on a dry garage floor without slipping. Use on wet ground, sloped surfaces, or at full extension was not tried, and no other climber tested it.",
+  "claim": "the stabilizer feet reliably prevent the ladder from slipping during ordinary outdoor use",
+  "question": "A homeowner fitted rubber stabilizer feet to an extension ladder and climbed it twice on a dry garage floor without slipping. Use on wet ground, sloped surfaces, or at full extension was not tried, and no other climber tested it.\n\nWhat can be concluded about whether the stabilizer feet reliably prevent the ladder from slipping during ordinary outdoor use from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X02",
+  "topic": "herb_drying_rack",
+  "topic_index": 1,
+  "evidence_stratum": "limited",
+  "evidence": "A small bunch of basil dried evenly on a new mesh rack in an air-conditioned pantry over three days. Larger batches, humid weather, and other herbs were not tested.",
+  "claim": "the mesh rack reliably dries typical home herb harvests evenly",
+  "question": "A small bunch of basil dried evenly on a new mesh rack in an air-conditioned pantry over three days. Larger batches, humid weather, and other herbs were not tested.\n\nWhat can be concluded about whether the mesh rack reliably dries typical home herb harvests evenly from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X03",
+  "topic": "bike_chain_guard",
+  "topic_index": 2,
+  "evidence_stratum": "limited",
+  "evidence": "A clip-on chain guard stayed in place during one ten-minute ride on a smooth path at low speed. Rough roads, rain, longer rides, and other bicycles were not tried.",
+  "claim": "the guard stays attached through ordinary commuting rides",
+  "question": "A clip-on chain guard stayed in place during one ten-minute ride on a smooth path at low speed. Rough roads, rain, longer rides, and other bicycles were not tried.\n\nWhat can be concluded about whether the guard stays attached through ordinary commuting rides from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X04",
+  "topic": "seedling_heat_mat",
+  "topic_index": 3,
+  "evidence_stratum": "limited",
+  "evidence": "A tray of tomato seeds on a new heat mat sprouted two days earlier than a neighboring tray without it in one indoor trial. Other seed types, room temperatures, and repeated seasons were not tested.",
+  "claim": "the heat mat reliably speeds sprouting for common garden seeds",
+  "question": "A tray of tomato seeds on a new heat mat sprouted two days earlier than a neighboring tray without it in one indoor trial. Other seed types, room temperatures, and repeated seasons were not tested.\n\nWhat can be concluded about whether the heat mat reliably speeds sprouting for common garden seeds from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X05",
+  "topic": "door_draft_brush",
+  "topic_index": 4,
+  "evidence_stratum": "limited",
+  "evidence": "A brush strip fitted to one interior door reduced the felt draft along the floor during a single mild evening. Exterior doors, strong wind, and winter temperatures were not tested.",
+  "claim": "the brush strip reliably blocks drafts under household doors",
+  "question": "A brush strip fitted to one interior door reduced the felt draft along the floor during a single mild evening. Exterior doors, strong wind, and winter temperatures were not tested.\n\nWhat can be concluded about whether the brush strip reliably blocks drafts under household doors from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X06",
+  "topic": "chess_notation_app",
+  "topic_index": 5,
+  "evidence_stratum": "limited",
+  "evidence": "A club player recorded one slow friendly game in a notation app without a mistake. Fast games, unusual moves, and use by other players were not tried.",
+  "claim": "the app reliably records typical club games without errors",
+  "question": "A club player recorded one slow friendly game in a notation app without a mistake. Fast games, unusual moves, and use by other players were not tried.\n\nWhat can be concluded about whether the app reliably records typical club games without errors from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X07",
+  "topic": "window_film_glare",
+  "topic_index": 6,
+  "evidence_stratum": "limited",
+  "evidence": "A tinted film applied to one south-facing office window reduced screen glare on a single cloudy afternoon. Direct sun, other windows, and different seasons were not tested.",
+  "claim": "the film reliably reduces monitor glare in the office",
+  "question": "A tinted film applied to one south-facing office window reduced screen glare on a single cloudy afternoon. Direct sun, other windows, and different seasons were not tested.\n\nWhat can be concluded about whether the film reliably reduces monitor glare in the office from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X08",
+  "topic": "solar_fountain_pump",
+  "topic_index": 7,
+  "evidence_stratum": "limited",
+  "evidence": "A gardener set a new solar fountain pump in a small barrel pond and it ran steadily through one cloudy afternoon. Direct noon sun, overnight operation, larger ponds, and weeks of continuous use were not tried.",
+  "claim": "the pump reliably runs under ordinary garden conditions",
+  "question": "A gardener set a new solar fountain pump in a small barrel pond and it ran steadily through one cloudy afternoon. Direct noon sun, overnight operation, larger ponds, and weeks of continuous use were not tried.\n\nWhat can be concluded about whether the pump reliably runs under ordinary garden conditions from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X09",
+  "topic": "knife_honing_guide",
+  "topic_index": 8,
+  "evidence_stratum": "limited",
+  "evidence": "A home cook used an angle guide to hone one chef's knife, and it cut a tomato more cleanly afterward. Other knives, steels, and repeated sessions were not tested.",
+  "claim": "the guide reliably improves honing results for kitchen knives",
+  "question": "A home cook used an angle guide to hone one chef's knife, and it cut a tomato more cleanly afterward. Other knives, steels, and repeated sessions were not tested.\n\nWhat can be concluded about whether the guide reliably improves honing results for kitchen knives from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X10",
+  "topic": "laundry_mesh_bag",
+  "topic_index": 9,
+  "evidence_stratum": "limited",
+  "evidence": "Delicate shirts washed once inside a mesh bag came out without snags in a single gentle cycle. Mixed loads, other machines, and repeated washes were not tried.",
+  "claim": "the bag reliably protects delicates in household washing",
+  "question": "Delicate shirts washed once inside a mesh bag came out without snags in a single gentle cycle. Mixed loads, other machines, and repeated washes were not tried.\n\nWhat can be concluded about whether the bag reliably protects delicates in household washing from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X11",
+  "topic": "garden_soil_meter",
+  "topic_index": 10,
+  "evidence_stratum": "limited",
+  "evidence": "A new soil meter gave a moist reading in one pot that a gardener had just watered and a dry reading in one unwatered pot. Different soils, depths, and outdoor beds were not tested.",
+  "claim": "the meter reliably reports soil moisture across the garden",
+  "question": "A new soil meter gave a moist reading in one pot that a gardener had just watered and a dry reading in one unwatered pot. Different soils, depths, and outdoor beds were not tested.\n\nWhat can be concluded about whether the meter reliably reports soil moisture across the garden from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X12",
+  "topic": "stovetop_splatter_screen",
+  "topic_index": 11,
+  "evidence_stratum": "limited",
+  "evidence": "A splatter screen placed over one pan of frying eggs kept the nearby counter cleaner than usual during a single breakfast. Other dishes, higher heat, and different pans were not tried.",
+  "claim": "the screen reliably reduces stovetop mess during frying",
+  "question": "A splatter screen placed over one pan of frying eggs kept the nearby counter cleaner than usual during a single breakfast. Other dishes, higher heat, and different pans were not tried.\n\nWhat can be concluded about whether the screen reliably reduces stovetop mess during frying from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X13",
+  "topic": "crate_corner_guards",
+  "topic_index": 12,
+  "evidence_stratum": "supportive",
+  "evidence": "Forty identical shipping crates were fitted either with or without molded corner guards in a randomized assignment and sent through the same handling course. Edge dents appeared in 4 of 20 guarded crates and 15 of 20 unguarded crates. A second handling run reproduced the same ordering.",
+  "claim": "the corner guards reduce edge dents for the tested crates in this handling course",
+  "question": "Forty identical shipping crates were fitted either with or without molded corner guards in a randomized assignment and sent through the same handling course. Edge dents appeared in 4 of 20 guarded crates and 15 of 20 unguarded crates. A second handling run reproduced the same ordering.\n\nWhat can be concluded about whether the corner guards reduce edge dents for the tested crates in this handling course from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X14",
+  "topic": "aquarium_siphon_starter",
+  "topic_index": 13,
+  "evidence_stratum": "supportive",
+  "evidence": "Thirty identical home aquariums were cleaned in a randomized split, half with a new self-starting siphon tube and half with the standard manual siphon. Water spilled during cleaning averaged 40 millilitres with the new tube and 190 millilitres with the standard one across all 30 cleanings.",
+  "claim": "the self-starting siphon reduces spillage during water changes",
+  "question": "Thirty identical home aquariums were cleaned in a randomized split, half with a new self-starting siphon tube and half with the standard manual siphon. Water spilled during cleaning averaged 40 millilitres with the new tube and 190 millilitres with the standard one across all 30 cleanings.\n\nWhat can be concluded about whether the self-starting siphon reduces spillage during water changes from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X15",
+  "topic": "greenhouse_vent_timer",
+  "topic_index": 14,
+  "evidence_stratum": "supportive",
+  "evidence": "Two adjacent greenhouse bays grew the same lettuce variety under matched watering. One bay's vent opened on a new timer schedule; the other used manual opening. Over six weeks the timer bay held midday temperatures in range 18% more hours and produced heavier heads in 24 of 30 sampled pairs.",
+  "claim": "the timer schedule improves temperature control for the tested bay",
+  "question": "Two adjacent greenhouse bays grew the same lettuce variety under matched watering. One bay's vent opened on a new timer schedule; the other used manual opening. Over six weeks the timer bay held midday temperatures in range 18% more hours and produced heavier heads in 24 of 30 sampled pairs.\n\nWhat can be concluded about whether the timer schedule improves temperature control for the tested bay from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X16",
+  "topic": "piano_pedal_extender",
+  "topic_index": 15,
+  "evidence_stratum": "supportive",
+  "evidence": "Ten child students practiced the same pieces with and without a pedal extender in randomized order. Nine of ten reached the pedal cleanly only with the extender, and teachers counted fewer posture corrections per session. The same piano and bench height were used throughout.",
+  "claim": "the extender helps these students reach the pedal in this setup",
+  "question": "Ten child students practiced the same pieces with and without a pedal extender in randomized order. Nine of ten reached the pedal cleanly only with the extender, and teachers counted fewer posture corrections per session. The same piano and bench height were used throughout.\n\nWhat can be concluded about whether the extender helps these students reach the pedal in this setup from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X17",
+  "topic": "warehouse_bin_labels",
+  "topic_index": 16,
+  "evidence_stratum": "supportive",
+  "evidence": "A warehouse relabeled half its picking bins with large-print location codes in a randomized split. Over four weeks, pickers using large-print bins made 62% fewer mis-picks than those using standard bins, with matched item mixes and shift patterns.",
+  "claim": "the large-print labels reduce mis-picks for the tested bins",
+  "question": "A warehouse relabeled half its picking bins with large-print location codes in a randomized split. Over four weeks, pickers using large-print bins made 62% fewer mis-picks than those using standard bins, with matched item mixes and shift patterns.\n\nWhat can be concluded about whether the large-print labels reduce mis-picks for the tested bins from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X18",
+  "topic": "orchard_reflective_mulch",
+  "topic_index": 17,
+  "evidence_stratum": "supportive",
+  "evidence": "Alternate rows of a single orchard block received reflective mulch film while control rows did not, with the same irrigation and pruning. Fruit under the film colored fully five days earlier on average across 40 paired samples, and sugar readings were higher in 31 of 40 pairs.",
+  "claim": "the reflective film advances fruit coloring for the tested rows",
+  "question": "Alternate rows of a single orchard block received reflective mulch film while control rows did not, with the same irrigation and pruning. Fruit under the film colored fully five days earlier on average across 40 paired samples, and sugar readings were higher in 31 of 40 pairs.\n\nWhat can be concluded about whether the reflective film advances fruit coloring for the tested rows from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X19",
+  "topic": "carpentry_edge_sanding_guide",
+  "topic_index": 18,
+  "evidence_stratum": "supportive",
+  "evidence": "Fifteen carpenters sanded long board edges both freehand and with a new clamp-on edge guide, in randomized order over one workshop week. Edge waviness averaged 0.6 millimetres with the guide and 1.9 millimetres freehand across 300 edges.",
+  "claim": "the edge guide produces straighter sanded edges",
+  "question": "Fifteen carpenters sanded long board edges both freehand and with a new clamp-on edge guide, in randomized order over one workshop week. Edge waviness averaged 0.6 millimetres with the guide and 1.9 millimetres freehand across 300 edges.\n\nWhat can be concluded about whether the edge guide produces straighter sanded edges from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X20",
+  "topic": "bakery_proofing_box",
+  "topic_index": 19,
+  "evidence_stratum": "supportive",
+  "evidence": "A bakery proofed matching dough batches in a new insulated box and at ambient counter conditions on alternating days. The box held its set temperature within one degree for 94% of logged minutes, and loaf volume variance across 36 batches was lower for box-proofed doughs.",
+  "claim": "the box stabilizes proofing conditions for the tested doughs",
+  "question": "A bakery proofed matching dough batches in a new insulated box and at ambient counter conditions on alternating days. The box held its set temperature within one degree for 94% of logged minutes, and loaf volume variance across 36 batches was lower for box-proofed doughs.\n\nWhat can be concluded about whether the box stabilizes proofing conditions for the tested doughs from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X21",
+  "topic": "ski_pole_baskets",
+  "topic_index": 20,
+  "evidence_stratum": "supportive",
+  "evidence": "Rental skis were fitted alternately with standard and wide powder baskets and lent to matched beginners on the same soft-snow slope. Poles with wide baskets sank past the basket in 6 of 100 observed plants versus 34 of 100 with standard baskets.",
+  "claim": "the wide baskets reduce pole sink for the tested slope",
+  "question": "Rental skis were fitted alternately with standard and wide powder baskets and lent to matched beginners on the same soft-snow slope. Poles with wide baskets sank past the basket in 6 of 100 observed plants versus 34 of 100 with standard baskets.\n\nWhat can be concluded about whether the wide baskets reduce pole sink for the tested slope from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X22",
+  "topic": "swim_lane_direction_signs",
+  "topic_index": 21,
+  "evidence_stratum": "supportive",
+  "evidence": "A community pool randomly alternated weeks with and without new direction-of-travel signs at the lane ends. Over eight weeks, lifeguards logged 14 head-on near-collisions during signed weeks and 41 during unsigned weeks across comparable attendance.",
+  "claim": "the direction signs reduce near-collisions in the lanes",
+  "question": "A community pool randomly alternated weeks with and without new direction-of-travel signs at the lane ends. Over eight weeks, lifeguards logged 14 head-on near-collisions during signed weeks and 41 during unsigned weeks across comparable attendance.\n\nWhat can be concluded about whether the direction signs reduce near-collisions in the lanes from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X23",
+  "topic": "trail_marker_posts",
+  "topic_index": 22,
+  "evidence_stratum": "supportive",
+  "evidence": "Hikers were timed finding a route on two matched trail sections, one marked with new reflective posts and one with faded stakes, with assignment randomized. Wrong turns occurred on 3 of 60 reflective-section walks versus 17 of 60 on the faded section.",
+  "claim": "the reflective posts reduce wrong turns on the tested sections",
+  "question": "Hikers were timed finding a route on two matched trail sections, one marked with new reflective posts and one with faded stakes, with assignment randomized. Wrong turns occurred on 3 of 60 reflective-section walks versus 17 of 60 on the faded section.\n\nWhat can be concluded about whether the reflective posts reduce wrong turns on the tested sections from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X24",
+  "topic": "tailor_hem_guide",
+  "topic_index": 23,
+  "evidence_stratum": "supportive",
+  "evidence": "Fourteen tailors stitched straight hems on matching fabric strips both freehand and with a new magnetic hem guide, in randomized order over one workshop week. Hem deviation averaged 1.2 millimetres with the guide and 4.8 millimetres freehand across 280 hems.",
+  "claim": "the hem guide makes stitching straighter for these tailors",
+  "question": "Fourteen tailors stitched straight hems on matching fabric strips both freehand and with a new magnetic hem guide, in randomized order over one workshop week. Hem deviation averaged 1.2 millimetres with the guide and 4.8 millimetres freehand across 280 hems.\n\nWhat can be concluded about whether the hem guide makes stitching straighter for these tailors from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X25",
+  "topic": "printer_duplex_default",
+  "topic_index": 24,
+  "evidence_stratum": "contradictory",
+  "evidence": "An office set duplex printing as the default on half its printers for one month and compared paper use with matched printers. The duplex-default printers used 4% more paper, because staff more often reprinted whole jobs after layout mistakes. Reams ordered and page counts were logged throughout.",
+  "claim": "the duplex default reduced paper use for the tested printers",
+  "question": "An office set duplex printing as the default on half its printers for one month and compared paper use with matched printers. The duplex-default printers used 4% more paper, because staff more often reprinted whole jobs after layout mistakes. Reams ordered and page counts were logged throughout.\n\nWhat can be concluded about whether the duplex default reduced paper use for the tested printers from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X26",
+  "topic": "salt_ice_melt_blend",
+  "topic_index": 25,
+  "evidence_stratum": "contradictory",
+  "evidence": "Matching walkway panels were treated with a new blended melt product or plain rock salt at the same spread rate across repeated frosts. The blend cleared panels more slowly in 33 of 40 matched trials and left more residue. Air temperature and panel orientation were controlled.",
+  "claim": "the blend clears the panels faster than rock salt under the tested conditions",
+  "question": "Matching walkway panels were treated with a new blended melt product or plain rock salt at the same spread rate across repeated frosts. The blend cleared panels more slowly in 33 of 40 matched trials and left more residue. Air temperature and panel orientation were controlled.\n\nWhat can be concluded about whether the blend clears the panels faster than rock salt under the tested conditions from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X27",
+  "topic": "email_subject_emoji",
+  "topic_index": 26,
+  "evidence_stratum": "contradictory",
+  "evidence": "A newsletter randomized 20,000 subscribers to subject lines with or without a small emoji across eight sends. The emoji versions had lower open rates in seven of eight sends, averaging three points lower, with send times and content held constant.",
+  "claim": "the emoji increased open rates for the tested sends",
+  "question": "A newsletter randomized 20,000 subscribers to subject lines with or without a small emoji across eight sends. The emoji versions had lower open rates in seven of eight sends, averaging three points lower, with send times and content held constant.\n\nWhat can be concluded about whether the emoji increased open rates for the tested sends from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X28",
+  "topic": "wool_dryer_balls",
+  "topic_index": 27,
+  "evidence_stratum": "contradictory",
+  "evidence": "Identical towel loads were dried with six wool dryer balls or no addition in alternating cycles of the same machine. Loads with balls took longer to reach dry in 14 of 20 cycles and used slightly more energy on the machine's meter.",
+  "claim": "the wool balls shorten drying time for the tested loads",
+  "question": "Identical towel loads were dried with six wool dryer balls or no addition in alternating cycles of the same machine. Loads with balls took longer to reach dry in 14 of 20 cycles and used slightly more energy on the machine's meter.\n\nWhat can be concluded about whether the wool balls shorten drying time for the tested loads from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X29",
+  "topic": "standing_desk_reminder",
+  "topic_index": 28,
+  "evidence_stratum": "contradictory",
+  "evidence": "Office workers received hourly sit-stand reminders for six weeks while desk sensors logged posture. Reminded workers stood less per day than an unreminded matched group in five of six weeks, and several reported disabling the desk motor.",
+  "claim": "the reminders increased daily standing time for the tested workers",
+  "question": "Office workers received hourly sit-stand reminders for six weeks while desk sensors logged posture. Reminded workers stood less per day than an unreminded matched group in five of six weeks, and several reported disabling the desk motor.\n\nWhat can be concluded about whether the reminders increased daily standing time for the tested workers from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X30",
+  "topic": "porch_light_color",
+  "topic_index": 29,
+  "evidence_stratum": "contradictory",
+  "evidence": "Matched porch fixtures were fitted with amber or white bulbs of equal brightness and insect counts were trapped nightly for one month. The amber fixtures drew more insects in 19 of 30 paired nights on the same street.",
+  "claim": "the amber bulbs attracted fewer insects than the white bulbs in this test",
+  "question": "Matched porch fixtures were fitted with amber or white bulbs of equal brightness and insect counts were trapped nightly for one month. The amber fixtures drew more insects in 19 of 30 paired nights on the same street.\n\nWhat can be concluded about whether the amber bulbs attracted fewer insects than the white bulbs in this test from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X31",
+  "topic": "grocery_list_app",
+  "topic_index": 30,
+  "evidence_stratum": "contradictory",
+  "evidence": "Shoppers were randomized to plan with a new list app or their usual paper lists for four weekly trips. App users forgot list items in 26% of trips versus 15% for paper users, and spent more per trip, across the same store and budget instructions.",
+  "claim": "the app reduced forgotten items for the tested shoppers",
+  "question": "Shoppers were randomized to plan with a new list app or their usual paper lists for four weekly trips. App users forgot list items in 26% of trips versus 15% for paper users, and spent more per trip, across the same store and budget instructions.\n\nWhat can be concluded about whether the app reduced forgotten items for the tested shoppers from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X32",
+  "topic": "water_bottle_markers",
+  "topic_index": 31,
+  "evidence_stratum": "contradictory",
+  "evidence": "Students carried bottles with hourly intake markings or plain bottles for two weeks while intake was logged. The marked-bottle group drank less on average in nine of ten school days, with the same fountains and schedule.",
+  "claim": "the markings increased water intake for the tested students",
+  "question": "Students carried bottles with hourly intake markings or plain bottles for two weeks while intake was logged. The marked-bottle group drank less on average in nine of ten school days, with the same fountains and schedule.\n\nWhat can be concluded about whether the markings increased water intake for the tested students from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X33",
+  "topic": "antenna_signal_booster",
+  "topic_index": 32,
+  "evidence_stratum": "contradictory",
+  "evidence": "A plug-in booster was added to half the antennas in one building while matched antennas stayed standard. Boosted antennas dropped channels more often in 23 of 30 evening comparisons and showed lower measured signal quality.",
+  "claim": "the booster improved reception for the tested antennas",
+  "question": "A plug-in booster was added to half the antennas in one building while matched antennas stayed standard. Boosted antennas dropped channels more often in 23 of 30 evening comparisons and showed lower measured signal quality.\n\nWhat can be concluded about whether the booster improved reception for the tested antennas from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X34",
+  "topic": "plant_misting_schedule",
+  "topic_index": 33,
+  "evidence_stratum": "contradictory",
+  "evidence": "Matched ferns were misted on a fixed twice-daily schedule or watered only at the soil under the same light. Misted ferns developed more leaf spots and lost more fronds over eight weeks across 20 paired plants.",
+  "claim": "the misting schedule improved fern health in the tested setup",
+  "question": "Matched ferns were misted on a fixed twice-daily schedule or watered only at the soil under the same light. Misted ferns developed more leaf spots and lost more fronds over eight weeks across 20 paired plants.\n\nWhat can be concluded about whether the misting schedule improved fern health in the tested setup from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X35",
+  "topic": "meeting_agenda_template",
+  "topic_index": 34,
+  "evidence_stratum": "contradictory",
+  "evidence": "A team rotated weekly meetings between a detailed agenda template and free-form agendas. Templated meetings ran longer in 9 of 12 sessions and resolved fewer listed items, with the same members and time slot.",
+  "claim": "the template shortened meetings for the tested team",
+  "question": "A team rotated weekly meetings between a detailed agenda template and free-form agendas. Templated meetings ran longer in 9 of 12 sessions and resolved fewer listed items, with the same members and time slot.\n\nWhat can be concluded about whether the template shortened meetings for the tested team from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X36",
+  "topic": "shower_timer_display",
+  "topic_index": 35,
+  "evidence_stratum": "contradictory",
+  "evidence": "Household showers were fitted with a countdown display for a month and water use was metered against the prior month for the same residents. Showers ran longer with the display in 24 of 30 days of paired comparison.",
+  "claim": "the display reduced shower water use in the tested household",
+  "question": "Household showers were fitted with a countdown display for a month and water use was metered against the prior month for the same residents. Showers ran longer with the display in 24 of 30 days of paired comparison.\n\nWhat can be concluded about whether the display reduced shower water use in the tested household from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X37",
+  "topic": "cafe_loyalty_app",
+  "topic_index": 36,
+  "evidence_stratum": "confounded",
+  "evidence": "A cafe launched a loyalty app and repeat visits rose the following quarter. In the same quarter the cafe extended its hours, added a seasonal menu, and a competitor next door closed for renovations. The app was never offered alone during that period.",
+  "claim": "the loyalty app caused the rise in repeat visits",
+  "question": "A cafe launched a loyalty app and repeat visits rose the following quarter. In the same quarter the cafe extended its hours, added a seasonal menu, and a competitor next door closed for renovations. The app was never offered alone during that period.\n\nWhat can be concluded about whether the loyalty app caused the rise in repeat visits from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X38",
+  "topic": "school_later_start",
+  "topic_index": 37,
+  "evidence_stratum": "confounded",
+  "evidence": "A school moved its start forty minutes later and average grades improved that term. The term also introduced a new tutoring period, replaced two teachers, and changed the grading scale. No term ran the later start without the other changes.",
+  "claim": "the later start caused the improvement in grades",
+  "question": "A school moved its start forty minutes later and average grades improved that term. The term also introduced a new tutoring period, replaced two teachers, and changed the grading scale. No term ran the later start without the other changes.\n\nWhat can be concluded about whether the later start caused the improvement in grades from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X39",
+  "topic": "gym_mirror_wall",
+  "topic_index": 38,
+  "evidence_stratum": "confounded",
+  "evidence": "A gym installed a mirrored wall in one studio and class attendance there rose. The same month the studio gained a popular new instructor and moved classes to evening slots. Attendance in a matched second studio was not tracked under the same changes.",
+  "claim": "the mirrored wall caused the rise in attendance",
+  "question": "A gym installed a mirrored wall in one studio and class attendance there rose. The same month the studio gained a popular new instructor and moved classes to evening slots. Attendance in a matched second studio was not tracked under the same changes.\n\nWhat can be concluded about whether the mirrored wall caused the rise in attendance from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X40",
+  "topic": "office_plants_productivity",
+  "topic_index": 39,
+  "evidence_stratum": "confounded",
+  "evidence": "An office added plants to one floor and that team's output metrics improved the next quarter. The same floor also received new monitors, a quieter ventilation system, and two experienced hires during the quarter.",
+  "claim": "the plants caused the improvement in output",
+  "question": "An office added plants to one floor and that team's output metrics improved the next quarter. The same floor also received new monitors, a quieter ventilation system, and two experienced hires during the quarter.\n\nWhat can be concluded about whether the plants caused the improvement in output from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X41",
+  "topic": "bus_lane_paint",
+  "topic_index": 40,
+  "evidence_stratum": "confounded",
+  "evidence": "A city painted a bus lane on one avenue and bus travel times fell. During the same period the signal timing was retimed citywide, two stops were consolidated, and ridership dropped after a fare increase. No stretch ran the painted lane with the old signals.",
+  "claim": "the painted lane caused the drop in travel times",
+  "question": "A city painted a bus lane on one avenue and bus travel times fell. During the same period the signal timing was retimed citywide, two stops were consolidated, and ridership dropped after a fare increase. No stretch ran the painted lane with the old signals.\n\nWhat can be concluded about whether the painted lane caused the drop in travel times from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X42",
+  "topic": "library_quiz_nights",
+  "topic_index": 41,
+  "evidence_stratum": "confounded",
+  "evidence": "A library began monthly quiz nights and youth memberships grew that year. The library also opened a renovated teen room, extended Saturday hours, and partnered with two schools that required library cards.",
+  "claim": "the quiz nights caused the growth in youth memberships",
+  "question": "A library began monthly quiz nights and youth memberships grew that year. The library also opened a renovated teen room, extended Saturday hours, and partnered with two schools that required library cards.\n\nWhat can be concluded about whether the quiz nights caused the growth in youth memberships from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X43",
+  "topic": "hotel_keycard_lights",
+  "topic_index": 42,
+  "evidence_stratum": "confounded",
+  "evidence": "A hotel installed keycard-activated room power and energy use dropped the next season. The same season brought lower occupancy, a mild winter, and replacement of hallway lighting with LEDs.",
+  "claim": "the keycard system caused the drop in energy use",
+  "question": "A hotel installed keycard-activated room power and energy use dropped the next season. The same season brought lower occupancy, a mild winter, and replacement of hallway lighting with LEDs.\n\nWhat can be concluded about whether the keycard system caused the drop in energy use from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X44",
+  "topic": "factory_safety_posters",
+  "topic_index": 43,
+  "evidence_stratum": "confounded",
+  "evidence": "A factory posted new safety graphics on the floor and recordable incidents declined the next half year. The same half year added mandatory glove use, a slower line speed, and a bonus for incident-free months.",
+  "claim": "the posters caused the decline in incidents",
+  "question": "A factory posted new safety graphics on the floor and recordable incidents declined the next half year. The same half year added mandatory glove use, a slower line speed, and a bonus for incident-free months.\n\nWhat can be concluded about whether the posters caused the decline in incidents from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X45",
+  "topic": "park_fountain_opening",
+  "topic_index": 44,
+  "evidence_stratum": "confounded",
+  "evidence": "A park reopened a fountain and visitor counts rose that summer. A new transit stop opened beside the park, the city ran a festival series there, and a nearby mall closed permanently.",
+  "claim": "the fountain reopening caused the rise in visitors",
+  "question": "A park reopened a fountain and visitor counts rose that summer. A new transit stop opened beside the park, the city ran a festival series there, and a nearby mall closed permanently.\n\nWhat can be concluded about whether the fountain reopening caused the rise in visitors from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X46",
+  "topic": "team_chat_threads",
+  "topic_index": 45,
+  "evidence_stratum": "confounded",
+  "evidence": "A company required threaded replies in its chat tool and reported faster issue resolution. The same quarter it hired two support staff, adopted a ticketing triage, and reduced scheduled meetings.",
+  "claim": "the threading rule caused the faster resolution",
+  "question": "A company required threaded replies in its chat tool and reported faster issue resolution. The same quarter it hired two support staff, adopted a ticketing triage, and reduced scheduled meetings.\n\nWhat can be concluded about whether the threading rule caused the faster resolution from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X47",
+  "topic": "harbor_tide_board",
+  "topic_index": 46,
+  "evidence_stratum": "confounded",
+  "evidence": "A small harbor installed a large tide-time display board at the boat ramp, and queuing delays at the ramp dropped the following season. That same season a second launch lane opened and weekday parking fees were reduced. No comparable nearby harbor kept delay logs.",
+  "claim": "the display board caused the reduction in launch delays",
+  "question": "A small harbor installed a large tide-time display board at the boat ramp, and queuing delays at the ramp dropped the following season. That same season a second launch lane opened and weekday parking fees were reduced. No comparable nearby harbor kept delay logs.\n\nWhat can be concluded about whether the display board caused the reduction in launch delays from the stated evidence?"
+ },
+ {
+  "phase": "evaluation",
+  "question_id": "X48",
+  "topic": "museum_free_fridays",
+  "topic_index": 47,
+  "evidence_stratum": "confounded",
+  "evidence": "A museum made Fridays free and monthly attendance climbed. The same period included a blockbuster exhibit opening, school vacation weeks, and new signage from the transit station.",
+  "claim": "the free Fridays caused the climb in attendance",
+  "question": "A museum made Fridays free and monthly attendance climbed. The same period included a blockbuster exhibit opening, school vacation weeks, and new signage from the transit station.\n\nWhat can be concluded about whether the free Fridays caused the climb in attendance from the stated evidence?"
+ }
+]

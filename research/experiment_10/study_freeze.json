@@ -1,0 +1,77 @@
+{
+  "schema_version": "pobs-study-freeze-v1",
+  "package_version": "0.1.0",
+  "items": {
+    "protocol": {
+      "path": "research/experiment_10/PROTOCOL.md",
+      "sha256": "7cbfb44212ccb72a455511b2f1b26099ec6e1c42a37c50a7722ea9327afd4d47"
+    },
+    "question_bank": {
+      "path": "research/experiment_10/question_bank.json",
+      "sha256": "b7ed92ea711b56a0a624a7076463f48d8ecf98a005d4665b57bc4159ff03659b"
+    },
+    "design": {
+      "path": "research/experiment_10/design_eval.jsonl",
+      "sha256": "b83091fb8343b7895bfa0237badde2d7afc2dd0424a4e0c88c27c6b0ae1fd0ab"
+    },
+    "dev_pool": {
+      "path": "research/experiment_10/development/dev_pool.jsonl",
+      "sha256": "55b4e8d21b5c4627bededbc73f82c38687f2ebfa3178df4abe69f7e08274c936"
+    },
+    "fold_map": {
+      "path": "research/experiment_10/development/fold_map.json",
+      "sha256": "0b59db1d36b17e604eca4a9f3bfe34d391c24e4a6324ccd12b5f41376b662f9e"
+    },
+    "fit_0_manifest": {
+      "path": "research/experiment_10/fits/smollm2-v3-20261106/manifest.json",
+      "sha256": "d9204c0255e12363c78cb199c28496d3c3e4f8c7849697e6a8c2c3b068e70799"
+    },
+    "fit_0_predictions": {
+      "path": "research/experiment_10/fits/smollm2-v3-20261106/predictions.jsonl",
+      "sha256": "296362224e3a968ae94153f2505ba010ecef642b9f177c033d853b67cd7419d0"
+    },
+    "fit_1_manifest": {
+      "path": "research/experiment_10/../experiment_11/fits/llama32-v2-20261106/manifest.json",
+      "sha256": "0fa7d4d1ebbefa206ffdba0eeb3b6eb2f5109fcad06c8eca748e855e98a0a79e"
+    },
+    "fit_1_predictions": {
+      "path": "research/experiment_10/../experiment_11/fits/llama32-v2-20261106/predictions.jsonl",
+      "sha256": "2c4b3eb8ac4225b7886ce467a83624d84dfab60d1de7ccdc5e081f2de8f7b6e3"
+    },
+    "config_eval_exp10_smollm2_cpu": {
+      "path": "research/experiment_10/../../configs/eval_exp10_smollm2_cpu.json",
+      "sha256": "3ec079aa1c5835f50e00dde3438e9902165008c7fa8be56adfabed8d231bb1b1"
+    },
+    "config_eval_exp10_llama32_cuda": {
+      "path": "research/experiment_10/../../configs/eval_exp10_llama32_cuda.json",
+      "sha256": "e9729333011af0307bbf1327bcb80ad0ca92c621de02becadb73cfec52dedba5"
+    }
+  },
+  "fits": [
+    {
+      "dir": "fits/smollm2-v3-20261106",
+      "outputs_sha256": {
+        "predictions": "296362224e3a968ae94153f2505ba010ecef642b9f177c033d853b67cd7419d0",
+        "report": "49eb2090e1fbb931c24cf8059804f7864d98c978ae599612c0848ab912525494"
+      },
+      "inputs_sha256": {
+        "dev_pool": "55b4e8d21b5c4627bededbc73f82c38687f2ebfa3178df4abe69f7e08274c936",
+        "samples": "b83091fb8343b7895bfa0237badde2d7afc2dd0424a4e0c88c27c6b0ae1fd0ab",
+        "script": "769d9129838d95f6abdd8d774e1088e7efb8f760bb4a72d1d14a45576bc57986"
+      }
+    },
+    {
+      "dir": "../experiment_11/fits/llama32-v2-20261106",
+      "outputs_sha256": {
+        "predictions": "2c4b3eb8ac4225b7886ce467a83624d84dfab60d1de7ccdc5e081f2de8f7b6e3",
+        "report": "07a3189df85730d987564050b3f6a08245ebfd665d5369c24d0d0c8096d3183c"
+      },
+      "inputs_sha256": {
+        "dev_pool": "9d01617084a6d9c89f7a6a681a46aa6c9a32c6cc46f2e6c9af5b8949bb683548",
+        "samples": "b83091fb8343b7895bfa0237badde2d7afc2dd0424a4e0c88c27c6b0ae1fd0ab",
+        "script": "769d9129838d95f6abdd8d774e1088e7efb8f760bb4a72d1d14a45576bc57986"
+      }
+    }
+  ],
+  "note": "Binds protocol, reviewed questions, design, development provenance and all model forecast sets into one hash manifest. Both evaluation runs must reference this freeze; any change invalidates the comparison. Not retroactive preregistration."
+}
