@@ -7,6 +7,7 @@ pretrained weights or installed third-party libraries.
 | Resource | How it is used | Upstream source |
 |---|---|---|
 | SmolLM2-360M-Instruct | Optional local subject model; six file hashes and a revision are recorded | [Pinned model card](https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md) |
+| Llama-3.2-3B-Instruct | Optional local subject model; eight file hashes and a revision are recorded. Gated upstream: access requires accepting the Meta Llama 3.2 Community License under the downloader's own account; weights are not redistributed by this repository | [Pinned model card](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/blob/0cb88a4f764b7a12671c53f0838cd831a0843b95/README.md) |
 | PyTorch | Optional inference on CPU/MPS/CUDA | [PyTorch license](https://github.com/pytorch/pytorch/blob/main/LICENSE) |
 | Transformers | Optional local tokenizer and causal model loader | [Transformers license](https://github.com/huggingface/transformers/blob/v4.57.6/LICENSE) |
 | MLX / MLX-LM | Optional native Apple GPU forward adapter; not bundled | [MLX](https://github.com/ml-explore/mlx), [MLX-LM](https://github.com/ml-explore/mlx-lm) |

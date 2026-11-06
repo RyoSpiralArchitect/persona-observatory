@@ -1,0 +1,14 @@
+{
+  "schema_version": "pobs-exp10-fit-manifest-v1",
+  "package_version": "0.1.0",
+  "inputs_sha256": {
+    "dev_pool": "f39a3d8a8393b1f0ca3b929b7735b71c25f011eefab2732107b82f716bc77c48",
+    "samples": "b83091fb8343b7895bfa0237badde2d7afc2dd0424a4e0c88c27c6b0ae1fd0ab",
+    "script": "348668ee774e49c1fba41a3b6630eae2ce0a9a77c6f9ff02929df5e21b1c31aa"
+  },
+  "outputs_sha256": {
+    "predictions": "ec9b9d1a22ac73f1e1929da826a10425859286f684623209ad75d9e01ecbcd6f",
+    "report": "f36ce36c8a0d88613b933668b98d7dae623c3e2cda93c94d5aca7309395dded6"
+  },
+  "note": "Exclusive fit attempt binding development labels, evaluation design, code and outputs by hash. Not a prospective lock; freezing happens at pobs prepare --forecasts."
+}

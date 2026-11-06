@@ -1,0 +1,19 @@
+{
+  "schema_version": "persona-observatory-study-v1",
+  "experiment_id": "exp13-eval-llama32",
+  "purpose": "prospective",
+  "seed_namespace": "pobs-exp13-eval-llama32-20261106",
+  "replicates": 2,
+  "question_bank": "../research/experiment_10/question_bank.json",
+  "settings": "../research/experiment_13/settings.json",
+  "model_manifest": "../manifests/llama-3.2-3b-instruct.json",
+  "runtime": {
+    "device": "cuda",
+    "dtype": "bfloat16",
+    "max_new_tokens": 96,
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "cpu_threads": 4,
+    "batch_size": 8
+  }
+}

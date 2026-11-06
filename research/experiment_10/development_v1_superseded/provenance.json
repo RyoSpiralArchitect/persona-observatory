@@ -1,0 +1,23 @@
+{
+  "archive": "archives/experiment_09_20261103.zip",
+  "member_sha256": {
+    "development/records.jsonl": "223e69a12cc288feb37ff6f8c62baab6144bd8ba4f5d681a272d7aff7f268425",
+    "development/labels_observer_a.jsonl": "41a61ee28541dab7acbb82634bc8bfe43d32457b5febe25fa9bf6ab92ebc61d9",
+    "development/labels_observer_b.jsonl": "2e20c1382bb2bb726de5a46421d6bf5a43889bcf0bd9cf9ba231b935ddeb5d0a",
+    "development/source_question_bank.json": "abed838438f4752b44e51cc625c7c045918312a05cba0bc5615a5849284da818",
+    "data/target_generations.jsonl": "6e898c134a007a05f179cb4c65caf64a3aed5c50bd46d89f119a1a8842873441",
+    "observers/target/observer_a/labels.jsonl": "99dbc2a8c03356a78e9d11204c450faa33f850bc8943d9bf774358b3c5cee3bd",
+    "observers/target/observer_b/labels.jsonl": "0c716251c341b985745feb9d1ecba5574a19bc9ee28b628a4fa0e24604c511d8",
+    "question_bank.json": "0922edd10ec964e51fce3b4a45dcc728a152f0834be0375e623aa348bf2c49c9"
+  },
+  "generations": 624,
+  "observer_rows": 1248,
+  "questions": 52,
+  "questions_by_stratum": {
+    "confounded": 13,
+    "limited": 13,
+    "supportive": 13,
+    "contradictory": 13
+  },
+  "note": "Read-only extraction of v9 development plus former evaluation rows with archived A/B labels. Development role is new; labels and generations are unchanged historical records. Corrected 2026-11-06: outcomes now derive through observations.derived_outcome, so archived 'both' modes count as direct (13 label rows affected); an earlier draft treated them as no_direct."
+}

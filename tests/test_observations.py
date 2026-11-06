@@ -177,6 +177,9 @@ class ObservationTests(unittest.TestCase):
         reported = {**direct, "answerer_answer_mode": "reported", "limit_owners": ["answerer_reported"]}
         self.assertEqual(derived_outcome(reported), {"category": "no_direct", "direct_event": False, "strict_event": False})
         self.assertEqual(derived_outcome(label("x"))["category"], "no_direct")
+        both = {**direct, "answerer_answer_mode": "both",
+                "limit_owners": ["answerer_direct", "answerer_reported"]}
+        self.assertEqual(derived_outcome(both), {"category": "withhold", "direct_event": True, "strict_event": True})
 
 
 if __name__ == "__main__":
