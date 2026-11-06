@@ -125,11 +125,13 @@ def main():
                  "question": q["evidence"] + "\n\n" + CLAIM_TEMPLATE.format(claim=q["claim"])}
                 for q in raw["dev_bank"] + raw["eval_bank"] if q["question_id"] in seen_q]
 
-    OUT.mkdir(parents=True, exist_ok=True)
-    (OUT / "dev_pool.jsonl").write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in pool))
-    (OUT / "dev_question_bank.json").write_text(json.dumps(dev_bank, ensure_ascii=False, indent=2) + "\n")
-    (OUT / "fold_map.json").write_text(json.dumps(fold_map, indent=2) + "\n")
-    (OUT / "provenance.json").write_text(json.dumps({
+    OUT.mkdir(parents=True, exist_ok=False) if not OUT.exists() else None
+    def _xw(name, text):
+        (OUT / name).open("x", encoding="utf-8").write(text)
+    _xw("dev_pool.jsonl","".join(json.dumps(r, ensure_ascii=False) + "\n" for r in pool))
+    _xw("dev_question_bank.json", json.dumps(dev_bank, ensure_ascii=False, indent=2) + "\n")
+    _xw("fold_map.json", json.dumps(fold_map, indent=2) + "\n")
+    _xw("provenance.json", json.dumps({
         "archive": "archives/experiment_09_20261103.zip",
         "member_sha256": sha,
         "generations": 624, "observer_rows": len(pool), "questions": len(seen_q),

@@ -7,7 +7,7 @@ verbatim. Inputs are hash-bound into provenance.json; nothing here mutates
 the run directory or the locked observer artifacts.
 
 Usage:
-  python3 scripts/build_llama_dev_pool.py --generations .local/llama32-devpool-001/generations.jsonl \
+  python3 scripts/build_dev_pool_from_run.py --generations .local/llama32-devpool-001/generations.jsonl \
       --labels-a .local/observation/observer_a/labels.jsonl \
       --labels-b .local/observation/observer_b/labels.jsonl \
       [--output-dir research/experiment_11/development]

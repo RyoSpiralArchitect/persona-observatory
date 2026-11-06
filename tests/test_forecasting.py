@@ -117,8 +117,6 @@ class ForecastGridTest(unittest.TestCase):
             self.assertAlmostEqual(math.fsum(r["category_probabilities"]), 1.0)
 
 
-if __name__ == "__main__":
-    unittest.main()
 
 class CategoryModeTest(unittest.TestCase):
     def test_category_fit_and_predictions(self):
@@ -152,3 +150,7 @@ class CategoryModeTest(unittest.TestCase):
         sel = select_rho(rows, {"q1": 0, "q2": 1}, "setting", "category")
         self.assertEqual(sel["metric"], "category")
         self.assertIn("cv_category_brier", sel)
+
+
+if __name__ == "__main__":
+    unittest.main()

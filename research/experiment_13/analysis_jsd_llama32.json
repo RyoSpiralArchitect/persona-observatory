@@ -1,0 +1,193 @@
+{
+  "schema_version": "pobs-jsd-report-v1",
+  "provenance": {
+    "scores_sha256": "3ba025a4c9774179d2b9366d4118df81fd3ee70a6ba8f530a92de1d089874a15",
+    "design_sha256": "9711d8ff7828ce610cccc5a317f81a1b3e7d54e22526dbf3bfab4d962594c330",
+    "script_sha256": "910418356ab13fcec7c0ff31cb108d7d152cf3b33c953583573d031ea040be57"
+  },
+  "categories": [
+    "support",
+    "reject",
+    "withhold",
+    "mixed",
+    "no_direct"
+  ],
+  "pairs": [
+    [
+      "lexswap_cautious",
+      "cautious"
+    ],
+    [
+      "lexswap_confident",
+      "confident"
+    ],
+    [
+      "gloss_cautious",
+      "cautious"
+    ],
+    [
+      "gloss_cautious",
+      "confident"
+    ],
+    [
+      "role_alex",
+      "neutral"
+    ],
+    [
+      "cautious",
+      "confident"
+    ]
+  ],
+  "results": {
+    "observer_a": {
+      "composition": {
+        "neutral": {
+          "support": 0.421875,
+          "reject": 0.2864583333333333,
+          "withhold": 0.2864583333333333,
+          "mixed": 0.005208333333333333,
+          "no_direct": 0.0
+        },
+        "cautious": {
+          "support": 0.15625,
+          "reject": 0.140625,
+          "withhold": 0.703125,
+          "mixed": 0.0,
+          "no_direct": 0.0
+        },
+        "confident": {
+          "support": 0.75,
+          "reject": 0.22395833333333334,
+          "withhold": 0.020833333333333332,
+          "mixed": 0.005208333333333333,
+          "no_direct": 0.0
+        },
+        "deferral": {
+          "support": 0.3125,
+          "reject": 0.21354166666666666,
+          "withhold": 0.4739583333333333,
+          "mixed": 0.0,
+          "no_direct": 0.0
+        },
+        "gatekeeper": {
+          "support": 0.25,
+          "reject": 0.203125,
+          "withhold": 0.546875,
+          "mixed": 0.0,
+          "no_direct": 0.0
+        },
+        "lexswap_cautious": {
+          "support": 0.328125,
+          "reject": 0.16666666666666666,
+          "withhold": 0.5052083333333334,
+          "mixed": 0.0,
+          "no_direct": 0.0
+        },
+        "lexswap_confident": {
+          "support": 0.71875,
+          "reject": 0.22916666666666666,
+          "withhold": 0.052083333333333336,
+          "mixed": 0.0,
+          "no_direct": 0.0
+        },
+        "gloss_cautious": {
+          "support": 0.28125,
+          "reject": 0.203125,
+          "withhold": 0.5052083333333334,
+          "mixed": 0.005208333333333333,
+          "no_direct": 0.005208333333333333
+        },
+        "role_alex": {
+          "support": 0.4270833333333333,
+          "reject": 0.2916666666666667,
+          "withhold": 0.28125,
+          "mixed": 0.0,
+          "no_direct": 0.0
+        }
+      },
+      "js_divergence": {
+        "lexswap_cautious:cautious": 0.03502517366194059,
+        "lexswap_confident:confident": 0.007855982916873939,
+        "gloss_cautious:cautious": 0.03413717998038338,
+        "gloss_cautious:confident": 0.28248309138571026,
+        "role_alex:neutral": 0.002649849340861491,
+        "cautious:confident": 0.4559963075938037
+      }
+    },
+    "observer_b": {
+      "composition": {
+        "neutral": {
+          "support": 0.4583333333333333,
+          "reject": 0.2864583333333333,
+          "withhold": 0.2552083333333333,
+          "mixed": 0.0,
+          "no_direct": 0.0
+        },
+        "cautious": {
+          "support": 0.19270833333333334,
+          "reject": 0.14583333333333334,
+          "withhold": 0.65625,
+          "mixed": 0.005208333333333333,
+          "no_direct": 0.0
+        },
+        "confident": {
+          "support": 0.7447916666666666,
+          "reject": 0.22916666666666666,
+          "withhold": 0.020833333333333332,
+          "mixed": 0.005208333333333333,
+          "no_direct": 0.0
+        },
+        "deferral": {
+          "support": 0.328125,
+          "reject": 0.20833333333333334,
+          "withhold": 0.4583333333333333,
+          "mixed": 0.005208333333333333,
+          "no_direct": 0.0
+        },
+        "gatekeeper": {
+          "support": 0.3072916666666667,
+          "reject": 0.1875,
+          "withhold": 0.4895833333333333,
+          "mixed": 0.0,
+          "no_direct": 0.015625
+        },
+        "lexswap_cautious": {
+          "support": 0.375,
+          "reject": 0.15104166666666666,
+          "withhold": 0.4583333333333333,
+          "mixed": 0.015625,
+          "no_direct": 0.0
+        },
+        "lexswap_confident": {
+          "support": 0.734375,
+          "reject": 0.234375,
+          "withhold": 0.026041666666666668,
+          "mixed": 0.0,
+          "no_direct": 0.005208333333333333
+        },
+        "gloss_cautious": {
+          "support": 0.3333333333333333,
+          "reject": 0.1875,
+          "withhold": 0.4791666666666667,
+          "mixed": 0.0,
+          "no_direct": 0.0
+        },
+        "role_alex": {
+          "support": 0.4583333333333333,
+          "reject": 0.2864583333333333,
+          "withhold": 0.25,
+          "mixed": 0.005208333333333333,
+          "no_direct": 0.0
+        }
+      },
+      "js_divergence": {
+        "lexswap_cautious:cautious": 0.036232146650376426,
+        "lexswap_confident:confident": 0.005465053563887874,
+        "gloss_cautious:cautious": 0.02821468790817897,
+        "gloss_cautious:confident": 0.24973735553629922,
+        "role_alex:neutral": 0.0026235330836180664,
+        "cautious:confident": 0.40336875507639913
+      }
+    }
+  }
+}
