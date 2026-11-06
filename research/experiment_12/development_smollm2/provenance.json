@@ -1,0 +1,13 @@
+{
+  "generations": "runs/exp12-dev-smollm2-002/generations.jsonl",
+  "generations_sha256": "07da8d114f2a4231c7a816cffa9e7ef42483ddd73a81bb0a058a0e3d6c1df381",
+  "labels_a": "runs/exp12-dev-smollm2-002/observers/observer_a/labels.jsonl",
+  "labels_a_sha256": "3e48fbe0a7ede435d29d770a6b19a67285e6f86eaf812e66c85a5b74274eaed1",
+  "labels_b": "runs/exp12-dev-smollm2-002/observers/observer_b/labels.jsonl",
+  "labels_b_sha256": "8cd146cc5f7bc07d345b6bc03540da1d707321bc896c43fa7fd0d5496acf2cec",
+  "fold_map_sha256": "0b59db1d36b17e604eca4a9f3bfe34d391c24e4a6324ccd12b5f41376b662f9e",
+  "question_bank_sha256": "9d4622a4149c6ebe0f177b7abd752c921bae040e2b7f6dde84c2ae11521e028b",
+  "rows": 2080,
+  "unique_samples": 1040,
+  "questions": 52
+}

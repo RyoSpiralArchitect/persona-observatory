@@ -23,7 +23,7 @@ REPO = Path(__file__).resolve().parent.parent
 import sys
 sys.path.insert(0, str(REPO / "src"))
 from persona_observatory import __version__  # noqa: E402
-from persona_observatory.storage import read_json, sha_file, write_json_exclusive  # noqa: E402
+from persona_observatory.storage import read_json, require, sha_file, write_json_exclusive  # noqa: E402
 
 
 def main():
@@ -35,6 +35,9 @@ def main():
                     help="Reviewed question bank, relative to study dir")
     ap.add_argument("--design", default=Path("design_eval.jsonl"), type=Path)
     ap.add_argument("--configs", nargs="*", default=[])
+    ap.add_argument("--dev-pool", action="append", type=Path,
+                    help="Extra dev pool path, relative to study dir (repeatable); default: development/dev_pool.jsonl if present")
+    ap.add_argument("--fold-map", type=Path, default=Path("development/fold_map.json"))
     args = ap.parse_args()
 
     sd = args.study_dir.resolve()
@@ -49,8 +52,13 @@ def main():
     add("protocol", Path("PROTOCOL.md"))
     add("question_bank", args.question_bank)
     add("design", args.design)
-    add("dev_pool", Path("development/dev_pool.jsonl"))
-    add("fold_map", Path("development/fold_map.json"))
+    pools = args.dev_pool or ([Path("development/dev_pool.jsonl")] if (sd/"development/dev_pool.jsonl").is_file() else [])
+    require(pools, "No development pool given or found")
+    for i, rel in enumerate(pools):
+        add(f"dev_pool_{i}", rel)
+    fm = sd / args.fold_map
+    if fm.is_file():
+        add("fold_map", args.fold_map)
     fits = []
     for i, rel in enumerate(args.fit):
         add(f"fit_{i}_manifest", rel / "manifest.json")
