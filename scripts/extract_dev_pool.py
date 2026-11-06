@@ -87,7 +87,7 @@ def main():
             if label is None:
                 raise SystemExit(f"Missing {obs} label for {sample_id}")
             direct, category = outcome(label)
-            pool.append({**base, "observer": obs, "direct_event": direct, "category": category})
+            pool.append({**base, "observer": "observer_" + obs, "direct_event": direct, "category": category})
 
     for rec in raw["dev_records"]:
         meta, fold = rec_meta[rec["sample_id"]]

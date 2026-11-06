@@ -59,11 +59,11 @@ def main():
         require(row["observer"] not in branches,
                 "Duplicate dev row: " + row["sample_id"] + "/" + row["observer"])
         branches.add(row["observer"])
-    expected = {"a", "b"}
+    expected = {"observer_a", "observer_b"}
     for sid, branches in sample_branches.items():
         require(branches == expected, f"Unpaired observer coverage for {sid}: {sorted(branches)}")
     require(sorted({r["observer"] for r in pool}) == sorted(expected),
-            "This study expects exactly observers a and b")
+            "This study expects exactly observer_a and observer_b")
 
     selection = {p: select_rho(pool, fold_of, p) for p in PREDICTORS}
     branches = sorted(expected)

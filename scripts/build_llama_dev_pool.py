@@ -77,7 +77,7 @@ def main():
                 "setting_id": g["setting_id"],
                 "replicate_id": g["replicate_id"],
                 "fold": fold_of[g["question_id"]],
-                "observer": obs,
+                "observer": "observer_" + obs,
                 "direct_event": out["direct_event"],
                 "category": out["category"],
             })
