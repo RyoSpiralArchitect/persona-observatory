@@ -18,6 +18,9 @@ import sys
 import zipfile
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
+from persona_observatory.observations import derived_outcome  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 ARCHIVE = ROOT / "archives" / "experiment_09_20261103.zip"
 PREFIX = "persona_shrinkage_pilot/"
@@ -36,14 +39,10 @@ MEMBERS = {
 CLAIM_TEMPLATE = "What can be concluded about whether {claim} from the stated evidence?"
 
 
-def read_jsonl(zf, member):
-    data = zf.read(PREFIX + member)
-    return [json.loads(line) for line in data.splitlines()], hashlib.sha256(data).hexdigest()
-
-
 def outcome(label):
-    direct = label["answerer_answer_mode"] == "direct"
-    return direct, (label["answerer_judgment"] if direct else "no_direct")
+    """Canonical rubric outcome: 'direct' and 'both' both count as direct."""
+    result = derived_outcome(label)
+    return result["direct_event"], result["category"]
 
 
 def main():
@@ -55,19 +54,24 @@ def main():
         raw[key] = [json.loads(line) for line in blob.splitlines()] if member.endswith(".jsonl") else json.loads(blob)
 
     questions = {q["question_id"]: q for q in raw["dev_bank"] + raw["eval_bank"]}
-    folds = {qid: q.get("development_fold") for qid, q in questions.items()}
     # Records carry the authoritative fold for old development; N-questions use topic_index + 7.
     rec_meta = {}
     for rec in raw["dev_records"]:
+        if rec["sample_id"] in rec_meta:
+            raise SystemExit("Duplicate development sample_id: " + rec["sample_id"])
         rec_meta[rec["sample_id"]] = (rec["source_record"], rec["development_fold"])
-    eval_meta = {g["sample_id"]: g for g in raw["eval_gens"]}
+    eval_meta = {}
+    for g in raw["eval_gens"]:
+        if g["sample_id"] in eval_meta:
+            raise SystemExit("Duplicate evaluation sample_id: " + g["sample_id"])
+        eval_meta[g["sample_id"]] = g
     n_folds = {q["question_id"]: q["topic_index"] + 7 for q in raw["eval_bank"]}
 
     labels = {"a": {}, "b": {}}
     for obs in ("a", "b"):
-        for row in raw[f"dev_labels_{obs}"]:
-            labels[obs][row["sample_id"]] = row
-        for row in raw[f"eval_labels_{obs}"]:
+        for row in raw[f"dev_labels_{obs}"] + raw[f"eval_labels_{obs}"]:
+            if row["sample_id"] in labels[obs]:
+                raise SystemExit(f"Duplicate label for {row['sample_id']} in observer {obs}")
             labels[obs][row["sample_id"]] = row
 
     pool, seen_q = [], set()
@@ -91,24 +95,30 @@ def main():
     for g in raw["eval_gens"]:
         emit(g["sample_id"], g, "v9_former_evaluation", MEMBERS["eval_gens"], n_folds[g["question_id"]])
 
-    # Checks mirror the verified feasibility record.
-    assert len({r["sample_id"] for r in pool}) == 624, "expected 624 generations"
-    assert len(pool) == 1248, "expected 624 x 2 observer rows"
-    assert len(seen_q) == 52, "expected 52 questions"
+    # Checks mirror the verified feasibility record; raises survive -O.
+    if len({r["sample_id"] for r in pool}) != 624:
+        raise SystemExit("expected 624 generations")
+    if len(pool) != 1248:
+        raise SystemExit("expected 624 x 2 observer rows")
+    if len(seen_q) != 52:
+        raise SystemExit("expected 52 questions")
     strata = {}
     for qid in seen_q:
         strata[questions[qid]["evidence_stratum"]] = strata.get(questions[qid]["evidence_stratum"], 0) + 1
-    assert strata == {"limited": 13, "contradictory": 13, "supportive": 13, "confounded": 13}, strata
+    if strata != {"limited": 13, "contradictory": 13, "supportive": 13, "confounded": 13}:
+        raise SystemExit("unexpected stratum balance: " + str(strata))
     q_fold = {}
     for qid in seen_q:
         if qid in n_folds:
             q_fold[qid] = n_folds[qid]
         else:
             fs = {fm for m, fm in rec_meta.values() if m["question_id"] == qid}
-            assert len(fs) == 1, f"inconsistent folds for {qid}"
+            if len(fs) != 1:
+                raise SystemExit(f"inconsistent folds for {qid}")
             q_fold[qid] = fs.pop()
     fold_map = {str(f): sorted(qid for qid in seen_q if q_fold[qid] == f) for f in range(13)}
-    assert all(len(v) == 4 for v in fold_map.values()), fold_map
+    if not all(len(v) == 4 for v in fold_map.values()):
+        raise SystemExit("fold map is not 13 folds of 4 questions")
 
     dev_bank = [{"question_id": q["question_id"], "topic": q["topic"],
                  "evidence_stratum": q["evidence_stratum"],
@@ -124,7 +134,7 @@ def main():
         "member_sha256": sha,
         "generations": 624, "observer_rows": len(pool), "questions": len(seen_q),
         "questions_by_stratum": strata,
-        "note": "Read-only extraction of v9 development plus former evaluation rows with archived A/B labels. Development role is new; labels and generations are unchanged historical records."}, indent=2) + "\n")
+        "note": "Read-only extraction of v9 development plus former evaluation rows with archived A/B labels. Development role is new; labels and generations are unchanged historical records. Corrected 2026-11-06: outcomes now derive through observations.derived_outcome, so archived 'both' modes count as direct (13 label rows affected); an earlier draft treated them as no_direct."}, indent=2) + "\n")
     print(f"Wrote {len(pool)} rows / {len(seen_q)} questions / {len(dev_bank)}-question bank to {OUT}")
 
 

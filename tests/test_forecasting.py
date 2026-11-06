@@ -68,9 +68,16 @@ class SelectionTest(unittest.TestCase):
                         glob["cv_gate_brier"][glob["rho"]])
 
     def test_tie_prefers_stronger_shrinkage(self):
-        # Global grouping ignores rho entirely; every candidate ties and inf wins.
+        # Global is exactly the pooled baseline; every rho yields the identical
+        # predictor, so all candidates tie and inf wins.
         chosen = select_rho(self.rows, self.fold_of, "global")
         self.assertEqual(chosen["rho"], math.inf)
+        self.assertEqual(len(set(chosen["cv_gate_brier"].values())), 1)
+
+    def test_global_fit_is_rho_invariant(self):
+        fitted = {rho: fit_predictor(self.rows, "global", rho) for rho in RHO_CANDIDATES}
+        rates = {rho: f["cell_rates"]["all"] for rho, f in fitted.items()}
+        self.assertEqual(len(set(rates.values())), 1)
 
     def test_branch_rows_stay_separate(self):
         # Observers label the same generations; disagreement makes them
@@ -79,6 +86,19 @@ class SelectionTest(unittest.TestCase):
         fitted_a = fit_predictor([r for r in rows if r["observer"] == "a"], "global", 1.0)
         fitted_b = fit_predictor([r for r in rows if r["observer"] == "b"], "global", 1.0)
         self.assertNotEqual(fitted_a["base"]["g_d"], fitted_b["base"]["g_d"])
+
+    def test_cv_fits_each_branch_separately(self):
+        # Fully contradictory branches: a always direct, b never. A pooled fit
+        # would land near 0.5 for both; branch-specific fits score near the
+        # smoothed extremes of each branch.
+        rows = []
+        for q in ("q1", "q2", "q3", "q4"):
+            rows += [row(q, "limited", "s1", True, "a") for _ in range(4)]
+            rows += [row(q, "limited", "s1", False, "b") for _ in range(4)]
+        score = cv_score(rows, self.fold_of, "global", 1.0)
+        # Branch-specific fits predict near 1.0 for a and near 0.0 for b;
+        # a pooled fit would predict ~0.5 for both and score near 0.25.
+        self.assertLess(score, 0.05)
 
 
 class ForecastGridTest(unittest.TestCase):

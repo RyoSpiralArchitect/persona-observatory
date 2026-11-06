@@ -74,7 +74,11 @@ def fit_predictor(rows: list[dict[str, Any]], predictor: str, rho: float) -> dic
         cell = counts.setdefault(_group_key(predictor, row), [0, 0])
         cell[0] += int(row["direct_event"])
         cell[1] += 1
-    rates = {key: cell_rate(d, n, base["g_d"], rho) for key, (d, n) in counts.items()}
+    if predictor == "global":
+        # The declared baseline is exactly the smoothed pooled rate; rho is inert.
+        rates = {"all": base["g_d"]}
+    else:
+        rates = {key: cell_rate(d, n, base["g_d"], rho) for key, (d, n) in counts.items()}
     return {"predictor": predictor, "rho": rho, "base": base, "cell_rates": rates}
 
 
@@ -90,17 +94,23 @@ def category_probabilities(fitted: dict[str, Any], row: dict[str, Any]) -> list[
     return [r * h[k] for k in JUDGMENT_ORDER] + [1.0 - r]
 
 
-def _question_brier(rows: list[dict[str, Any]], fitted: dict[str, Any]) -> float:
-    return math.fsum((gate_probability(fitted, row) - int(row["direct_event"])) ** 2
-                     for row in rows) / len(rows)
+def _question_brier(rows: list[dict[str, Any]], fitted_by_observer: dict[str, dict[str, Any]]) -> float:
+    """Mean D Brier over a question's rows; each branch is scored by its own fit."""
+    total = 0.0
+    for row in rows:
+        fitted = fitted_by_observer[row["observer"]]
+        total += (gate_probability(fitted, row) - int(row["direct_event"])) ** 2
+    return total / len(rows)
 
 
 def cv_score(rows: list[dict[str, Any]], fold_of: dict[str, Any], predictor: str, rho: float) -> float:
-    """Question-blocked CV: equal weight per held-out question, per branch row.
+    """Question-blocked CV with branch-specific fits and equal question weights.
 
-    ``fold_of`` maps every question_id to its fold. Rows carry an ``observer``
-    field; both branches stay in the same fold and enter the question mean with
-    equal weight, so no branch is upweighted by generation count.
+    ``fold_of`` maps every question_id to its fold. Each observer branch is
+    fitted on its own training rows — counts are never pooled across branches —
+    and scores only its own held-out labels. Both branches stay in the same
+    fold and enter the question mean with equal weight, so no branch is
+    upweighted by generation count.
     """
     folds: dict[Any, list[dict[str, Any]]] = {}
     for row in rows:
@@ -112,7 +122,9 @@ def cv_score(rows: list[dict[str, Any]], fold_of: dict[str, Any], predictor: str
         held_ids = {row["question_id"] for row in held_out}
         train = [row for rows_in_fold in folds.values() for row in rows_in_fold
                  if row["question_id"] not in held_ids]
-        fitted = fit_predictor(train, predictor, rho)
+        branches = {row["observer"] for row in held_out}
+        fitted = {obs: fit_predictor([r for r in train if r["observer"] == obs], predictor, rho)
+                  for obs in branches}
         by_question: dict[str, list[dict[str, Any]]] = {}
         for row in held_out:
             by_question.setdefault(row["question_id"], []).append(row)

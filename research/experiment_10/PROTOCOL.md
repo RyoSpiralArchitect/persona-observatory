@@ -76,10 +76,17 @@
   トピック非重複を機械確認。意味的重複の人による点検は未実施）
 - design 出力 `design_eval.jsonl`（576 samples）
 - SmolLM2 側 fit・rho 選択・予測 `predictions_smollm2.jsonl`（4,608行）：
-  global=inf, evidence=4, setting=1, joint=1。CV の最良値は選択用であり
+  global=inf, evidence=1, setting=1, joint=1。CV の最良値は選択用であり
   独立した成功証拠ではない
-- Llama 開発生成 run：furnace `runs/llama32-devpool-001`（実行中/完了時に
-  verify-run で確認）
+- **訂正（2026-11-06、fork review 由来）**：初版の成果物は三つの実装不整合の
+  もとで生成され、git 履歴に superseded として残る。(a) CV が A/B をプールして
+  fit していたのを枝別 fit に修正（evidence の rho が 4→1 に変化）。(b) 抽出が
+  `both` モードを no_direct としていたのを、`derived_outcome` 正準定義
+  （direct 扱い、13行影響）に修正。(c) Global が有限 rho で g_D からずれる
+  実装を、宣言どおり `r = g_D` 固定に修正（全 rho で同点となるのが正しい
+  振る舞い）。現在の予測ファイルは修正後のものである
+- Llama 開発生成 run：furnace `runs/llama32-devpool-001`（624生成完了、
+  verify-run 通過、A/B 盲検ワークスペース export 済み）
 
 ## 未完了
 

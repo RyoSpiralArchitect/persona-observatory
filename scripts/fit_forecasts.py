@@ -48,11 +48,22 @@ def main():
     pool = read_rows(args.dev_pool)
     samples = read_rows(args.samples)
     fold_of = {}
+    sample_branches = {}
     for row in pool:
         q, f = row["question_id"], row["fold"]
         if q in fold_of and fold_of[q] != f:
             raise SystemExit("Inconsistent fold for " + q)
         fold_of[q] = f
+        branches = sample_branches.setdefault(row["sample_id"], set())
+        if row["observer"] in branches:
+            raise SystemExit("Duplicate dev row: " + row["sample_id"] + "/" + row["observer"])
+        branches.add(row["observer"])
+    expected = {"a", "b"}
+    for sid, branches in sample_branches.items():
+        if branches != expected:
+            raise SystemExit(f"Unpaired observer coverage for {sid}: {sorted(branches)}")
+    if sorted({r["observer"] for r in pool}) != sorted(expected):
+        raise SystemExit("This study expects exactly observers a and b")
 
     selection = {p: select_rho(pool, fold_of, p) for p in PREDICTORS}
     branches = sorted({r["observer"] for r in pool})

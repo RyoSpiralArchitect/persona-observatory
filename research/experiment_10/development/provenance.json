@@ -14,10 +14,10 @@
   "observer_rows": 1248,
   "questions": 52,
   "questions_by_stratum": {
-    "contradictory": 13,
-    "limited": 13,
     "confounded": 13,
-    "supportive": 13
+    "limited": 13,
+    "supportive": 13,
+    "contradictory": 13
   },
-  "note": "Read-only extraction of v9 development plus former evaluation rows with archived A/B labels. Development role is new; labels and generations are unchanged historical records."
+  "note": "Read-only extraction of v9 development plus former evaluation rows with archived A/B labels. Development role is new; labels and generations are unchanged historical records. Corrected 2026-11-06: outcomes now derive through observations.derived_outcome, so archived 'both' modes count as direct (13 label rows affected); an earlier draft treated them as no_direct."
 }
