@@ -1,0 +1,18 @@
+{
+  "status": "LOCAL_CHECKS_PASSED",
+  "tests": {
+    "discovered": 77,
+    "passed": 71,
+    "optional_skips": 6
+  },
+  "archive": "v9, nested v8 and 19 browsable copies verified unchanged",
+  "public_evidence": "191 members; 1152 generations and 9216 forecast rows verified and recomputed; changed-archive and rebound-score negative checks rejected",
+  "scientific_verdict": "Primary descriptive support false; all four advance gates failed. Observer initial-context exposure is disclosed separately.",
+  "artifact_sha256": {
+    "archive.txt": "94e35f8ef7e1e8353b1bfd98fad89fd6517cfb33f49d9fac9fc4d8b143884dea",
+    "checks.json": "ff91e2e0453df934f1eecc8983cbfb22ca08f84f6be61f05533b186ed8212a54",
+    "compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "unit.txt": "b3e0c51ed586d9e545de876b328c572ea6ec3952217d2011c6eed31783cf36af"
+  },
+  "scope": "Engineering and arithmetic consistency do not certify semantic labels or fully history-naive observation."
+}

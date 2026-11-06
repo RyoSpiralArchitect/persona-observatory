@@ -15,6 +15,7 @@ dependencies = []
 
 [project.optional-dependencies]
 inference = ["transformers==4.57.6", "huggingface-hub==0.36.2", "safetensors>=0.5,<1"]
+mlx = ["mlx==0.32.2; platform_system == 'Darwin'", "mlx-lm==0.32.2; platform_system == 'Darwin'", "transformers==5.13.0", "numpy==2.2.3"]
 dev = []
 
 [project.scripts]

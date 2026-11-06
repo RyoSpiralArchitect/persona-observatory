@@ -1,0 +1,21 @@
+{
+  "schema_version": "persona-observatory-study-v1",
+  "experiment_id": "portable-smoke",
+  "purpose": "smoke_replay",
+  "seed_namespace": "pobs-smoke-20261103",
+  "replicates": 1,
+  "question_bank": "../examples/smoke_questions.json",
+  "settings": "../examples/smoke_settings.json",
+  "model_manifest": "../manifests/smollm2-360m-instruct.json",
+  "runtime": {
+    "device": "metal",
+    "dtype": "float32",
+    "max_new_tokens": 16,
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "cpu_threads": 4,
+    "batch_size": 1,
+    "engine": "mlx"
+  },
+  "notes": "Engineering-only MLX Metal adapter smoke with the original unquantized weight files and known questions. NumPy PCG64 sampler; no cross-engine token identity claim."
+}

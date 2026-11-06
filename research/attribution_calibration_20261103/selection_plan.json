@@ -1,0 +1,16 @@
+{
+  "schema_version": "persona-calibration-selection-v1",
+  "status": "FROZEN_BEFORE_HUMAN_JUDGMENTS",
+  "archive_sha256": "7bf3a69c9e503634c0a738fb99e7aea991527942a83d9ad092f053aab9e4a7bd",
+  "rubric_sha256": "7a28b5f7101c3e9de0367c064bec34f60154b7e7a4c9934c4685eff381d601a6",
+  "selection_seed": "pobs-attribution-calibration-v1-20261103",
+  "disagreement_unique_cases": 26,
+  "agreed_controls_per_d": 13,
+  "batch_size": 6,
+  "source_role": "Existing Experiment 10 outputs reused only for calibration and subsequent development",
+  "control_selection": "Within each agreed-D group, greedily prefer least-used setting-by-evidence cells; break ties by SHA-256. Representative of an exact triple is its lexically smallest sample_id. No matching or population-representativeness claim.",
+  "ordering": "Independently SHA-256 ordered exact triples; opaque case IDs; source mapping withheld from the participant packet.",
+  "measurement": "Set-valued direct/reported/both/none attribution, verbatim evidence, human rationale, preserved ambiguity",
+  "comparison_gate": "Do not show source labels during annotation; compare only after all 52 cases are received and locked, or after an explicit partial-stop declaration. Never change original labels.",
+  "limits": "Selected calibration sample of public data, one volunteer human, prior study exposure. Not blind adjudication, population accuracy, or fresh evaluation. Agreement does not establish shared-label correctness."
+}

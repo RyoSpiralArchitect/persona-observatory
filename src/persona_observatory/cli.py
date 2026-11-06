@@ -17,6 +17,7 @@ def parser():
     doctor = sub.add_parser("doctor", help="Check backend availability without loading model weights")
     doctor.add_argument("--device", default="auto")
     doctor.add_argument("--dtype", default="auto")
+    doctor.add_argument("--engine", choices=("transformers", "mlx"), default="transformers")
     fetch = sub.add_parser("fetch-model", help="Download public pinned files and verify their checksums")
     fetch.add_argument("--config", required=True, type=Path)
     fetch.add_argument("--destination", required=True, type=Path)
@@ -47,8 +48,8 @@ def parser():
 
 def dispatch(a):
     if a.command == "doctor":
-        from .backend import inspect_backend
-        return inspect_backend(a.device, a.dtype)
+        from .adapters import inspect_backend
+        return inspect_backend(a.device, a.dtype, a.engine)
     if a.command == "fetch-model":
         from .models import fetch_model, manifest_from_config
         return fetch_model(a.destination, manifest_from_config(a.config))

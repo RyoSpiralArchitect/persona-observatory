@@ -33,6 +33,7 @@ JSON で指定する。相対パスは **config ファイルの場所**を基準
 
 | キー | 値・初期値 |
 |---|---|
+| `engine` | `transformers`（初期値）、`mlx` |
 | `device` | `cpu`, `mps`, `cuda`, `cuda:N`, `auto`。初期値 `auto` |
 | `dtype` | `float32`, `float16`, `bfloat16`, `auto`。`auto` は float32 |
 | `max_new_tokens` | 正整数、初期値96 |
@@ -41,9 +42,14 @@ JSON で指定する。相対パスは **config ファイルの場所**を基準
 | `cpu_threads` | 正整数、初期値4 |
 | `batch_size` | 正整数、初期値1 |
 
-`auto` は準備時に CUDA→MPS→CPU の順で利用可能なものを選び、その選択を固定する。
+Transformers の `auto` は準備時に CUDA→MPS→CPU の順で利用可能なものを選び、その選択を固定する。
 明示した device が利用できない場合は停止する。dtype が実機で使えるかは
 `doctor` と smoke で確認する。
+
+MLX の device は `metal`, `cpu`, `auto` で、`auto` は Metal→CPU の順。
+現行 adapter は `batch_size=1` のみ対応し、`cpu_threads` は未使用の初期値4に限定する。
+MLX は元の非量子化 Llama 系重みを読み込む。
+[engine ごとの環境と sampling の違い](adapters.md)を参照する。
 
 `seed_namespace + question_id + replicate_id` から SHA-256 で63-bit seed を作る。
 同じ質問・反復には、異なる指示条件でも同じ stream を割り当てる。

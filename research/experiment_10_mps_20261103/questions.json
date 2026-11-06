@@ -1,0 +1,866 @@
+[
+  {
+    "question_id": "M001",
+    "topic": "calendar_timezone",
+    "evidence_stratum": "limited",
+    "topic_index": 0,
+    "evidence": "A calendar invitation displayed the right hour on one laptop that stayed in its home time zone. Travel, daylight-saving changes and invitations from other zones were not tested.",
+    "claim": "the calendar keeps meeting times correct across time-zone changes",
+    "question": "A calendar invitation displayed the right hour on one laptop that stayed in its home time zone. Travel, daylight-saving changes and invitations from other zones were not tested.\n\nWhat can be concluded about whether the calendar keeps meeting times correct across time-zone changes from the stated evidence?"
+  },
+  {
+    "question_id": "M002",
+    "topic": "chess_clock_drift",
+    "evidence_stratum": "limited",
+    "topic_index": 1,
+    "evidence": "A new chess clock agreed with a wall clock during one five-minute game at room temperature. Longer sessions, low batteries and other units were not checked.",
+    "claim": "the chess clock keeps accurate time throughout long tournaments",
+    "question": "A new chess clock agreed with a wall clock during one five-minute game at room temperature. Longer sessions, low batteries and other units were not checked.\n\nWhat can be concluded about whether the chess clock keeps accurate time throughout long tournaments from the stated evidence?"
+  },
+  {
+    "question_id": "M003",
+    "topic": "barcode_inventory",
+    "evidence_stratum": "limited",
+    "topic_index": 2,
+    "evidence": "A stock scanner read one clean barcode on a flat cardboard box. Curved packages, damaged labels and crowded shelves were not tried.",
+    "claim": "the scanner reliably identifies stock across ordinary warehouse conditions",
+    "question": "A stock scanner read one clean barcode on a flat cardboard box. Curved packages, damaged labels and crowded shelves were not tried.\n\nWhat can be concluded about whether the scanner reliably identifies stock across ordinary warehouse conditions from the stated evidence?"
+  },
+  {
+    "question_id": "M004",
+    "topic": "glass_depth_sensor",
+    "evidence_stratum": "limited",
+    "topic_index": 3,
+    "evidence": "A depth sensor estimated the distance to one opaque board correctly under steady indoor lighting. Transparent surfaces, reflections and sunlight were not examined.",
+    "claim": "the sensor measures object distance accurately in varied rooms",
+    "question": "A depth sensor estimated the distance to one opaque board correctly under steady indoor lighting. Transparent surfaces, reflections and sunlight were not examined.\n\nWhat can be concluded about whether the sensor measures object distance accurately in varied rooms from the stated evidence?"
+  },
+  {
+    "question_id": "M005",
+    "topic": "indoor_location_beacon",
+    "evidence_stratum": "limited",
+    "topic_index": 4,
+    "evidence": "A location beacon placed a stationary tag in the correct room during a single empty-building test. Moving tags, crowds and closed metal doors were not tested.",
+    "claim": "the beacon locates moving equipment reliably in occupied buildings",
+    "question": "A location beacon placed a stationary tag in the correct room during a single empty-building test. Moving tags, crowds and closed metal doors were not tested.\n\nWhat can be concluded about whether the beacon locates moving equipment reliably in occupied buildings from the stated evidence?"
+  },
+  {
+    "question_id": "M006",
+    "topic": "star_tracker_alignment",
+    "evidence_stratum": "limited",
+    "topic_index": 5,
+    "evidence": "A telescope tracker held one bright star centered for three minutes on a calm evening. Long exposures, wind and other sky positions were not tested.",
+    "claim": "the tracker maintains alignment during varied overnight observations",
+    "question": "A telescope tracker held one bright star centered for three minutes on a calm evening. Long exposures, wind and other sky positions were not tested.\n\nWhat can be concluded about whether the tracker maintains alignment during varied overnight observations from the stated evidence?"
+  },
+  {
+    "question_id": "M007",
+    "topic": "microscope_focus_motor",
+    "evidence_stratum": "limited",
+    "topic_index": 6,
+    "evidence": "A focus motor sharpened one prepared slide at low magnification. Different slide thicknesses and high-magnification work were not tested.",
+    "claim": "the motor consistently focuses varied microscope specimens",
+    "question": "A focus motor sharpened one prepared slide at low magnification. Different slide thicknesses and high-magnification work were not tested.\n\nWhat can be concluded about whether the motor consistently focuses varied microscope specimens from the stated evidence?"
+  },
+  {
+    "question_id": "M008",
+    "topic": "three_dimensional_scan_texture",
+    "evidence_stratum": "limited",
+    "topic_index": 7,
+    "evidence": "A scanner produced a complete surface map of one matte cube. Shiny, dark, curved and partly hidden objects were not tried.",
+    "claim": "the scanner captures complete surface geometry for varied objects",
+    "question": "A scanner produced a complete surface map of one matte cube. Shiny, dark, curved and partly hidden objects were not tried.\n\nWhat can be concluded about whether the scanner captures complete surface geometry for varied objects from the stated evidence?"
+  },
+  {
+    "question_id": "M009",
+    "topic": "password_vault_export",
+    "evidence_stratum": "limited",
+    "topic_index": 8,
+    "evidence": "A vault exported three short test entries that were imported correctly into the same application version. Large vaults, attachments and other versions were not tested.",
+    "claim": "the export preserves all stored information across application versions",
+    "question": "A vault exported three short test entries that were imported correctly into the same application version. Large vaults, attachments and other versions were not tested.\n\nWhat can be concluded about whether the export preserves all stored information across application versions from the stated evidence?"
+  },
+  {
+    "question_id": "M010",
+    "topic": "language_subtitle_timing",
+    "evidence_stratum": "limited",
+    "topic_index": 9,
+    "evidence": "A subtitle editor aligned one short clip with clearly separated sentences. Rapid dialogue, long clips and variable frame rates were not checked.",
+    "claim": "the editor keeps subtitles synchronized across varied video clips",
+    "question": "A subtitle editor aligned one short clip with clearly separated sentences. Rapid dialogue, long clips and variable frame rates were not checked.\n\nWhat can be concluded about whether the editor keeps subtitles synchronized across varied video clips from the stated evidence?"
+  },
+  {
+    "question_id": "M011",
+    "topic": "weather_station_uptime",
+    "evidence_stratum": "limited",
+    "topic_index": 10,
+    "evidence": "A garden weather station sent every scheduled report during one mild afternoon. Battery depletion, storms and long unattended operation were not observed.",
+    "claim": "the station delivers uninterrupted reports through a full season",
+    "question": "A garden weather station sent every scheduled report during one mild afternoon. Battery depletion, storms and long unattended operation were not observed.\n\nWhat can be concluded about whether the station delivers uninterrupted reports through a full season from the stated evidence?"
+  },
+  {
+    "question_id": "M012",
+    "topic": "magnetic_whiteboard_storage",
+    "evidence_stratum": "limited",
+    "topic_index": 11,
+    "evidence": "A magnetic holder retained three light markers on a clean board for an hour. Heavier items, vibration and dusty boards were not tried.",
+    "claim": "the holder securely stores mixed classroom supplies during normal use",
+    "question": "A magnetic holder retained three light markers on a clean board for an hour. Heavier items, vibration and dusty boards were not tried.\n\nWhat can be concluded about whether the holder securely stores mixed classroom supplies during normal use from the stated evidence?"
+  },
+  {
+    "question_id": "M013",
+    "topic": "origami_instruction_diagram",
+    "evidence_stratum": "limited",
+    "topic_index": 12,
+    "evidence": "One experienced folder completed a familiar design using new diagrams. Beginners, unfamiliar designs and readers with different printing sizes were not studied.",
+    "claim": "the diagrams let beginners complete unfamiliar designs accurately",
+    "question": "One experienced folder completed a familiar design using new diagrams. Beginners, unfamiliar designs and readers with different printing sizes were not studied.\n\nWhat can be concluded about whether the diagrams let beginners complete unfamiliar designs accurately from the stated evidence?"
+  },
+  {
+    "question_id": "M014",
+    "topic": "photo_autofocus_tracking",
+    "evidence_stratum": "limited",
+    "topic_index": 13,
+    "evidence": "A camera kept a slowly moving toy in focus for one short indoor clip. Fast motion, low light and subjects crossing each other were not tried.",
+    "claim": "the autofocus reliably tracks moving subjects in varied scenes",
+    "question": "A camera kept a slowly moving toy in focus for one short indoor clip. Fast motion, low light and subjects crossing each other were not tried.\n\nWhat can be concluded about whether the autofocus reliably tracks moving subjects in varied scenes from the stated evidence?"
+  },
+  {
+    "question_id": "M015",
+    "topic": "music_playlist_deduplication",
+    "evidence_stratum": "limited",
+    "topic_index": 14,
+    "evidence": "A playlist tool removed two exact duplicate files from a tiny collection. Different encodings, alternate titles and live versions were not examined.",
+    "claim": "the tool removes duplicate recordings without discarding distinct performances",
+    "question": "A playlist tool removed two exact duplicate files from a tiny collection. Different encodings, alternate titles and live versions were not examined.\n\nWhat can be concluded about whether the tool removes duplicate recordings without discarding distinct performances from the stated evidence?"
+  },
+  {
+    "question_id": "M016",
+    "topic": "robotic_maze_navigation",
+    "evidence_stratum": "limited",
+    "topic_index": 15,
+    "evidence": "A small robot traversed one straight corridor with freshly charged batteries. Junctions, moving obstacles and uneven floors were not tested.",
+    "claim": "the robot navigates unfamiliar indoor routes reliably",
+    "question": "A small robot traversed one straight corridor with freshly charged batteries. Junctions, moving obstacles and uneven floors were not tested.\n\nWhat can be concluded about whether the robot navigates unfamiliar indoor routes reliably from the stated evidence?"
+  },
+  {
+    "question_id": "M017",
+    "topic": "speech_volume_normalizer",
+    "evidence_stratum": "limited",
+    "topic_index": 16,
+    "evidence": "A volume tool made one quiet recording sound louder without an obvious problem. Mixed speakers, background sounds and sudden peaks were not checked.",
+    "claim": "the tool equalizes speech loudness while preserving varied recordings",
+    "question": "A volume tool made one quiet recording sound louder without an obvious problem. Mixed speakers, background sounds and sudden peaks were not checked.\n\nWhat can be concluded about whether the tool equalizes speech loudness while preserving varied recordings from the stated evidence?"
+  },
+  {
+    "question_id": "M018",
+    "topic": "weatherproof_keyboard",
+    "evidence_stratum": "limited",
+    "topic_index": 17,
+    "evidence": "A keyboard worked after a few clean-water drops were wiped off immediately. Sticky spills, prolonged wetness and repeated exposure were not tested.",
+    "claim": "the keyboard remains functional after routine accidental beverage spills",
+    "question": "A keyboard worked after a few clean-water drops were wiped off immediately. Sticky spills, prolonged wetness and repeated exposure were not tested.\n\nWhat can be concluded about whether the keyboard remains functional after routine accidental beverage spills from the stated evidence?"
+  },
+  {
+    "question_id": "M019",
+    "topic": "archive_date_parser",
+    "evidence_stratum": "limited",
+    "topic_index": 18,
+    "evidence": "An archive program interpreted five dates written in one unambiguous format. Other regional formats and missing years were not tested.",
+    "claim": "the parser correctly interprets dates in heterogeneous historical catalogues",
+    "question": "An archive program interpreted five dates written in one unambiguous format. Other regional formats and missing years were not tested.\n\nWhat can be concluded about whether the parser correctly interprets dates in heterogeneous historical catalogues from the stated evidence?"
+  },
+  {
+    "question_id": "M020",
+    "topic": "wireless_mouse_interference",
+    "evidence_stratum": "limited",
+    "topic_index": 19,
+    "evidence": "A wireless mouse moved smoothly beside one idle router for ten minutes. Busy networks, several mice and other rooms were not tested.",
+    "claim": "the mouse remains responsive in crowded wireless environments",
+    "question": "A wireless mouse moved smoothly beside one idle router for ten minutes. Busy networks, several mice and other rooms were not tested.\n\nWhat can be concluded about whether the mouse remains responsive in crowded wireless environments from the stated evidence?"
+  },
+  {
+    "question_id": "M021",
+    "topic": "plant_species_classifier",
+    "evidence_stratum": "limited",
+    "topic_index": 20,
+    "evidence": "A classifier identified one well-lit leaf photograph from a familiar species. Damaged leaves, unfamiliar species and unusual viewpoints were not tested.",
+    "claim": "the classifier reliably identifies plants from everyday photographs",
+    "question": "A classifier identified one well-lit leaf photograph from a familiar species. Damaged leaves, unfamiliar species and unusual viewpoints were not tested.\n\nWhat can be concluded about whether the classifier reliably identifies plants from everyday photographs from the stated evidence?"
+  },
+  {
+    "question_id": "M022",
+    "topic": "hologram_display_viewing",
+    "evidence_stratum": "limited",
+    "topic_index": 21,
+    "evidence": "One viewer saw a clear image while standing at the marked position of a display. Other heights, sideways positions and bright rooms were not checked.",
+    "claim": "the display presents a clear image to visitors in varied viewing positions",
+    "question": "One viewer saw a clear image while standing at the marked position of a display. Other heights, sideways positions and bright rooms were not checked.\n\nWhat can be concluded about whether the display presents a clear image to visitors in varied viewing positions from the stated evidence?"
+  },
+  {
+    "question_id": "M023",
+    "topic": "seismic_logger_storage",
+    "evidence_stratum": "limited",
+    "topic_index": 22,
+    "evidence": "A logger saved one short artificial vibration trace to an empty storage card. Nearly full cards, interruptions and extended recording were not tried.",
+    "claim": "the logger preserves continuous vibration records during long deployments",
+    "question": "A logger saved one short artificial vibration trace to an empty storage card. Nearly full cards, interruptions and extended recording were not tried.\n\nWhat can be concluded about whether the logger preserves continuous vibration records during long deployments from the stated evidence?"
+  },
+  {
+    "question_id": "M024",
+    "topic": "balloon_altitude_estimator",
+    "evidence_stratum": "limited",
+    "topic_index": 23,
+    "evidence": "An altitude estimator matched a ruler during one low indoor balloon lift. Outdoor wind, changing air pressure and much greater heights were not tested.",
+    "claim": "the estimator measures balloon altitude accurately outdoors",
+    "question": "An altitude estimator matched a ruler during one low indoor balloon lift. Outdoor wind, changing air pressure and much greater heights were not tested.\n\nWhat can be concluded about whether the estimator measures balloon altitude accurately outdoors from the stated evidence?"
+  },
+  {
+    "question_id": "M025",
+    "topic": "database_index_latency",
+    "evidence_stratum": "confounded",
+    "topic_index": 0,
+    "evidence": "A search database became faster after a new index was introduced. The same deployment also moved it to a more powerful server, and no configuration varied the two changes separately.",
+    "claim": "the new index caused the reduction in search latency",
+    "question": "A search database became faster after a new index was introduced. The same deployment also moved it to a more powerful server, and no configuration varied the two changes separately.\n\nWhat can be concluded about whether the new index caused the reduction in search latency from the stated evidence?"
+  },
+  {
+    "question_id": "M026",
+    "topic": "train_platform_crowding",
+    "evidence_stratum": "confounded",
+    "topic_index": 1,
+    "evidence": "Crowding fell after a platform introduced colored boarding zones. At the same time additional trains began running, with no period that separated these changes.",
+    "claim": "the boarding zones caused the reduction in crowding",
+    "question": "Crowding fell after a platform introduced colored boarding zones. At the same time additional trains began running, with no period that separated these changes.\n\nWhat can be concluded about whether the boarding zones caused the reduction in crowding from the stated evidence?"
+  },
+  {
+    "question_id": "M027",
+    "topic": "gallery_audio_guide",
+    "evidence_stratum": "confounded",
+    "topic_index": 2,
+    "evidence": "Visitors spent longer at exhibits after an audio guide was introduced. The gallery simultaneously opened a popular temporary collection and did not compare matched exhibits.",
+    "claim": "the audio guide caused the longer viewing time",
+    "question": "Visitors spent longer at exhibits after an audio guide was introduced. The gallery simultaneously opened a popular temporary collection and did not compare matched exhibits.\n\nWhat can be concluded about whether the audio guide caused the longer viewing time from the stated evidence?"
+  },
+  {
+    "question_id": "M028",
+    "topic": "school_lunch_ordering",
+    "evidence_stratum": "confounded",
+    "topic_index": 3,
+    "evidence": "Meal-order errors declined after a school introduced an ordering app. The kitchen also simplified the menu that week and kept no separate comparison.",
+    "claim": "the ordering app caused the reduction in meal-order errors",
+    "question": "Meal-order errors declined after a school introduced an ordering app. The kitchen also simplified the menu that week and kept no separate comparison.\n\nWhat can be concluded about whether the ordering app caused the reduction in meal-order errors from the stated evidence?"
+  },
+  {
+    "question_id": "M029",
+    "topic": "bicycle_share_docks",
+    "evidence_stratum": "confounded",
+    "topic_index": 4,
+    "evidence": "More shared bicycles were returned properly after a new dock display was installed. The operator also reduced the late-return fee and added staff assistance at the same locations.",
+    "claim": "the new display caused the improvement in returns",
+    "question": "More shared bicycles were returned properly after a new dock display was installed. The operator also reduced the late-return fee and added staff assistance at the same locations.\n\nWhat can be concluded about whether the new display caused the improvement in returns from the stated evidence?"
+  },
+  {
+    "question_id": "M030",
+    "topic": "online_course_quizzes",
+    "evidence_stratum": "confounded",
+    "topic_index": 5,
+    "evidence": "Course completion rose after short quizzes were added. Enrollment simultaneously became invitation-only, and the earlier and later learners were not matched.",
+    "claim": "the added quizzes caused the rise in completion",
+    "question": "Course completion rose after short quizzes were added. Enrollment simultaneously became invitation-only, and the earlier and later learners were not matched.\n\nWhat can be concluded about whether the added quizzes caused the rise in completion from the stated evidence?"
+  },
+  {
+    "question_id": "M031",
+    "topic": "warehouse_pick_routes",
+    "evidence_stratum": "confounded",
+    "topic_index": 6,
+    "evidence": "Pickers finished orders faster after a route-planning scheme was adopted. The warehouse also moved frequently requested items closer together, with no separate comparison.",
+    "claim": "the route-planning scheme caused the faster order picking",
+    "question": "Pickers finished orders faster after a route-planning scheme was adopted. The warehouse also moved frequently requested items closer together, with no separate comparison.\n\nWhat can be concluded about whether the route-planning scheme caused the faster order picking from the stated evidence?"
+  },
+  {
+    "question_id": "M032",
+    "topic": "community_tool_booking",
+    "evidence_stratum": "confounded",
+    "topic_index": 7,
+    "evidence": "Fewer tool reservations were missed after a deposit system began. Opening hours were extended at the same time, and no observation isolated either change.",
+    "claim": "the deposit system caused the decline in missed reservations",
+    "question": "Fewer tool reservations were missed after a deposit system began. Opening hours were extended at the same time, and no observation isolated either change.\n\nWhat can be concluded about whether the deposit system caused the decline in missed reservations from the stated evidence?"
+  },
+  {
+    "question_id": "M033",
+    "topic": "festival_ticket_layout",
+    "evidence_stratum": "confounded",
+    "topic_index": 8,
+    "evidence": "Ticket purchases increased after an event redesigned its checkout page. Ticket prices were also cut and a major performer was announced on the same day.",
+    "claim": "the page redesign caused the increase in ticket purchases",
+    "question": "Ticket purchases increased after an event redesigned its checkout page. Ticket prices were also cut and a major performer was announced on the same day.\n\nWhat can be concluded about whether the page redesign caused the increase in ticket purchases from the stated evidence?"
+  },
+  {
+    "question_id": "M034",
+    "topic": "recycling_station_icons",
+    "evidence_stratum": "confounded",
+    "topic_index": 9,
+    "evidence": "Sorting mistakes fell after a recycling station added illustrated icons. Staff also began checking every item at the station, and neither change was tested alone.",
+    "claim": "the icons caused the decline in sorting mistakes",
+    "question": "Sorting mistakes fell after a recycling station added illustrated icons. Staff also began checking every item at the station, and neither change was tested alone.\n\nWhat can be concluded about whether the icons caused the decline in sorting mistakes from the stated evidence?"
+  },
+  {
+    "question_id": "M035",
+    "topic": "aquatic_race_lane_marking",
+    "evidence_stratum": "confounded",
+    "topic_index": 10,
+    "evidence": "Practice lap times improved after a pool added contrasting lane markings. The squad also started a different training schedule and switched to a faster timing system that week.",
+    "claim": "the lane markings caused the improvement in lap times",
+    "question": "Practice lap times improved after a pool added contrasting lane markings. The squad also started a different training schedule and switched to a faster timing system that week.\n\nWhat can be concluded about whether the lane markings caused the improvement in lap times from the stated evidence?"
+  },
+  {
+    "question_id": "M036",
+    "topic": "podcast_episode_chapters",
+    "evidence_stratum": "confounded",
+    "topic_index": 11,
+    "evidence": "More listeners reached the end of episodes after chapter markers were added. Episodes also became substantially shorter, and no equal-length comparison was made.",
+    "claim": "the chapter markers caused the higher completion rate",
+    "question": "More listeners reached the end of episodes after chapter markers were added. Episodes also became substantially shorter, and no equal-length comparison was made.\n\nWhat can be concluded about whether the chapter markers caused the higher completion rate from the stated evidence?"
+  },
+  {
+    "question_id": "M037",
+    "topic": "campus_bike_route",
+    "evidence_stratum": "confounded",
+    "topic_index": 12,
+    "evidence": "More students cycled after a new route map was distributed. A discounted bicycle rental scheme began simultaneously, without separate exposure groups.",
+    "claim": "the route map caused the increase in cycling",
+    "question": "More students cycled after a new route map was distributed. A discounted bicycle rental scheme began simultaneously, without separate exposure groups.\n\nWhat can be concluded about whether the route map caused the increase in cycling from the stated evidence?"
+  },
+  {
+    "question_id": "M038",
+    "topic": "craft_market_stall_grid",
+    "evidence_stratum": "confounded",
+    "topic_index": 13,
+    "evidence": "Visitors found stalls more quickly after a market changed its grid layout. The market also reduced the number of stalls and introduced volunteers giving directions.",
+    "claim": "the new grid layout caused faster stall finding",
+    "question": "Visitors found stalls more quickly after a market changed its grid layout. The market also reduced the number of stalls and introduced volunteers giving directions.\n\nWhat can be concluded about whether the new grid layout caused faster stall finding from the stated evidence?"
+  },
+  {
+    "question_id": "M039",
+    "topic": "digital_archive_search_facets",
+    "evidence_stratum": "confounded",
+    "topic_index": 14,
+    "evidence": "Archive users found more relevant documents after filters were added. Thousands of previously missing records were also indexed in the same update.",
+    "claim": "the search filters caused the improvement in document finding",
+    "question": "Archive users found more relevant documents after filters were added. Thousands of previously missing records were also indexed in the same update.\n\nWhat can be concluded about whether the search filters caused the improvement in document finding from the stated evidence?"
+  },
+  {
+    "question_id": "M040",
+    "topic": "board_game_turn_tracker",
+    "evidence_stratum": "confounded",
+    "topic_index": 15,
+    "evidence": "Game sessions ended sooner after a turn-tracking device was adopted. The group simultaneously removed two lengthy optional rules and did not test either change alone.",
+    "claim": "the tracker caused the shorter game sessions",
+    "question": "Game sessions ended sooner after a turn-tracking device was adopted. The group simultaneously removed two lengthy optional rules and did not test either change alone.\n\nWhat can be concluded about whether the tracker caused the shorter game sessions from the stated evidence?"
+  },
+  {
+    "question_id": "M041",
+    "topic": "textile_workshop_scheduling",
+    "evidence_stratum": "confounded",
+    "topic_index": 16,
+    "evidence": "More projects were finished after a workshop staggered its starting times. It also hired an additional instructor and restricted project complexity at the same time.",
+    "claim": "the staggered schedule caused the increase in completed projects",
+    "question": "More projects were finished after a workshop staggered its starting times. It also hired an additional instructor and restricted project complexity at the same time.\n\nWhat can be concluded about whether the staggered schedule caused the increase in completed projects from the stated evidence?"
+  },
+  {
+    "question_id": "M042",
+    "topic": "harbor_freight_dashboard",
+    "evidence_stratum": "confounded",
+    "topic_index": 17,
+    "evidence": "Loading delays fell after a harbor introduced a scheduling dashboard. Arriving freight volume also dropped sharply, with no adjustment for that change.",
+    "claim": "the dashboard caused the reduction in loading delays",
+    "question": "Loading delays fell after a harbor introduced a scheduling dashboard. Arriving freight volume also dropped sharply, with no adjustment for that change.\n\nWhat can be concluded about whether the dashboard caused the reduction in loading delays from the stated evidence?"
+  },
+  {
+    "question_id": "M043",
+    "topic": "concert_seat_numbering",
+    "evidence_stratum": "confounded",
+    "topic_index": 18,
+    "evidence": "Seating complaints declined after a hall revised its seat-number signs. Ushers received extra training that week and audience capacity was temporarily reduced.",
+    "claim": "the revised signs caused the decline in seating complaints",
+    "question": "Seating complaints declined after a hall revised its seat-number signs. Ushers received extra training that week and audience capacity was temporarily reduced.\n\nWhat can be concluded about whether the revised signs caused the decline in seating complaints from the stated evidence?"
+  },
+  {
+    "question_id": "M044",
+    "topic": "language_exchange_matching",
+    "evidence_stratum": "confounded",
+    "topic_index": 19,
+    "evidence": "Participants attended more sessions after a club introduced a new partner-matching rule. Meetings also moved online, with no comparison that kept the meeting format fixed.",
+    "claim": "the matching rule caused the rise in attendance",
+    "question": "Participants attended more sessions after a club introduced a new partner-matching rule. Meetings also moved online, with no comparison that kept the meeting format fixed.\n\nWhat can be concluded about whether the matching rule caused the rise in attendance from the stated evidence?"
+  },
+  {
+    "question_id": "M045",
+    "topic": "community_fridge_inventory",
+    "evidence_stratum": "confounded",
+    "topic_index": 20,
+    "evidence": "Food remained unused less often after a shared fridge gained an inventory display. Deliveries were also reduced and volunteers changed their distribution schedule.",
+    "claim": "the inventory display caused the reduction in unused food",
+    "question": "Food remained unused less often after a shared fridge gained an inventory display. Deliveries were also reduced and volunteers changed their distribution schedule.\n\nWhat can be concluded about whether the inventory display caused the reduction in unused food from the stated evidence?"
+  },
+  {
+    "question_id": "M046",
+    "topic": "hiking_checkpoint_stamp",
+    "evidence_stratum": "confounded",
+    "topic_index": 21,
+    "evidence": "Walkers finished a route more often after checkpoint stamps were introduced. The route was shortened at the same time, and the groups were not otherwise compared.",
+    "claim": "the stamps caused the improvement in route completion",
+    "question": "Walkers finished a route more often after checkpoint stamps were introduced. The route was shortened at the same time, and the groups were not otherwise compared.\n\nWhat can be concluded about whether the stamps caused the improvement in route completion from the stated evidence?"
+  },
+  {
+    "question_id": "M047",
+    "topic": "robotics_code_editor",
+    "evidence_stratum": "confounded",
+    "topic_index": 22,
+    "evidence": "Students made fewer programming errors after a new editor was introduced. Exercises also became shorter and more worked examples were provided that week.",
+    "claim": "the editor caused the reduction in programming errors",
+    "question": "Students made fewer programming errors after a new editor was introduced. Exercises also became shorter and more worked examples were provided that week.\n\nWhat can be concluded about whether the editor caused the reduction in programming errors from the stated evidence?"
+  },
+  {
+    "question_id": "M048",
+    "topic": "call_center_callback_option",
+    "evidence_stratum": "confounded",
+    "topic_index": 23,
+    "evidence": "Customer complaints fell after a callback option was added. The center also doubled staffing during peak hours and stopped accepting one difficult request type.",
+    "claim": "the callback option caused the decline in complaints",
+    "question": "Customer complaints fell after a callback option was added. The center also doubled staffing during peak hours and stopped accepting one difficult request type.\n\nWhat can be concluded about whether the callback option caused the decline in complaints from the stated evidence?"
+  },
+  {
+    "question_id": "M049",
+    "topic": "insulated_mail_slot",
+    "evidence_stratum": "supportive",
+    "topic_index": 0,
+    "evidence": "In a controlled chamber, otherwise identical doors were randomly assigned an insulated or ordinary mail slot. Across thirty repeated matched trials, the insulated doors consistently lost less heat at the same temperature difference.",
+    "claim": "the insulated mail slot reduces heat loss under the tested conditions",
+    "question": "In a controlled chamber, otherwise identical doors were randomly assigned an insulated or ordinary mail slot. Across thirty repeated matched trials, the insulated doors consistently lost less heat at the same temperature difference.\n\nWhat can be concluded about whether the insulated mail slot reduces heat loss under the tested conditions from the stated evidence?"
+  },
+  {
+    "question_id": "M050",
+    "topic": "desk_cable_winch",
+    "evidence_stratum": "supportive",
+    "topic_index": 1,
+    "evidence": "Identical desks were randomly assigned a cable winch or a fixed loose cable. With the same movement sequence and load, thirty trials showed fewer cable snags with the winch.",
+    "claim": "the winch reduces cable snagging during the tested desk movements",
+    "question": "Identical desks were randomly assigned a cable winch or a fixed loose cable. With the same movement sequence and load, thirty trials showed fewer cable snags with the winch.\n\nWhat can be concluded about whether the winch reduces cable snagging during the tested desk movements from the stated evidence?"
+  },
+  {
+    "question_id": "M051",
+    "topic": "browser_tab_suspension",
+    "evidence_stratum": "supportive",
+    "topic_index": 2,
+    "evidence": "Two matched computers ran the same sequence of tabs with suspension randomly enabled or disabled. Across forty repetitions, enabled suspension consistently used less memory, while page contents were unchanged.",
+    "claim": "tab suspension reduces memory use for the tested browsing sequence",
+    "question": "Two matched computers ran the same sequence of tabs with suspension randomly enabled or disabled. Across forty repetitions, enabled suspension consistently used less memory, while page contents were unchanged.\n\nWhat can be concluded about whether tab suspension reduces memory use for the tested browsing sequence from the stated evidence?"
+  },
+  {
+    "question_id": "M052",
+    "topic": "sorting_robot_gripper",
+    "evidence_stratum": "supportive",
+    "topic_index": 3,
+    "evidence": "Otherwise identical robots received a redesigned or standard gripper by random assignment. On the same mixture of objects, repeated trials showed more successful pickups with the redesigned gripper.",
+    "claim": "the redesigned gripper improves pickup success for the tested objects",
+    "question": "Otherwise identical robots received a redesigned or standard gripper by random assignment. On the same mixture of objects, repeated trials showed more successful pickups with the redesigned gripper.\n\nWhat can be concluded about whether the redesigned gripper improves pickup success for the tested objects from the stated evidence?"
+  },
+  {
+    "question_id": "M053",
+    "topic": "solar_panel_spacing",
+    "evidence_stratum": "supportive",
+    "topic_index": 4,
+    "evidence": "Equal panel arrays were randomly assigned two spacing layouts at matched locations. Repeated simultaneous measurements with the same orientation showed higher daily energy output from the wider layout.",
+    "claim": "wider panel spacing raises energy output under the tested arrangement",
+    "question": "Equal panel arrays were randomly assigned two spacing layouts at matched locations. Repeated simultaneous measurements with the same orientation showed higher daily energy output from the wider layout.\n\nWhat can be concluded about whether wider panel spacing raises energy output under the tested arrangement from the stated evidence?"
+  },
+  {
+    "question_id": "M054",
+    "topic": "wooden_flute_bore",
+    "evidence_stratum": "supportive",
+    "topic_index": 5,
+    "evidence": "Matched wooden flutes differed only in one bore adjustment, assigned at random before measurement. A fixed air source produced more stable pitch in the adjusted instruments across repeated trials.",
+    "claim": "the bore adjustment improves pitch stability under the tested air supply",
+    "question": "Matched wooden flutes differed only in one bore adjustment, assigned at random before measurement. A fixed air source produced more stable pitch in the adjusted instruments across repeated trials.\n\nWhat can be concluded about whether the bore adjustment improves pitch stability under the tested air supply from the stated evidence?"
+  },
+  {
+    "question_id": "M055",
+    "topic": "suit_rental_measurement_form",
+    "evidence_stratum": "supportive",
+    "topic_index": 6,
+    "evidence": "Rental clerks were randomly assigned the old or a revised measurement form for comparable orders. Across repeated balanced batches, the revised form produced fewer sizing transcription errors.",
+    "claim": "the revised form reduces sizing transcription errors in the tested workflow",
+    "question": "Rental clerks were randomly assigned the old or a revised measurement form for comparable orders. Across repeated balanced batches, the revised form produced fewer sizing transcription errors.\n\nWhat can be concluded about whether the revised form reduces sizing transcription errors in the tested workflow from the stated evidence?"
+  },
+  {
+    "question_id": "M056",
+    "topic": "window_shade_perforation",
+    "evidence_stratum": "supportive",
+    "topic_index": 7,
+    "evidence": "Matched rooms were randomly assigned shades with two perforation patterns. Repeated measurements under the same artificial sunlight found lower glare with the new pattern at comparable illumination.",
+    "claim": "the new perforation pattern reduces glare under the tested lighting",
+    "question": "Matched rooms were randomly assigned shades with two perforation patterns. Repeated measurements under the same artificial sunlight found lower glare with the new pattern at comparable illumination.\n\nWhat can be concluded about whether the new perforation pattern reduces glare under the tested lighting from the stated evidence?"
+  },
+  {
+    "question_id": "M057",
+    "topic": "ceramic_kiln_loading",
+    "evidence_stratum": "supportive",
+    "topic_index": 8,
+    "evidence": "Identical test pieces were randomly placed using two kiln-loading layouts across repeated firings. With the same firing program, the revised layout consistently produced smaller temperature differences among pieces.",
+    "claim": "the revised loading layout improves temperature uniformity in the tested kiln",
+    "question": "Identical test pieces were randomly placed using two kiln-loading layouts across repeated firings. With the same firing program, the revised layout consistently produced smaller temperature differences among pieces.\n\nWhat can be concluded about whether the revised loading layout improves temperature uniformity in the tested kiln from the stated evidence?"
+  },
+  {
+    "question_id": "M058",
+    "topic": "spreadsheet_recalculation_cache",
+    "evidence_stratum": "supportive",
+    "topic_index": 9,
+    "evidence": "A cache was randomly enabled or disabled for repeated runs of the same workbook updates on the same machine. The cached runs completed faster and returned exactly the same cell values.",
+    "claim": "the cache speeds recalculation for the tested workbook without changing its results",
+    "question": "A cache was randomly enabled or disabled for repeated runs of the same workbook updates on the same machine. The cached runs completed faster and returned exactly the same cell values.\n\nWhat can be concluded about whether the cache speeds recalculation for the tested workbook without changing its results from the stated evidence?"
+  },
+  {
+    "question_id": "M059",
+    "topic": "wind_tunnel_balance_mount",
+    "evidence_stratum": "supportive",
+    "topic_index": 10,
+    "evidence": "A balance was repeatedly tested with two interchangeable mounts in randomly ordered runs. At matched airflow and load, the new mount produced smaller measurement variation.",
+    "claim": "the new mount reduces measurement variation in the tested wind tunnel",
+    "question": "A balance was repeatedly tested with two interchangeable mounts in randomly ordered runs. At matched airflow and load, the new mount produced smaller measurement variation.\n\nWhat can be concluded about whether the new mount reduces measurement variation in the tested wind tunnel from the stated evidence?"
+  },
+  {
+    "question_id": "M060",
+    "topic": "book_scanner_lighting",
+    "evidence_stratum": "supportive",
+    "topic_index": 11,
+    "evidence": "Matched book pages were scanned under two lighting geometries in random order. Across repeated scans at the same exposure, the revised geometry yielded fewer shadowed characters.",
+    "claim": "the revised lighting reduces character shadows in the tested scans",
+    "question": "Matched book pages were scanned under two lighting geometries in random order. Across repeated scans at the same exposure, the revised geometry yielded fewer shadowed characters.\n\nWhat can be concluded about whether the revised lighting reduces character shadows in the tested scans from the stated evidence?"
+  },
+  {
+    "question_id": "M061",
+    "topic": "ceramic_filter_channel",
+    "evidence_stratum": "supportive",
+    "topic_index": 12,
+    "evidence": "Equal batches of clean test fluid passed through randomly assigned filter housings with one of two channel shapes. Repeated tests at the same pressure showed greater flow through the new shape.",
+    "claim": "the new channel shape increases flow under the tested conditions",
+    "question": "Equal batches of clean test fluid passed through randomly assigned filter housings with one of two channel shapes. Repeated tests at the same pressure showed greater flow through the new shape.\n\nWhat can be concluded about whether the new channel shape increases flow under the tested conditions from the stated evidence?"
+  },
+  {
+    "question_id": "M062",
+    "topic": "jigsaw_blade_alignment",
+    "evidence_stratum": "supportive",
+    "topic_index": 13,
+    "evidence": "Identical saws were randomly assigned standard or revised alignment guides. A fixed feed procedure on matched boards repeatedly produced straighter cuts with the revised guide.",
+    "claim": "the revised alignment guide improves cut straightness in the tested setup",
+    "question": "Identical saws were randomly assigned standard or revised alignment guides. A fixed feed procedure on matched boards repeatedly produced straighter cuts with the revised guide.\n\nWhat can be concluded about whether the revised alignment guide improves cut straightness in the tested setup from the stated evidence?"
+  },
+  {
+    "question_id": "M063",
+    "topic": "server_compression_dictionary",
+    "evidence_stratum": "supportive",
+    "topic_index": 14,
+    "evidence": "Two compression dictionaries were tested on the same held-out collection in randomly ordered runs. The revised dictionary consistently produced smaller files that decompressed to the identical original bytes.",
+    "claim": "the revised dictionary reduces storage for the tested collection without changing its contents",
+    "question": "Two compression dictionaries were tested on the same held-out collection in randomly ordered runs. The revised dictionary consistently produced smaller files that decompressed to the identical original bytes.\n\nWhat can be concluded about whether the revised dictionary reduces storage for the tested collection without changing its contents from the stated evidence?"
+  },
+  {
+    "question_id": "M064",
+    "topic": "basketball_score_display",
+    "evidence_stratum": "supportive",
+    "topic_index": 15,
+    "evidence": "Observers were randomly assigned two score-display layouts while watching the same recorded plays. Across balanced sessions, they reported the correct score faster with the revised layout.",
+    "claim": "the revised display improves score-reading speed in the tested task",
+    "question": "Observers were randomly assigned two score-display layouts while watching the same recorded plays. Across balanced sessions, they reported the correct score faster with the revised layout.\n\nWhat can be concluded about whether the revised display improves score-reading speed in the tested task from the stated evidence?"
+  },
+  {
+    "question_id": "M065",
+    "topic": "fountain_nozzle_geometry",
+    "evidence_stratum": "supportive",
+    "topic_index": 16,
+    "evidence": "Matched fountains differed only in nozzle geometry assigned at random. At equal water pressure, repeated measurements found less splash outside the basin with the new geometry.",
+    "claim": "the new nozzle geometry reduces splash outside the tested basin",
+    "question": "Matched fountains differed only in nozzle geometry assigned at random. At equal water pressure, repeated measurements found less splash outside the basin with the new geometry.\n\nWhat can be concluded about whether the new nozzle geometry reduces splash outside the tested basin from the stated evidence?"
+  },
+  {
+    "question_id": "M066",
+    "topic": "museum_climate_buffer",
+    "evidence_stratum": "supportive",
+    "topic_index": 17,
+    "evidence": "Identical empty display cases were randomly assigned a humidity buffer or none. Under repeated matched room-humidity changes, buffered cases showed smaller internal fluctuations.",
+    "claim": "the humidity buffer reduces internal fluctuations under the tested conditions",
+    "question": "Identical empty display cases were randomly assigned a humidity buffer or none. Under repeated matched room-humidity changes, buffered cases showed smaller internal fluctuations.\n\nWhat can be concluded about whether the humidity buffer reduces internal fluctuations under the tested conditions from the stated evidence?"
+  },
+  {
+    "question_id": "M067",
+    "topic": "drone_landing_fiducial",
+    "evidence_stratum": "supportive",
+    "topic_index": 18,
+    "evidence": "A drone landed on two randomly alternated marker patterns under matched indoor lighting. Across repeated approaches, the revised marker produced smaller landing-position errors.",
+    "claim": "the revised marker improves landing precision in the tested indoor setup",
+    "question": "A drone landed on two randomly alternated marker patterns under matched indoor lighting. Across repeated approaches, the revised marker produced smaller landing-position errors.\n\nWhat can be concluded about whether the revised marker improves landing precision in the tested indoor setup from the stated evidence?"
+  },
+  {
+    "question_id": "M068",
+    "topic": "projector_color_profile",
+    "evidence_stratum": "supportive",
+    "topic_index": 19,
+    "evidence": "Two color profiles were applied in random order to the same projector and test images. Repeated instrument readings showed lower color error with the revised profile against the same reference.",
+    "claim": "the revised profile improves color accuracy for the tested projector and images",
+    "question": "Two color profiles were applied in random order to the same projector and test images. Repeated instrument readings showed lower color error with the revised profile against the same reference.\n\nWhat can be concluded about whether the revised profile improves color accuracy for the tested projector and images from the stated evidence?"
+  },
+  {
+    "question_id": "M069",
+    "topic": "folding_screen_acoustics",
+    "evidence_stratum": "supportive",
+    "topic_index": 20,
+    "evidence": "Matched empty rooms received either an acoustic screen or a visually similar rigid screen by random assignment. The same sound source repeatedly produced lower reflected sound with the acoustic screen.",
+    "claim": "the acoustic screen reduces reflected sound under the tested conditions",
+    "question": "Matched empty rooms received either an acoustic screen or a visually similar rigid screen by random assignment. The same sound source repeatedly produced lower reflected sound with the acoustic screen.\n\nWhat can be concluded about whether the acoustic screen reduces reflected sound under the tested conditions from the stated evidence?"
+  },
+  {
+    "question_id": "M070",
+    "topic": "network_packet_scheduler",
+    "evidence_stratum": "supportive",
+    "topic_index": 21,
+    "evidence": "Two scheduling rules were randomly alternated on the same router with identical replayed traffic. Repeated runs showed lower queue delay under the revised rule without increased packet loss.",
+    "claim": "the revised scheduler lowers delay for the tested traffic without increasing loss",
+    "question": "Two scheduling rules were randomly alternated on the same router with identical replayed traffic. Repeated runs showed lower queue delay under the revised rule without increased packet loss.\n\nWhat can be concluded about whether the revised scheduler lowers delay for the tested traffic without increasing loss from the stated evidence?"
+  },
+  {
+    "question_id": "M071",
+    "topic": "coin_sorter_feed_rate",
+    "evidence_stratum": "supportive",
+    "topic_index": 22,
+    "evidence": "Identical coin mixtures were passed through a sorter with two feed controls in random order. At the same total input rate, the revised control repeatedly produced fewer jams.",
+    "claim": "the revised feed control reduces jams for the tested coin mixtures",
+    "question": "Identical coin mixtures were passed through a sorter with two feed controls in random order. At the same total input rate, the revised control repeatedly produced fewer jams.\n\nWhat can be concluded about whether the revised feed control reduces jams for the tested coin mixtures from the stated evidence?"
+  },
+  {
+    "question_id": "M072",
+    "topic": "fabric_pattern_projection",
+    "evidence_stratum": "supportive",
+    "topic_index": 23,
+    "evidence": "Tailors were randomly assigned projected or paper pattern guides for matched pieces of fabric. Across balanced tasks, projected guides produced smaller cutting deviations from the same reference outlines.",
+    "claim": "the projected guides improve cutting accuracy in the tested tasks",
+    "question": "Tailors were randomly assigned projected or paper pattern guides for matched pieces of fabric. Across balanced tasks, projected guides produced smaller cutting deviations from the same reference outlines.\n\nWhat can be concluded about whether the projected guides improve cutting accuracy in the tested tasks from the stated evidence?"
+  },
+  {
+    "question_id": "M073",
+    "topic": "touchscreen_palm_filter",
+    "evidence_stratum": "contradictory",
+    "topic_index": 0,
+    "evidence": "Matched tablets were tested with palm filtering randomly enabled or disabled during the same stylus movements. Across repeated trials, enabling it produced more unintended marks, rather than fewer.",
+    "claim": "the palm filter reduces unintended marks during the tested stylus task",
+    "question": "Matched tablets were tested with palm filtering randomly enabled or disabled during the same stylus movements. Across repeated trials, enabling it produced more unintended marks, rather than fewer.\n\nWhat can be concluded about whether the palm filter reduces unintended marks during the tested stylus task from the stated evidence?"
+  },
+  {
+    "question_id": "M074",
+    "topic": "sprinkler_pressure_valve",
+    "evidence_stratum": "contradictory",
+    "topic_index": 1,
+    "evidence": "Identical sprinkler lines received a revised or standard valve at random. With equal supply pressure, repeated measurements found less uniform water coverage with the revised valve.",
+    "claim": "the revised valve improves water-coverage uniformity under the tested conditions",
+    "question": "Identical sprinkler lines received a revised or standard valve at random. With equal supply pressure, repeated measurements found less uniform water coverage with the revised valve.\n\nWhat can be concluded about whether the revised valve improves water-coverage uniformity under the tested conditions from the stated evidence?"
+  },
+  {
+    "question_id": "M075",
+    "topic": "ceramic_mug_handle_angle",
+    "evidence_stratum": "contradictory",
+    "topic_index": 2,
+    "evidence": "Matched mugs differed only in handle angle, assigned randomly to a fixed carrying test. The new angle repeatedly produced larger tilts and more spills.",
+    "claim": "the new handle angle reduces spills in the tested carrying task",
+    "question": "Matched mugs differed only in handle angle, assigned randomly to a fixed carrying test. The new angle repeatedly produced larger tilts and more spills.\n\nWhat can be concluded about whether the new handle angle reduces spills in the tested carrying task from the stated evidence?"
+  },
+  {
+    "question_id": "M076",
+    "topic": "photo_library_thumbnail_size",
+    "evidence_stratum": "contradictory",
+    "topic_index": 3,
+    "evidence": "Users were randomly assigned two thumbnail sizes while finding the same photographs in matched libraries. Across balanced sessions, the larger thumbnails made searches slower and no more accurate.",
+    "claim": "larger thumbnails make the tested photo-search task faster",
+    "question": "Users were randomly assigned two thumbnail sizes while finding the same photographs in matched libraries. Across balanced sessions, the larger thumbnails made searches slower and no more accurate.\n\nWhat can be concluded about whether larger thumbnails make the tested photo-search task faster from the stated evidence?"
+  },
+  {
+    "question_id": "M077",
+    "topic": "water_meter_pulse_filter",
+    "evidence_stratum": "contradictory",
+    "topic_index": 4,
+    "evidence": "A meter was tested with its pulse filter enabled and disabled in randomized order at known flow rates. Enabling the filter consistently increased the difference between recorded and actual volume.",
+    "claim": "the pulse filter improves volume-measurement accuracy under the tested conditions",
+    "question": "A meter was tested with its pulse filter enabled and disabled in randomized order at known flow rates. Enabling the filter consistently increased the difference between recorded and actual volume.\n\nWhat can be concluded about whether the pulse filter improves volume-measurement accuracy under the tested conditions from the stated evidence?"
+  },
+  {
+    "question_id": "M078",
+    "topic": "translation_memory_cache",
+    "evidence_stratum": "contradictory",
+    "topic_index": 5,
+    "evidence": "Two cache settings processed the same translation requests in random order. The new setting repeatedly returned more outdated translations and took longer to finish.",
+    "claim": "the new cache setting improves correctness and speed for the tested requests",
+    "question": "Two cache settings processed the same translation requests in random order. The new setting repeatedly returned more outdated translations and took longer to finish.\n\nWhat can be concluded about whether the new cache setting improves correctness and speed for the tested requests from the stated evidence?"
+  },
+  {
+    "question_id": "M079",
+    "topic": "cardboard_insulation_cells",
+    "evidence_stratum": "contradictory",
+    "topic_index": 6,
+    "evidence": "Matched insulated boxes differed only in cell geometry. Under repeated equal temperature differences, the new geometry consistently allowed faster heat transfer.",
+    "claim": "the new cell geometry improves insulation in the tested boxes",
+    "question": "Matched insulated boxes differed only in cell geometry. Under repeated equal temperature differences, the new geometry consistently allowed faster heat transfer.\n\nWhat can be concluded about whether the new cell geometry improves insulation in the tested boxes from the stated evidence?"
+  },
+  {
+    "question_id": "M080",
+    "topic": "mechanical_counter_spring",
+    "evidence_stratum": "contradictory",
+    "topic_index": 7,
+    "evidence": "Counters with two spring designs were randomly tested using identical input pulses. The new spring repeatedly missed more pulses than the standard spring.",
+    "claim": "the new spring improves count accuracy for the tested pulses",
+    "question": "Counters with two spring designs were randomly tested using identical input pulses. The new spring repeatedly missed more pulses than the standard spring.\n\nWhat can be concluded about whether the new spring improves count accuracy for the tested pulses from the stated evidence?"
+  },
+  {
+    "question_id": "M081",
+    "topic": "sculpture_display_turntable",
+    "evidence_stratum": "contradictory",
+    "topic_index": 8,
+    "evidence": "Matched turntables were tested with and without a proposed stabilizer in random order. At the same rotation speed and load, stabilized tables showed larger angular wobble.",
+    "claim": "the stabilizer reduces wobble under the tested display conditions",
+    "question": "Matched turntables were tested with and without a proposed stabilizer in random order. At the same rotation speed and load, stabilized tables showed larger angular wobble.\n\nWhat can be concluded about whether the stabilizer reduces wobble under the tested display conditions from the stated evidence?"
+  },
+  {
+    "question_id": "M082",
+    "topic": "bookbinding_glue_temperature",
+    "evidence_stratum": "contradictory",
+    "topic_index": 9,
+    "evidence": "Matched bindings were randomly assigned the old or a higher glue temperature. Under the same curing and pull test, the higher-temperature bindings repeatedly separated at lower force.",
+    "claim": "the higher glue temperature strengthens the tested bindings",
+    "question": "Matched bindings were randomly assigned the old or a higher glue temperature. Under the same curing and pull test, the higher-temperature bindings repeatedly separated at lower force.\n\nWhat can be concluded about whether the higher glue temperature strengthens the tested bindings from the stated evidence?"
+  },
+  {
+    "question_id": "M083",
+    "topic": "conference_caption_font",
+    "evidence_stratum": "contradictory",
+    "topic_index": 10,
+    "evidence": "Participants read the same captions using two fonts in balanced random order. The proposed font produced more reading errors at the same size and display distance.",
+    "claim": "the proposed font improves caption-reading accuracy under the tested conditions",
+    "question": "Participants read the same captions using two fonts in balanced random order. The proposed font produced more reading errors at the same size and display distance.\n\nWhat can be concluded about whether the proposed font improves caption-reading accuracy under the tested conditions from the stated evidence?"
+  },
+  {
+    "question_id": "M084",
+    "topic": "model_train_wheel_profile",
+    "evidence_stratum": "contradictory",
+    "topic_index": 11,
+    "evidence": "Matched model trains differed only in wheel profile and ran the same curves in randomized order. The revised profile consistently derailed more often.",
+    "claim": "the revised wheel profile reduces derailments on the tested curves",
+    "question": "Matched model trains differed only in wheel profile and ran the same curves in randomized order. The revised profile consistently derailed more often.\n\nWhat can be concluded about whether the revised wheel profile reduces derailments on the tested curves from the stated evidence?"
+  },
+  {
+    "question_id": "M085",
+    "topic": "laundry_sorting_light",
+    "evidence_stratum": "contradictory",
+    "topic_index": 12,
+    "evidence": "Sorters were randomly assigned standard or color-shifted lighting for the same fabric batches. Under the shifted light they made more color-sorting mistakes across repeated sessions.",
+    "claim": "the shifted lighting improves color-sorting accuracy for the tested fabrics",
+    "question": "Sorters were randomly assigned standard or color-shifted lighting for the same fabric batches. Under the shifted light they made more color-sorting mistakes across repeated sessions.\n\nWhat can be concluded about whether the shifted lighting improves color-sorting accuracy for the tested fabrics from the stated evidence?"
+  },
+  {
+    "question_id": "M086",
+    "topic": "chocolate_tempering_curve",
+    "evidence_stratum": "contradictory",
+    "topic_index": 13,
+    "evidence": "Matched chocolate batches were randomly processed with two temperature curves while ingredients stayed fixed. The revised curve repeatedly produced less gloss and more visible surface bloom after equal storage.",
+    "claim": "the revised curve improves the tested chocolate's surface finish",
+    "question": "Matched chocolate batches were randomly processed with two temperature curves while ingredients stayed fixed. The revised curve repeatedly produced less gloss and more visible surface bloom after equal storage.\n\nWhat can be concluded about whether the revised curve improves the tested chocolate's surface finish from the stated evidence?"
+  },
+  {
+    "question_id": "M087",
+    "topic": "piano_pedal_damper",
+    "evidence_stratum": "contradictory",
+    "topic_index": 14,
+    "evidence": "Matched piano actions were tested with two pedal damper designs in random order. Instrument readings repeatedly showed longer unwanted ringing with the new damper.",
+    "claim": "the new damper reduces unwanted ringing in the tested piano actions",
+    "question": "Matched piano actions were tested with two pedal damper designs in random order. Instrument readings repeatedly showed longer unwanted ringing with the new damper.\n\nWhat can be concluded about whether the new damper reduces unwanted ringing in the tested piano actions from the stated evidence?"
+  },
+  {
+    "question_id": "M088",
+    "topic": "map_tile_prefetch",
+    "evidence_stratum": "contradictory",
+    "topic_index": 15,
+    "evidence": "Two prefetch settings replayed the same sequence of map movements on a matched connection. The revised setting used more data and caused longer visible pauses across repeated runs.",
+    "claim": "the revised prefetch setting reduces data use and visible pauses in the tested navigation",
+    "question": "Two prefetch settings replayed the same sequence of map movements on a matched connection. The revised setting used more data and caused longer visible pauses across repeated runs.\n\nWhat can be concluded about whether the revised prefetch setting reduces data use and visible pauses in the tested navigation from the stated evidence?"
+  },
+  {
+    "question_id": "M089",
+    "topic": "ceramic_tile_grout_width",
+    "evidence_stratum": "contradictory",
+    "topic_index": 16,
+    "evidence": "Matched tile panels differed only in grout width and underwent identical temperature cycles. Panels with the proposed wider grout repeatedly developed more cracks.",
+    "claim": "the wider grout reduces cracking under the tested temperature cycles",
+    "question": "Matched tile panels differed only in grout width and underwent identical temperature cycles. Panels with the proposed wider grout repeatedly developed more cracks.\n\nWhat can be concluded about whether the wider grout reduces cracking under the tested temperature cycles from the stated evidence?"
+  },
+  {
+    "question_id": "M090",
+    "topic": "watercolor_paper_sizing",
+    "evidence_stratum": "contradictory",
+    "topic_index": 17,
+    "evidence": "Matched paper sheets were randomly assigned two surface-sizing treatments. With equal pigment and water, the new treatment repeatedly produced more spreading beyond the intended edges.",
+    "claim": "the new sizing treatment improves edge control in the tested watercolor task",
+    "question": "Matched paper sheets were randomly assigned two surface-sizing treatments. With equal pigment and water, the new treatment repeatedly produced more spreading beyond the intended edges.\n\nWhat can be concluded about whether the new sizing treatment improves edge control in the tested watercolor task from the stated evidence?"
+  },
+  {
+    "question_id": "M091",
+    "topic": "puzzle_piece_edge_shape",
+    "evidence_stratum": "contradictory",
+    "topic_index": 18,
+    "evidence": "Participants assembled matched puzzles with two edge shapes in randomized order. The new shape increased incorrect fits and lengthened completion time in repeated balanced sessions.",
+    "claim": "the new edge shape improves fit accuracy and assembly speed in the tested puzzles",
+    "question": "Participants assembled matched puzzles with two edge shapes in randomized order. The new shape increased incorrect fits and lengthened completion time in repeated balanced sessions.\n\nWhat can be concluded about whether the new edge shape improves fit accuracy and assembly speed in the tested puzzles from the stated evidence?"
+  },
+  {
+    "question_id": "M092",
+    "topic": "sailboat_rudder_profile",
+    "evidence_stratum": "contradictory",
+    "topic_index": 19,
+    "evidence": "Matched model sailboats differed only in rudder profile. In repeated runs with the same controlled current, the new profile produced larger deviations from the commanded course.",
+    "claim": "the new rudder profile improves course keeping under the tested current",
+    "question": "Matched model sailboats differed only in rudder profile. In repeated runs with the same controlled current, the new profile produced larger deviations from the commanded course.\n\nWhat can be concluded about whether the new rudder profile improves course keeping under the tested current from the stated evidence?"
+  },
+  {
+    "question_id": "M093",
+    "topic": "receipt_printer_heat_setting",
+    "evidence_stratum": "contradictory",
+    "topic_index": 20,
+    "evidence": "Matched printers produced the same receipts using two heat settings in random order. The proposed setting consistently caused more missing strokes and less readable characters.",
+    "claim": "the proposed heat setting improves print legibility in the tested receipts",
+    "question": "Matched printers produced the same receipts using two heat settings in random order. The proposed setting consistently caused more missing strokes and less readable characters.\n\nWhat can be concluded about whether the proposed heat setting improves print legibility in the tested receipts from the stated evidence?"
+  },
+  {
+    "question_id": "M094",
+    "topic": "marble_track_bank_angle",
+    "evidence_stratum": "contradictory",
+    "topic_index": 21,
+    "evidence": "Identical marble tracks differed only in one bend's banking angle. Repeated releases from the same height sent more marbles off the track with the proposed angle.",
+    "claim": "the proposed banking angle reduces departures from the tested track",
+    "question": "Identical marble tracks differed only in one bend's banking angle. Repeated releases from the same height sent more marbles off the track with the proposed angle.\n\nWhat can be concluded about whether the proposed banking angle reduces departures from the tested track from the stated evidence?"
+  },
+  {
+    "question_id": "M095",
+    "topic": "digital_metronome_swing",
+    "evidence_stratum": "contradictory",
+    "topic_index": 22,
+    "evidence": "Musicians followed two metronome cues in randomized balanced sessions for the same rhythm task. The proposed swing cue produced larger timing errors against the fixed target rhythm.",
+    "claim": "the proposed swing cue improves timing accuracy in the tested rhythm task",
+    "question": "Musicians followed two metronome cues in randomized balanced sessions for the same rhythm task. The proposed swing cue produced larger timing errors against the fixed target rhythm.\n\nWhat can be concluded about whether the proposed swing cue improves timing accuracy in the tested rhythm task from the stated evidence?"
+  },
+  {
+    "question_id": "M096",
+    "topic": "storage_crate_vent_pattern",
+    "evidence_stratum": "contradictory",
+    "topic_index": 23,
+    "evidence": "Matched crates held identical warm test loads under equal room conditions. Repeated measurements showed slower cooling with the proposed vent pattern.",
+    "claim": "the proposed vent pattern speeds cooling under the tested storage conditions",
+    "question": "Matched crates held identical warm test loads under equal room conditions. Repeated measurements showed slower cooling with the proposed vent pattern.\n\nWhat can be concluded about whether the proposed vent pattern speeds cooling under the tested storage conditions from the stated evidence?"
+  }
+]

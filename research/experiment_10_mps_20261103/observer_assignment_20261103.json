@@ -1,0 +1,30 @@
+{
+  "schema_version": "persona-observatory-observer-assignment-v1",
+  "recorded_utc": "2026-11-03T08:56:53.849737+00:00",
+  "user_choice": "Two fresh inspection agents, explicitly authorized before evaluation generation.",
+  "observers": {
+    "observer_a": {
+      "agent": "/root/blind_observer_a",
+      "workspace": ".local/blind_review_20261103/a"
+    },
+    "observer_b": {
+      "agent": "/root/blind_observer_b",
+      "workspace": ".local/blind_review_20261103/b"
+    }
+  },
+  "context_start": "fork_turns=none for both; neither receives parent conversation or design/forecast files.",
+  "model_selection": "Both use the inherited parent runtime; no model override. Exact provider model build is not exposed by the collaboration tool and is not claimed pinned.",
+  "allowed_inputs": [
+    "own frozen rubric",
+    "own empty discovery file",
+    "own blinded validation file",
+    "exact duplicate inventory derived only from those inputs"
+  ],
+  "allowed_helpers": "Read/present bounded batches, group/expand exact (requested_answerer,question,completion) duplicates, serialize manually chosen codes, validate schema.",
+  "forbidden": "No repository/memory/history/conditions/seeds/priors/forecasts/model states/other observer files; no keyword labeling, classifier, other model or subdelegation.",
+  "procedure": "Each observer semantically reads every distinct full triple, writes exactly eight rubric fields with Japanese grounded notes, and records own exposure and ambiguity notes. Same triple has same six codes. Original packets and first manual submissions are retained. Coordinator may report structural validation errors only; no outcome-directed relabeling or post-score adjudication.",
+  "review_units": "Exact duplicate triples in each separately shuffled packet; sequential bounded batches within each observer context. Context compaction if needed is recorded in notes; no reset chosen after seeing agreement or scores.",
+  "blindness_limit": "File access is instruction-restricted, not an OS access-control boundary. Questions can reveal evidence structure; explicit condition metadata and predictions are withheld.",
+  "rubric_sha256": "7a28b5f7101c3e9de0367c064bec34f60154b7e7a4c9934c4685eff381d601a6",
+  "measurement_scope": "Two model-based measurement branches of the same subject generations, not human raters, independent model populations or doubled subject N."
+}

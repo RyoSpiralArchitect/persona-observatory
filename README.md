@@ -5,6 +5,8 @@
 [日本語の詳しい説明](README_JA.md) · [Apache-2.0](LICENSE) ·
 [Research history](docs/research_history.md) · [Next experiment proposal (日本語)](docs/next_experiment.md)
 
+[Inference adapters: PyTorch and native MLX](docs/adapters.md)
+
 Persona Observatory asks whether profiles built from observable model responses
 help forecast responses to new questions. Semantic observers read complete
 outputs; separate code fits or evaluates probability forecasts. Hidden states
@@ -79,12 +81,12 @@ new tokens. `configs/replay_v9_*.json` reuses known Experiment 9 questions. Thes
 are engineering checks, not fresh scientific holdouts. Models, environments,
 and local runs are excluded from Git.
 
-The portable runner uses Transformers with `trust_remote_code=False`, CPU
+The default adapter uses Transformers with `trust_remote_code=False`, CPU
 float32 sampling, and a separate CPU random stream for each question/replicate,
 paired across settings. The selected device performs model forward passes.
 Equal seeds do not guarantee equal text across devices, numerical stacks, or the
-archived runtime. Existing CPU smoke evidence is retained; actual MPS and CUDA
-generation have not yet been validated by this repository's records.
+archived runtime. The optional native MLX adapter uses the same model files and
+tokenizer with its separately recorded NumPy sampler; see [adapter setup](docs/adapters.md).
 
 ## A prospective study
 
@@ -106,7 +108,25 @@ See [measurement](docs/measurement.md), [configuration](docs/configuration.md),
 and [contribution boundaries](CONTRIBUTING.md). The
 [next experiment proposal](docs/next_experiment.md) compares global,
 evidence-only, setting-only, and joint forecasts of direct judgment D, holding
-judgment composition pooled. It is a proposal, not a frozen or executed study.
+judgment composition pooled. That initial proposal remains a historical design
+note. Its [96-question MPS implementation](research/experiment_10_mps_20261103/README.md)
+has completed 1,152 generations with forecasts and comparisons fixed beforehand.
+Both agent observations are locked and scores are complete: the primary
+Joint−Evidence D Brier difference is **+0.000749**, and all four advance gates
+failed. Setting ranked best as a secondary finding. Initial environment context
+exposed both annotators to historical study information, so they were not
+study-history-naive; current condition metadata and forecasts were withheld.
+These are two measurements of the same outputs, not human raters or twice as
+many subject generations. See the [report and evidence](research/experiment_10_mps_20261103/REPORT_JA.md).
+Separate [post-hoc diagnostics (日本語)](research/experiment_10_mps_20261103/analysis_20261103/ANALYSIS_JA.md)
+decompose the fixed forecast differences and examine annotation sensitivity;
+they do not revise the primary result or refit predictors.
+
+The [next staged work](docs/next_study_after_exp10.md) begins with
+[human attribution calibration](research/attribution_calibration_20261103/README.md).
+The answer-masked packet is ready; human judgments are pending. A separate
+component-shrinkage calculation is tested on synthetic counts only. Fresh model
+selection and evaluation wait for calibration and a new measurement/protocol lock.
 
 ## Repository layout
 

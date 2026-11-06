@@ -1,0 +1,2025 @@
+{
+  "status": "POST_HOC_DESCRIPTIVE_DIAGNOSTICS",
+  "created_utc": "2026-11-03T10:07:41.884831+00:00",
+  "analysis_plan_sha256": "dc8574682e1f864c2c41d8bb70bce008e441f58829ee378736e73c7f935cc933",
+  "script_sha256": "b24084103215ae74ec33017dd2305a2af854d80c1517753899a9b783d4d697af",
+  "generations": 1152,
+  "questions": 96,
+  "marginals": [
+    {
+      "observer": "observer_a",
+      "grouping": "global",
+      "key": "all",
+      "development_n": 624,
+      "evaluation_n": 1152,
+      "development_d_rate": 0.6682692307692307,
+      "evaluation_d_rate": 0.6701388888888888,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6681346153846155,
+        "Setting": 0.6681346153846154,
+        "Joint": 0.6681346153846154
+      }
+    },
+    {
+      "observer": "observer_a",
+      "grouping": "evidence",
+      "key": "confounded",
+      "development_n": 156,
+      "evaluation_n": 288,
+      "development_d_rate": 0.7307692307692307,
+      "evaluation_d_rate": 0.6770833333333334,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6993846153846155,
+        "Setting": 0.6681346153846154,
+        "Joint": 0.6993846153846154
+      }
+    },
+    {
+      "observer": "observer_a",
+      "grouping": "evidence",
+      "key": "contradictory",
+      "development_n": 156,
+      "evaluation_n": 288,
+      "development_d_rate": 0.7115384615384616,
+      "evaluation_d_rate": 0.6736111111111112,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6897692307692308,
+        "Setting": 0.6681346153846154,
+        "Joint": 0.6897692307692308
+      }
+    },
+    {
+      "observer": "observer_a",
+      "grouping": "evidence",
+      "key": "limited",
+      "development_n": 156,
+      "evaluation_n": 288,
+      "development_d_rate": 0.5705128205128205,
+      "evaluation_d_rate": 0.6979166666666666,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6192564102564103,
+        "Setting": 0.6681346153846154,
+        "Joint": 0.6192564102564103
+      }
+    },
+    {
+      "observer": "observer_a",
+      "grouping": "evidence",
+      "key": "supportive",
+      "development_n": 156,
+      "evaluation_n": 288,
+      "development_d_rate": 0.6602564102564102,
+      "evaluation_d_rate": 0.6319444444444444,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6641282051282053,
+        "Setting": 0.6681346153846154,
+        "Joint": 0.6641282051282053
+      }
+    },
+    {
+      "observer": "observer_a",
+      "grouping": "setting",
+      "key": "eval_cautious_instruction_p0",
+      "development_n": 104,
+      "evaluation_n": 192,
+      "development_d_rate": 0.5576923076923077,
+      "evaluation_d_rate": 0.5,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6681346153846155,
+        "Setting": 0.6128461538461539,
+        "Joint": 0.6128461538461539
+      }
+    },
+    {
+      "observer": "observer_a",
+      "grouping": "setting",
+      "key": "eval_cautious_instruction_p1",
+      "development_n": 104,
+      "evaluation_n": 192,
+      "development_d_rate": 0.6538461538461539,
+      "evaluation_d_rate": 0.640625,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6681346153846155,
+        "Setting": 0.660923076923077,
+        "Joint": 0.660923076923077
+      }
+    },
+    {
+      "observer": "observer_a",
+      "grouping": "setting",
+      "key": "eval_confident_instruction_p0",
+      "development_n": 104,
+      "evaluation_n": 192,
+      "development_d_rate": 0.6634615384615384,
+      "evaluation_d_rate": 0.7083333333333334,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6681346153846155,
+        "Setting": 0.6657307692307692,
+        "Joint": 0.6657307692307692
+      }
+    },
+    {
+      "observer": "observer_a",
+      "grouping": "setting",
+      "key": "eval_confident_instruction_p1",
+      "development_n": 104,
+      "evaluation_n": 192,
+      "development_d_rate": 0.6634615384615384,
+      "evaluation_d_rate": 0.7291666666666666,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6681346153846155,
+        "Setting": 0.6657307692307692,
+        "Joint": 0.6657307692307692
+      }
+    },
+    {
+      "observer": "observer_a",
+      "grouping": "setting",
+      "key": "eval_neutral_instruction_p0",
+      "development_n": 104,
+      "evaluation_n": 192,
+      "development_d_rate": 0.7403846153846154,
+      "evaluation_d_rate": 0.6875,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6681346153846155,
+        "Setting": 0.7041923076923077,
+        "Joint": 0.7041923076923077
+      }
+    },
+    {
+      "observer": "observer_a",
+      "grouping": "setting",
+      "key": "eval_neutral_instruction_p1",
+      "development_n": 104,
+      "evaluation_n": 192,
+      "development_d_rate": 0.7307692307692307,
+      "evaluation_d_rate": 0.7552083333333334,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6681346153846155,
+        "Setting": 0.6993846153846154,
+        "Joint": 0.6993846153846155
+      }
+    },
+    {
+      "observer": "observer_b",
+      "grouping": "global",
+      "key": "all",
+      "development_n": 624,
+      "evaluation_n": 1152,
+      "development_d_rate": 0.6618589743589743,
+      "evaluation_d_rate": 0.6736111111111112,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6617294871794871,
+        "Setting": 0.6617294871794872,
+        "Joint": 0.6617294871794871
+      }
+    },
+    {
+      "observer": "observer_b",
+      "grouping": "evidence",
+      "key": "confounded",
+      "development_n": 156,
+      "evaluation_n": 288,
+      "development_d_rate": 0.717948717948718,
+      "evaluation_d_rate": 0.6666666666666666,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6897743589743589,
+        "Setting": 0.6617294871794872,
+        "Joint": 0.689774358974359
+      }
+    },
+    {
+      "observer": "observer_b",
+      "grouping": "evidence",
+      "key": "contradictory",
+      "development_n": 156,
+      "evaluation_n": 288,
+      "development_d_rate": 0.7051282051282052,
+      "evaluation_d_rate": 0.6840277777777778,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6833641025641025,
+        "Setting": 0.6617294871794872,
+        "Joint": 0.6833641025641026
+      }
+    },
+    {
+      "observer": "observer_b",
+      "grouping": "evidence",
+      "key": "limited",
+      "development_n": 156,
+      "evaluation_n": 288,
+      "development_d_rate": 0.5705128205128205,
+      "evaluation_d_rate": 0.6875,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6160564102564102,
+        "Setting": 0.6617294871794872,
+        "Joint": 0.6160564102564102
+      }
+    },
+    {
+      "observer": "observer_b",
+      "grouping": "evidence",
+      "key": "supportive",
+      "development_n": 156,
+      "evaluation_n": 288,
+      "development_d_rate": 0.6538461538461539,
+      "evaluation_d_rate": 0.65625,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6577230769230769,
+        "Setting": 0.6617294871794872,
+        "Joint": 0.657723076923077
+      }
+    },
+    {
+      "observer": "observer_b",
+      "grouping": "setting",
+      "key": "eval_cautious_instruction_p0",
+      "development_n": 104,
+      "evaluation_n": 192,
+      "development_d_rate": 0.5480769230769231,
+      "evaluation_d_rate": 0.515625,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6617294871794871,
+        "Setting": 0.6048384615384615,
+        "Joint": 0.6048384615384615
+      }
+    },
+    {
+      "observer": "observer_b",
+      "grouping": "setting",
+      "key": "eval_cautious_instruction_p1",
+      "development_n": 104,
+      "evaluation_n": 192,
+      "development_d_rate": 0.6538461538461539,
+      "evaluation_d_rate": 0.6510416666666666,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6617294871794871,
+        "Setting": 0.6577230769230769,
+        "Joint": 0.6577230769230769
+      }
+    },
+    {
+      "observer": "observer_b",
+      "grouping": "setting",
+      "key": "eval_confident_instruction_p0",
+      "development_n": 104,
+      "evaluation_n": 192,
+      "development_d_rate": 0.6538461538461539,
+      "evaluation_d_rate": 0.6927083333333334,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6617294871794871,
+        "Setting": 0.6577230769230769,
+        "Joint": 0.657723076923077
+      }
+    },
+    {
+      "observer": "observer_b",
+      "grouping": "setting",
+      "key": "eval_confident_instruction_p1",
+      "development_n": 104,
+      "evaluation_n": 192,
+      "development_d_rate": 0.6634615384615384,
+      "evaluation_d_rate": 0.7239583333333334,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6617294871794871,
+        "Setting": 0.6625307692307693,
+        "Joint": 0.6625307692307693
+      }
+    },
+    {
+      "observer": "observer_b",
+      "grouping": "setting",
+      "key": "eval_neutral_instruction_p0",
+      "development_n": 104,
+      "evaluation_n": 192,
+      "development_d_rate": 0.7307692307692307,
+      "evaluation_d_rate": 0.6979166666666666,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6617294871794871,
+        "Setting": 0.6961846153846154,
+        "Joint": 0.6961846153846154
+      }
+    },
+    {
+      "observer": "observer_b",
+      "grouping": "setting",
+      "key": "eval_neutral_instruction_p1",
+      "development_n": 104,
+      "evaluation_n": 192,
+      "development_d_rate": 0.7211538461538461,
+      "evaluation_d_rate": 0.7604166666666666,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6617294871794871,
+        "Setting": 0.691376923076923,
+        "Joint": 0.691376923076923
+      }
+    }
+  ],
+  "cells": [
+    {
+      "observer": "observer_a",
+      "setting": "eval_cautious_instruction_p0",
+      "stratum": "confounded",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.7307692307692307,
+      "evaluation_d_rate": 0.5416666666666666,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6993846153846155,
+        "Setting": 0.6128461538461539,
+        "Joint": 0.6993846153846154
+      },
+      "brier": {
+        "Global": 0.264224,
+        "Evidence": 0.2731388402366864,
+        "Setting": 0.2533304082840237,
+        "Joint": 0.2731388402366864
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_cautious_instruction_p0",
+      "stratum": "contradictory",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.5769230769230769,
+      "evaluation_d_rate": 0.5208333333333334,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6897692307692308,
+        "Setting": 0.6128461538461539,
+        "Joint": 0.6224615384615385
+      },
+      "brier": {
+        "Global": 0.271224,
+        "Evidence": 0.2781053096646943,
+        "Setting": 0.2580323313609468,
+        "Joint": 0.2598942642998028
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_cautious_instruction_p0",
+      "stratum": "limited",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.3076923076923077,
+      "evaluation_d_rate": 0.5208333333333334,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6192564102564103,
+        "Setting": 0.6128461538461539,
+        "Joint": 0.4878461538461538
+      },
+      "brier": {
+        "Global": 0.271224,
+        "Evidence": 0.25925307429322814,
+        "Setting": 0.2580323313609468,
+        "Joint": 0.2506541262327416
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_cautious_instruction_p0",
+      "stratum": "supportive",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.6153846153846154,
+      "evaluation_d_rate": 0.4166666666666667,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6641282051282053,
+        "Setting": 0.6128461538461539,
+        "Joint": 0.6416923076923078
+      },
+      "brier": {
+        "Global": 0.306224,
+        "Evidence": 0.3042927685733071,
+        "Setting": 0.28154194674556215,
+        "Joint": 0.29369209467455626
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_cautious_instruction_p1",
+      "stratum": "confounded",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.6538461538461539,
+      "evaluation_d_rate": 0.6041666666666666,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6993846153846155,
+        "Setting": 0.660923076923077,
+        "Joint": 0.660923076923077
+      },
+      "brier": {
+        "Global": 0.243224,
+        "Evidence": 0.24821576331360948,
+        "Setting": 0.2423705956607495,
+        "Joint": 0.2423705956607495
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_cautious_instruction_p1",
+      "stratum": "contradictory",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.7307692307692307,
+      "evaluation_d_rate": 0.6875,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6897692307692308,
+        "Setting": 0.660923076923077,
+        "Joint": 0.6993846153846154
+      },
+      "brier": {
+        "Global": 0.215224,
+        "Evidence": 0.21484889940828403,
+        "Setting": 0.2155500828402367,
+        "Joint": 0.21498499408284025
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_cautious_instruction_p1",
+      "stratum": "limited",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.6538461538461539,
+      "evaluation_d_rate": 0.5625,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6192564102564103,
+        "Setting": 0.660923076923077,
+        "Joint": 0.660923076923077
+      },
+      "brier": {
+        "Global": 0.257224,
+        "Evidence": 0.24931504010519398,
+        "Setting": 0.2557808520710059,
+        "Joint": 0.2557808520710059
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_cautious_instruction_p1",
+      "stratum": "supportive",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.5769230769230769,
+      "evaluation_d_rate": 0.7083333333333334,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6641282051282053,
+        "Setting": 0.660923076923077,
+        "Joint": 0.6224615384615385
+      },
+      "brier": {
+        "Global": 0.208224,
+        "Evidence": 0.20855131558185402,
+        "Setting": 0.20884495463510847,
+        "Joint": 0.21397118737672582
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_confident_instruction_p0",
+      "stratum": "confounded",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.7307692307692307,
+      "evaluation_d_rate": 0.6875,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6993846153846155,
+        "Setting": 0.6657307692307692,
+        "Joint": 0.6993846153846154
+      },
+      "brier": {
+        "Global": 0.215224,
+        "Evidence": 0.21498499408284022,
+        "Setting": 0.21531764940828402,
+        "Joint": 0.21498499408284025
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_confident_instruction_p0",
+      "stratum": "contradictory",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.6153846153846154,
+      "evaluation_d_rate": 0.7708333333333334,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6897692307692308,
+        "Setting": 0.6657307692307692,
+        "Joint": 0.6416923076923078
+      },
+      "brier": {
+        "Global": 0.18722399999999997,
+        "Evidence": 0.1832206942800789,
+        "Setting": 0.18769585453648915,
+        "Joint": 0.19332671005917157
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_confident_instruction_p0",
+      "stratum": "limited",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.46153846153846156,
+      "evaluation_d_rate": 0.7708333333333334,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6192564102564103,
+        "Setting": 0.6657307692307692,
+        "Joint": 0.5647692307692308
+      },
+      "brier": {
+        "Global": 0.18722399999999997,
+        "Evidence": 0.19962486916502298,
+        "Setting": 0.18769585453648915,
+        "Joint": 0.21911171992110454
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_confident_instruction_p0",
+      "stratum": "supportive",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.8461538461538461,
+      "evaluation_d_rate": 0.6041666666666666,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6641282051282053,
+        "Setting": 0.6657307692307692,
+        "Joint": 0.7570769230769231
+      },
+      "brier": {
+        "Global": 0.243224,
+        "Evidence": 0.24274469165023013,
+        "Setting": 0.24293944428007888,
+        "Joint": 0.26253085207100596
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_confident_instruction_p1",
+      "stratum": "confounded",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.6538461538461539,
+      "evaluation_d_rate": 0.6666666666666666,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6993846153846155,
+        "Setting": 0.6657307692307692,
+        "Joint": 0.660923076923077
+      },
+      "brier": {
+        "Global": 0.222224,
+        "Evidence": 0.22329268639053254,
+        "Setting": 0.22222309812623275,
+        "Joint": 0.22225521104536491
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_confident_instruction_p1",
+      "stratum": "contradictory",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.9230769230769231,
+      "evaluation_d_rate": 0.6875,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6897692307692308,
+        "Setting": 0.6657307692307692,
+        "Joint": 0.7955384615384616
+      },
+      "brier": {
+        "Global": 0.215224,
+        "Evidence": 0.21484889940828403,
+        "Setting": 0.21531764940828402,
+        "Joint": 0.22651605917159764
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_confident_instruction_p1",
+      "stratum": "limited",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.5,
+      "evaluation_d_rate": 0.8333333333333334,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6192564102564103,
+        "Setting": 0.6657307692307692,
+        "Joint": 0.5840000000000001
+      },
+      "brier": {
+        "Global": 0.16622399999999998,
+        "Evidence": 0.1847178178829717,
+        "Setting": 0.166979508382643,
+        "Joint": 0.20105599999999998
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_confident_instruction_p1",
+      "stratum": "supportive",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.5769230769230769,
+      "evaluation_d_rate": 0.7291666666666666,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6641282051282053,
+        "Setting": 0.6657307692307692,
+        "Joint": 0.6224615384615385
+      },
+      "brier": {
+        "Global": 0.201224,
+        "Evidence": 0.20171264036817882,
+        "Setting": 0.20150675197238657,
+        "Joint": 0.20886862327416175
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_neutral_instruction_p0",
+      "stratum": "confounded",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.8461538461538461,
+      "evaluation_d_rate": 0.6875,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6993846153846155,
+        "Setting": 0.7041923076923077,
+        "Joint": 0.7570769230769231
+      },
+      "brier": {
+        "Global": 0.215224,
+        "Evidence": 0.21498499408284022,
+        "Setting": 0.21512238313609466,
+        "Joint": 0.21968469822485207
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_neutral_instruction_p0",
+      "stratum": "contradictory",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.6923076923076923,
+      "evaluation_d_rate": 0.6666666666666666,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6897692307692308,
+        "Setting": 0.7041923076923077,
+        "Joint": 0.6801538461538462
+      },
+      "brier": {
+        "Global": 0.222224,
+        "Evidence": 0.2227559506903353,
+        "Setting": 0.2236303959566075,
+        "Joint": 0.22240412623274164
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_neutral_instruction_p0",
+      "stratum": "limited",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.6923076923076923,
+      "evaluation_d_rate": 0.75,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6192564102564103,
+        "Setting": 0.7041923076923077,
+        "Joint": 0.6801538461538462
+      },
+      "brier": {
+        "Global": 0.19422399999999998,
+        "Evidence": 0.2045938862590401,
+        "Setting": 0.1895983446745562,
+        "Joint": 0.19237848520710057
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_neutral_instruction_p0",
+      "stratum": "supportive",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.7307692307692307,
+      "evaluation_d_rate": 0.6458333333333334,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6641282051282053,
+        "Setting": 0.7041923076923077,
+        "Joint": 0.6993846153846154
+      },
+      "brier": {
+        "Global": 0.229224,
+        "Evidence": 0.22906734122287972,
+        "Setting": 0.23213840877712033,
+        "Joint": 0.23160037869822483
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_neutral_instruction_p1",
+      "stratum": "confounded",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.7692307692307693,
+      "evaluation_d_rate": 0.875,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6993846153846155,
+        "Setting": 0.6993846153846154,
+        "Joint": 0.7186153846153847
+      },
+      "brier": {
+        "Global": 0.152224,
+        "Evidence": 0.14021576331360944,
+        "Setting": 0.14021576331360946,
+        "Joint": 0.13383114792899406
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_neutral_instruction_p1",
+      "stratum": "contradictory",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.7307692307692307,
+      "evaluation_d_rate": 0.7083333333333334,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6897692307692308,
+        "Setting": 0.6993846153846154,
+        "Joint": 0.6993846153846154
+      },
+      "brier": {
+        "Global": 0.208224,
+        "Evidence": 0.20694184812623273,
+        "Setting": 0.20667730177514795,
+        "Joint": 0.20667730177514795
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_neutral_instruction_p1",
+      "stratum": "limited",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.8076923076923077,
+      "evaluation_d_rate": 0.75,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6192564102564103,
+        "Setting": 0.6993846153846154,
+        "Joint": 0.7378461538461539
+      },
+      "brier": {
+        "Global": 0.19422399999999998,
+        "Evidence": 0.2045938862590401,
+        "Setting": 0.1900619171597633,
+        "Joint": 0.18764771597633137
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_neutral_instruction_p1",
+      "stratum": "supportive",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.6153846153846154,
+      "evaluation_d_rate": 0.6875,
+      "probabilities": {
+        "Global": 0.668,
+        "Evidence": 0.6641282051282053,
+        "Setting": 0.6993846153846154,
+        "Joint": 0.6416923076923078
+      },
+      "brier": {
+        "Global": 0.215224,
+        "Evidence": 0.21538999079552926,
+        "Setting": 0.21498499408284025,
+        "Joint": 0.2169420946745562
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_cautious_instruction_p0",
+      "stratum": "confounded",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.6923076923076923,
+      "evaluation_d_rate": 0.5208333333333334,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6897743589743589,
+        "Setting": 0.6048384615384615,
+        "Joint": 0.6769538461538461
+      },
+      "brier": {
+        "Global": 0.2693812266666667,
+        "Evidence": 0.2781070423668639,
+        "Setting": 0.25662283378698225,
+        "Joint": 0.2739395867455621
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_cautious_instruction_p0",
+      "stratum": "contradictory",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.5769230769230769,
+      "evaluation_d_rate": 0.5416666666666666,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6833641025641025,
+        "Setting": 0.6048384615384615,
+        "Joint": 0.6192615384615384
+      },
+      "brier": {
+        "Global": 0.2626478933333333,
+        "Evidence": 0.2683420522287968,
+        "Setting": 0.25225456455621303,
+        "Joint": 0.25428485301775144
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_cautious_instruction_p0",
+      "stratum": "limited",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.3076923076923077,
+      "evaluation_d_rate": 0.5208333333333334,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6160564102564102,
+        "Setting": 0.6048384615384615,
+        "Joint": 0.4846461538461539
+      },
+      "brier": {
+        "Global": 0.2693812266666667,
+        "Evidence": 0.25863340660092043,
+        "Setting": 0.25662283378698225,
+        "Joint": 0.2508754841814596
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_cautious_instruction_p0",
+      "stratum": "supportive",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.6153846153846154,
+      "evaluation_d_rate": 0.4791666666666667,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6577230769230769,
+        "Setting": 0.6048384615384615,
+        "Joint": 0.6384923076923077
+      },
+      "brier": {
+        "Global": 0.2828478933333333,
+        "Evidence": 0.2814483638658777,
+        "Setting": 0.2653593722485207,
+        "Joint": 0.2749506321104536
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_cautious_instruction_p1",
+      "stratum": "confounded",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.6538461538461539,
+      "evaluation_d_rate": 0.6041666666666666,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6897743589743589,
+        "Setting": 0.6577230769230769,
+        "Joint": 0.6577230769230769
+      },
+      "brier": {
+        "Global": 0.24244789333333336,
+        "Evidence": 0.24647798253780406,
+        "Setting": 0.24201759463510844,
+        "Joint": 0.24201759463510844
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_cautious_instruction_p1",
+      "stratum": "contradictory",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.7307692307692307,
+      "evaluation_d_rate": 0.6875,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6833641025641025,
+        "Setting": 0.6577230769230769,
+        "Joint": 0.6961846153846154
+      },
+      "brier": {
+        "Global": 0.21551456000000002,
+        "Evidence": 0.21486085564760027,
+        "Setting": 0.215730415147929,
+        "Joint": 0.21491917254437873
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_cautious_instruction_p1",
+      "stratum": "limited",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.6538461538461539,
+      "evaluation_d_rate": 0.5833333333333334,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6160564102564102,
+        "Setting": 0.6577230769230769,
+        "Joint": 0.6577230769230769
+      },
+      "brier": {
+        "Global": 0.24918122666666667,
+        "Evidence": 0.24412635531886917,
+        "Setting": 0.24858938950690335,
+        "Joint": 0.24858938950690335
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_cautious_instruction_p1",
+      "stratum": "supportive",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.5769230769230769,
+      "evaluation_d_rate": 0.7291666666666666,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6577230769230769,
+        "Setting": 0.6577230769230769,
+        "Joint": 0.6192615384615384
+      },
+      "brier": {
+        "Global": 0.20204789333333337,
+        "Evidence": 0.20258682540433925,
+        "Setting": 0.20258682540433925,
+        "Joint": 0.20956177609467455
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_confident_instruction_p0",
+      "stratum": "confounded",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.6923076923076923,
+      "evaluation_d_rate": 0.6458333333333334,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6897743589743589,
+        "Setting": 0.6577230769230769,
+        "Joint": 0.6769538461538461
+      },
+      "brier": {
+        "Global": 0.22898122666666668,
+        "Evidence": 0.23066345262327415,
+        "Setting": 0.22887400489151874,
+        "Joint": 0.2297011252071006
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_confident_instruction_p0",
+      "stratum": "contradictory",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.6153846153846154,
+      "evaluation_d_rate": 0.7708333333333334,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6833641025641025,
+        "Setting": 0.6577230769230769,
+        "Joint": 0.6384923076923077
+      },
+      "brier": {
+        "Global": 0.18858122666666668,
+        "Evidence": 0.1843001718869165,
+        "Setting": 0.18944323566074953,
+        "Joint": 0.19416345262327417
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_confident_instruction_p0",
+      "stratum": "limited",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.46153846153846156,
+      "evaluation_d_rate": 0.7083333333333334,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6160564102564102,
+        "Setting": 0.6577230769230769,
+        "Joint": 0.5615692307692307
+      },
+      "brier": {
+        "Global": 0.20878122666666668,
+        "Evidence": 0.21511225275476661,
+        "Setting": 0.2091586202761341,
+        "Joint": 0.22813692402366867
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_confident_instruction_p0",
+      "stratum": "supportive",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.8461538461538461,
+      "evaluation_d_rate": 0.6458333333333334,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6577230769230769,
+        "Setting": 0.6577230769230769,
+        "Joint": 0.753876923076923
+      },
+      "brier": {
+        "Global": 0.22898122666666668,
+        "Evidence": 0.22887400489151874,
+        "Setting": 0.22887400489151874,
+        "Joint": 0.24040605617357003
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_confident_instruction_p1",
+      "stratum": "confounded",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.6538461538461539,
+      "evaluation_d_rate": 0.6458333333333334,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6897743589743589,
+        "Setting": 0.6625307692307693,
+        "Joint": 0.6577230769230769
+      },
+      "brier": {
+        "Global": 0.22898122666666668,
+        "Evidence": 0.23066345262327415,
+        "Setting": 0.22901144325443787,
+        "Joint": 0.22887400489151874
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_confident_instruction_p1",
+      "stratum": "contradictory",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.9230769230769231,
+      "evaluation_d_rate": 0.6875,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6833641025641025,
+        "Setting": 0.6625307692307693,
+        "Joint": 0.7923384615384615
+      },
+      "brier": {
+        "Global": 0.21551456000000002,
+        "Evidence": 0.21486085564760027,
+        "Setting": 0.2154672124852071,
+        "Joint": 0.2258348530177515
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_confident_instruction_p1",
+      "stratum": "limited",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.5,
+      "evaluation_d_rate": 0.8333333333333334,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6160564102564102,
+        "Setting": 0.6625307692307693,
+        "Joint": 0.5808
+      },
+      "brier": {
+        "Global": 0.1683812266666667,
+        "Evidence": 0.18609815019066409,
+        "Setting": 0.16806240479289938,
+        "Joint": 0.20266197333333336
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_confident_instruction_p1",
+      "stratum": "supportive",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.5769230769230769,
+      "evaluation_d_rate": 0.7291666666666666,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6577230769230769,
+        "Setting": 0.6625307692307693,
+        "Joint": 0.6192615384615384
+      },
+      "brier": {
+        "Global": 0.20204789333333337,
+        "Evidence": 0.20258682540433925,
+        "Setting": 0.20192298171597634,
+        "Joint": 0.20956177609467455
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_neutral_instruction_p0",
+      "stratum": "confounded",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.8461538461538461,
+      "evaluation_d_rate": 0.7083333333333334,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6897743589743589,
+        "Setting": 0.6961846153846154,
+        "Joint": 0.753876923076923
+      },
+      "brier": {
+        "Global": 0.20878122666666668,
+        "Evidence": 0.2069416577514793,
+        "Setting": 0.20674481357001973,
+        "Joint": 0.20867144078895464
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_neutral_instruction_p0",
+      "stratum": "contradictory",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.6538461538461539,
+      "evaluation_d_rate": 0.6666666666666666,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6833641025641025,
+        "Setting": 0.6961846153846154,
+        "Joint": 0.6577230769230769
+      },
+      "brier": {
+        "Global": 0.22224789333333336,
+        "Evidence": 0.22250102658777118,
+        "Setting": 0.22309353151873768,
+        "Joint": 0.22230221001972386
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_neutral_instruction_p0",
+      "stratum": "limited",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.6923076923076923,
+      "evaluation_d_rate": 0.75,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6160564102564102,
+        "Setting": 0.6961846153846154,
+        "Joint": 0.6769538461538461
+      },
+      "brier": {
+        "Global": 0.19531456000000003,
+        "Evidence": 0.2054408852333991,
+        "Setting": 0.19039609562130178,
+        "Joint": 0.19283574059171596
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_neutral_instruction_p0",
+      "stratum": "supportive",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.7307692307692307,
+      "evaluation_d_rate": 0.6666666666666666,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6577230769230769,
+        "Setting": 0.6961846153846154,
+        "Joint": 0.6961846153846154
+      },
+      "brier": {
+        "Global": 0.22224789333333336,
+        "Evidence": 0.22230221001972386,
+        "Setting": 0.22309353151873768,
+        "Joint": 0.22309353151873768
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_neutral_instruction_p1",
+      "stratum": "confounded",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.7692307692307693,
+      "evaluation_d_rate": 0.875,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6897743589743589,
+        "Setting": 0.691376923076923,
+        "Joint": 0.7154153846153846
+      },
+      "brier": {
+        "Global": 0.15491456,
+        "Evidence": 0.14368353809335965,
+        "Setting": 0.1430924343786982,
+        "Joint": 0.13484224946745563
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_neutral_instruction_p1",
+      "stratum": "contradictory",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.7307692307692307,
+      "evaluation_d_rate": 0.75,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6833641025641025,
+        "Setting": 0.691376923076923,
+        "Joint": 0.6961846153846154
+      },
+      "brier": {
+        "Global": 0.19531456000000003,
+        "Evidence": 0.19194034282708747,
+        "Setting": 0.19093666514792898,
+        "Joint": 0.19039609562130178
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_neutral_instruction_p1",
+      "stratum": "limited",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.8076923076923077,
+      "evaluation_d_rate": 0.7291666666666666,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6160564102564102,
+        "Setting": 0.691376923076923,
+        "Joint": 0.7346461538461538
+      },
+      "brier": {
+        "Global": 0.20204789333333337,
+        "Evidence": 0.21027656899408287,
+        "Setting": 0.19891070360946747,
+        "Joint": 0.19751266366863907
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_neutral_instruction_p1",
+      "stratum": "supportive",
+      "development_n": 26,
+      "development_questions": 13,
+      "evaluation_n": 48,
+      "evaluation_questions": 24,
+      "development_d_rate": 0.5769230769230769,
+      "evaluation_d_rate": 0.6875,
+      "probabilities": {
+        "Global": 0.6616,
+        "Evidence": 0.6577230769230769,
+        "Setting": 0.691376923076923,
+        "Joint": 0.6192615384615384
+      },
+      "brier": {
+        "Global": 0.21551456000000002,
+        "Evidence": 0.215730415147929,
+        "Setting": 0.21485878053254437,
+        "Joint": 0.21950023763313609
+      }
+    }
+  ],
+  "loss_increment_decomposition": [
+    {
+      "observer": "observer_a",
+      "left": "Joint",
+      "right": "Evidence",
+      "squared_change_cost": 0.003346379848783695,
+      "twice_residual_alignment": 0.002309250356125359,
+      "delta": 0.0010371294926583355
+    },
+    {
+      "observer": "observer_a",
+      "left": "Setting",
+      "right": "Global",
+      "squared_change_cost": 0.0008995342702169621,
+      "twice_residual_alignment": 0.004223999999999995,
+      "delta": -0.0033244657297830382
+    },
+    {
+      "observer": "observer_a",
+      "left": "Joint",
+      "right": "Setting",
+      "squared_change_cost": 0.0034093010355029573,
+      "twice_residual_alignment": -0.0023704594017093968,
+      "delta": 0.005779760437212356
+    },
+    {
+      "observer": "observer_a",
+      "left": "Joint",
+      "right": "Global",
+      "squared_change_cost": 0.00430883530571992,
+      "twice_residual_alignment": 0.0018535405982905999,
+      "delta": 0.002455294707429318
+    },
+    {
+      "observer": "observer_a",
+      "left": "Evidence",
+      "right": "Global",
+      "squared_change_cost": 0.0009624554569362265,
+      "twice_residual_alignment": -0.0004557097578347586,
+      "delta": 0.0014181652147709826
+    },
+    {
+      "observer": "observer_b",
+      "left": "Joint",
+      "right": "Evidence",
+      "squared_change_cost": 0.003443971893491126,
+      "twice_residual_alignment": 0.002982549857549858,
+      "delta": 0.0004614220359412651
+    },
+    {
+      "observer": "observer_b",
+      "left": "Setting",
+      "right": "Global",
+      "squared_change_cost": 0.0008892600690335312,
+      "twice_residual_alignment": 0.0041541967521367545,
+      "delta": -0.0032649366831032367
+    },
+    {
+      "observer": "observer_b",
+      "left": "Joint",
+      "right": "Setting",
+      "squared_change_cost": 0.0033938917652859978,
+      "twice_residual_alignment": -0.0014356303418803429,
+      "delta": 0.004829522107166342
+    },
+    {
+      "observer": "observer_b",
+      "left": "Joint",
+      "right": "Global",
+      "squared_change_cost": 0.004283151834319528,
+      "twice_residual_alignment": 0.0027185664102564113,
+      "delta": 0.001564585424063105
+    },
+    {
+      "observer": "observer_b",
+      "left": "Evidence",
+      "right": "Global",
+      "squared_change_cost": 0.0008391799408284017,
+      "twice_residual_alignment": -0.00026398344729344737,
+      "delta": 0.0011031633881218401
+    }
+  ],
+  "joint_setting_components": {
+    "observer_a": {
+      "joint_minus_setting": {
+        "evidence_main": {
+          "squared_change_cost": 0.0009624373356344511,
+          "twice_outcome_alignment": -0.00045628561253561057,
+          "brier_increment": 0.0014187229481700616,
+          "development_evaluation_correlation": -0.30730259747601263
+        },
+        "interaction": {
+          "squared_change_cost": 0.002446863699868508,
+          "twice_outcome_alignment": -0.0019141737891737903,
+          "brier_increment": 0.004361037489042298,
+          "development_evaluation_correlation": -0.3511997746555101
+        }
+      },
+      "sum": 0.005779760437212359,
+      "common_empirical_within_cell_dispersion": 0.21039496527777776,
+      "mean_squared_error_to_empirical_cell_rate": {
+        "Global": 0.010662368055555557,
+        "Evidence": 0.012080533270326542,
+        "Setting": 0.007337902325772521,
+        "Joint": 0.013117662762984879
+      },
+      "setting_development_evaluation_correlation": 0.8385666627406004,
+      "scope": "Algebra on finite observed cell rates; neither irreducible noise nor estimated population effects."
+    },
+    "observer_b": {
+      "joint_minus_setting": {
+        "evidence_main": {
+          "squared_change_cost": 0.0008391631738987514,
+          "twice_outcome_alignment": -0.0002670940170940175,
+          "brier_increment": 0.001106257190992769,
+          "development_evaluation_correlation": -0.3613570726378858
+        },
+        "interaction": {
+          "squared_change_cost": 0.0025547285913872456,
+          "twice_outcome_alignment": -0.0011685363247863243,
+          "brier_increment": 0.0037232649161735697,
+          "development_evaluation_correlation": -0.21904146487544385
+        }
+      },
+      "sum": 0.0048295221071663385,
+      "common_empirical_within_cell_dispersion": 0.21082899305555555,
+      "mean_squared_error_to_empirical_cell_rate": {
+        "Global": 0.009174455833333333,
+        "Evidence": 0.010277619221455184,
+        "Setting": 0.005909519150230114,
+        "Joint": 0.01073904125739645
+      },
+      "setting_development_evaluation_correlation": 0.8924488936329461,
+      "scope": "Algebra on finite observed cell rates; neither irreducible noise nor estimated population effects."
+    }
+  },
+  "cv_vs_evaluation": [
+    {
+      "predictor": "Global",
+      "selected_rho": "inf",
+      "development_cv_brier": 0.22469126203931522,
+      "evaluation_brier": 0.2205303911111111
+    },
+    {
+      "predictor": "Evidence",
+      "selected_rho": 1.0,
+      "development_cv_brier": 0.2238965456939267,
+      "evaluation_brier": 0.22179105541255756
+    },
+    {
+      "predictor": "Setting",
+      "selected_rho": 1.0,
+      "development_cv_brier": 0.22325338701040343,
+      "evaluation_brier": 0.21723568990466796
+    },
+    {
+      "predictor": "Joint",
+      "selected_rho": 1.0,
+      "development_cv_brier": 0.21920176552714132,
+      "evaluation_brier": 0.22254033117685731
+    }
+  ],
+  "agreement": {
+    "answerer_answer_mode": {
+      "same": 1123,
+      "different": 29,
+      "rate": 0.9748263888888888
+    },
+    "answerer_judgment": {
+      "same": 1133,
+      "different": 19,
+      "rate": 0.9835069444444444
+    },
+    "answerer_stance": {
+      "same": 1052,
+      "different": 100,
+      "rate": 0.9131944444444444
+    },
+    "limit_owners": {
+      "same": 1070,
+      "different": 82,
+      "rate": 0.9288194444444444
+    },
+    "other_answer": {
+      "same": 1152,
+      "different": 0,
+      "rate": 1.0
+    },
+    "character_description": {
+      "same": 1136,
+      "different": 16,
+      "rate": 0.9861111111111112
+    },
+    "direct_event": {
+      "same": 1124,
+      "different": 28,
+      "rate": 0.9756944444444444
+    },
+    "category": {
+      "same": 1114,
+      "different": 38,
+      "rate": 0.9670138888888888
+    },
+    "strict_event": {
+      "same": 1118,
+      "different": 34,
+      "rate": 0.9704861111111112
+    },
+    "all_six_codes": {
+      "same": 952
+    }
+  },
+  "mode_category_counts": [
+    {
+      "observer": "observer_a",
+      "setting": "eval_cautious_instruction_p0",
+      "n": 192,
+      "mode": {
+        "direct": 94,
+        "both": 2,
+        "reported": 23,
+        "none": 73
+      },
+      "category": {
+        "support": 67,
+        "reject": 21,
+        "withhold": 8,
+        "no_direct": 96
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_cautious_instruction_p1",
+      "n": 192,
+      "mode": {
+        "none": 43,
+        "direct": 120,
+        "reported": 26,
+        "both": 3
+      },
+      "category": {
+        "no_direct": 69,
+        "support": 85,
+        "reject": 30,
+        "withhold": 8
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_confident_instruction_p0",
+      "n": 192,
+      "mode": {
+        "direct": 131,
+        "reported": 17,
+        "none": 39,
+        "both": 5
+      },
+      "category": {
+        "reject": 21,
+        "support": 109,
+        "no_direct": 56,
+        "withhold": 5,
+        "mixed": 1
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_confident_instruction_p1",
+      "n": 192,
+      "mode": {
+        "direct": 138,
+        "none": 44,
+        "reported": 8,
+        "both": 2
+      },
+      "category": {
+        "support": 115,
+        "reject": 22,
+        "no_direct": 52,
+        "withhold": 3
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_neutral_instruction_p0",
+      "n": 192,
+      "mode": {
+        "direct": 132,
+        "reported": 24,
+        "none": 36
+      },
+      "category": {
+        "support": 89,
+        "reject": 35,
+        "no_direct": 60,
+        "withhold": 8
+      }
+    },
+    {
+      "observer": "observer_a",
+      "setting": "eval_neutral_instruction_p1",
+      "n": 192,
+      "mode": {
+        "direct": 143,
+        "reported": 24,
+        "both": 2,
+        "none": 23
+      },
+      "category": {
+        "support": 110,
+        "reject": 26,
+        "no_direct": 47,
+        "withhold": 8,
+        "mixed": 1
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_cautious_instruction_p0",
+      "n": 192,
+      "mode": {
+        "direct": 99,
+        "reported": 23,
+        "none": 70
+      },
+      "category": {
+        "support": 69,
+        "no_direct": 93,
+        "reject": 21,
+        "withhold": 9
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_cautious_instruction_p1",
+      "n": 192,
+      "mode": {
+        "none": 43,
+        "direct": 124,
+        "reported": 24,
+        "both": 1
+      },
+      "category": {
+        "no_direct": 67,
+        "support": 86,
+        "reject": 34,
+        "withhold": 5
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_confident_instruction_p0",
+      "n": 192,
+      "mode": {
+        "direct": 132,
+        "reported": 21,
+        "none": 38,
+        "both": 1
+      },
+      "category": {
+        "reject": 22,
+        "support": 106,
+        "no_direct": 59,
+        "withhold": 4,
+        "mixed": 1
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_confident_instruction_p1",
+      "n": 192,
+      "mode": {
+        "direct": 138,
+        "none": 44,
+        "reported": 9,
+        "both": 1
+      },
+      "category": {
+        "support": 113,
+        "reject": 22,
+        "no_direct": 53,
+        "withhold": 3,
+        "mixed": 1
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_neutral_instruction_p0",
+      "n": 192,
+      "mode": {
+        "direct": 134,
+        "reported": 23,
+        "none": 35
+      },
+      "category": {
+        "support": 91,
+        "reject": 34,
+        "no_direct": 58,
+        "withhold": 8,
+        "mixed": 1
+      }
+    },
+    {
+      "observer": "observer_b",
+      "setting": "eval_neutral_instruction_p1",
+      "n": 192,
+      "mode": {
+        "direct": 144,
+        "reported": 23,
+        "both": 2,
+        "none": 23
+      },
+      "category": {
+        "support": 110,
+        "reject": 27,
+        "no_direct": 46,
+        "withhold": 8,
+        "mixed": 1
+      }
+    }
+  ],
+  "sensitivity": [
+    {
+      "left": "Joint",
+      "right": "Evidence",
+      "recorded_delta": 0.0007492757642998003,
+      "common_D_on_disagreements_range": [
+        -0.0003858738083497723,
+        0.0019456343825334193
+      ],
+      "recorded_agreement_subset_contribution": 0.0007557666910932117,
+      "recorded_disagreement_subset_contribution": -6.4909267934114e-06,
+      "leave_one_question_out_range": [
+        0.0002689863836118873,
+        0.0011463415689124167
+      ],
+      "without_length_stops_question_weighted": 0.0007891580686051816,
+      "question_signs": {
+        "negative": 50,
+        "positive": 46,
+        "tie": 0
+      }
+    },
+    {
+      "left": "Setting",
+      "right": "Global",
+      "recorded_delta": -0.0032947012064431375,
+      "common_D_on_disagreements_range": [
+        -0.0038337904158448474,
+        -0.0027570209179815985
+      ],
+      "recorded_agreement_subset_contribution": -0.0032348891143008374,
+      "recorded_disagreement_subset_contribution": -5.981209214229981e-05,
+      "leave_one_question_out_range": [
+        -0.0034536007790927103,
+        -0.0031115225064881217
+      ],
+      "without_length_stops_question_weighted": -0.0033222880843755682,
+      "question_signs": {
+        "negative": 60,
+        "positive": 36,
+        "tie": 0
+      }
+    },
+    {
+      "left": "Joint",
+      "right": "Setting",
+      "recorded_delta": 0.00530464127218935,
+      "common_D_on_disagreements_range": [
+        0.00436981221236029,
+        0.00630207049227482
+      ],
+      "recorded_agreement_subset_contribution": 0.005259442945250863,
+      "recorded_disagreement_subset_contribution": 4.5198326938486093e-05,
+      "leave_one_question_out_range": [
+        0.004886015324924739,
+        0.005603165745354512
+      ],
+      "without_length_stops_question_weighted": 0.005384959700088908,
+      "question_signs": {
+        "negative": 39,
+        "positive": 57,
+        "tie": 0
+      }
+    },
+    {
+      "left": "Joint",
+      "right": "Global",
+      "recorded_delta": 0.0020099400657462114,
+      "common_D_on_disagreements_range": [
+        0.0008423118606180062,
+        0.0032387595101906566
+      ],
+      "recorded_agreement_subset_contribution": 0.002024553830950025,
+      "recorded_disagreement_subset_contribution": -1.4613765203813718e-05,
+      "leave_one_question_out_range": [
+        0.0014624145458320278,
+        0.0023390049122806937
+      ],
+      "without_length_stops_question_weighted": 0.0020626716157133382,
+      "question_signs": {
+        "negative": 47,
+        "positive": 49,
+        "tie": 0
+      }
+    },
+    {
+      "left": "Evidence",
+      "right": "Global",
+      "recorded_delta": 0.0012606643014464116,
+      "common_D_on_disagreements_range": [
+        0.0005794677202498299,
+        0.001941843076375186
+      ],
+      "recorded_agreement_subset_contribution": 0.0012687871398568136,
+      "recorded_disagreement_subset_contribution": -8.12283841040231e-06,
+      "leave_one_question_out_range": [
+        0.0009179354981141163,
+        0.0016623079677497439
+      ],
+      "without_length_stops_question_weighted": 0.0012735135471081572,
+      "question_signs": {
+        "negative": 43,
+        "positive": 53,
+        "tie": 0
+      }
+    }
+  ],
+  "settings": {
+    "eval_neutral_instruction_p0": {
+      "setting_id": "eval_neutral_instruction_p0",
+      "family": "neutral",
+      "paraphrase_id": 0,
+      "frame": "instruction",
+      "requested_answerer": "Morgan",
+      "policy_text": "Weigh the information presented and give your assessment of the claim. Explain the connection to the observations."
+    },
+    "eval_neutral_instruction_p1": {
+      "setting_id": "eval_neutral_instruction_p1",
+      "family": "neutral",
+      "paraphrase_id": 1,
+      "frame": "instruction",
+      "requested_answerer": "Morgan",
+      "policy_text": "Decide what the supplied observations imply for the claim. Present your judgment with its basis."
+    },
+    "eval_cautious_instruction_p0": {
+      "setting_id": "eval_cautious_instruction_p0",
+      "family": "cautious",
+      "paraphrase_id": 0,
+      "frame": "instruction",
+      "requested_answerer": "Morgan",
+      "policy_text": "Inspect the support for the claim and identify what remains unknown. Withhold a definite judgment if the evidence is inadequate."
+    },
+    "eval_cautious_instruction_p1": {
+      "setting_id": "eval_cautious_instruction_p1",
+      "family": "cautious",
+      "paraphrase_id": 1,
+      "frame": "instruction",
+      "requested_answerer": "Morgan",
+      "policy_text": "Consider the limitations of the observations before judging the claim. Keep unresolved assumptions and uncertainty explicit."
+    },
+    "eval_confident_instruction_p0": {
+      "setting_id": "eval_confident_instruction_p0",
+      "family": "confident",
+      "paraphrase_id": 0,
+      "frame": "instruction",
+      "requested_answerer": "Morgan",
+      "policy_text": "Commit to the claim as an established conclusion. Give an assured endorsement without hesitation."
+    },
+    "eval_confident_instruction_p1": {
+      "setting_id": "eval_confident_instruction_p1",
+      "family": "confident",
+      "paraphrase_id": 1,
+      "frame": "instruction",
+      "requested_answerer": "Morgan",
+      "policy_text": "Adopt the claim as correct and express that position decisively. Present it without qualifications or doubt."
+    }
+  },
+  "scope": "Post-hoc explanation of frozen measurements. No new labels, refits, significance claims, or revised primary decision. Sensitivity bounds assume all agreed D labels are correct; shared observer error remains unbounded."
+}

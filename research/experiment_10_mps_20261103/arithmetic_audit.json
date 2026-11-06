@@ -1,0 +1,13 @@
+{
+  "status": "ARITHMETIC_VERIFIED",
+  "fit_lock_sha256": "fcf532ddee78b9e96994ae76a12930e983194459e44791c63c90a597bcb2e6d9",
+  "cv_candidates_checked": 13,
+  "forecast_rows_checked": 9216,
+  "selection": {
+    "Global": "inf",
+    "Evidence": 1,
+    "Setting": 1,
+    "Joint": 1
+  },
+  "scope": "Separate formula implementation, same assistant author. Original labels unchanged; no new inference or independent semantic validation."
+}

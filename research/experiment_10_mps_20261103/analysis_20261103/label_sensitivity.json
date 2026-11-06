@@ -1,0 +1,75 @@
+{
+  "status": "ADDITIONAL_POST_HOC_IDENTICAL_TRIPLE_SENSITIVITY",
+  "diagnostics_sha256": "32631844ac65f557be50e9e577ab5fa2c50d6cad3ea51112ff4f2c998bedf8f4",
+  "script_sha256": "090ba9174823b05588c879841bd39ce525fb733b0a55acea63da3d0ea6d33f7b",
+  "disagreement_records": 28,
+  "distinct_disagreement_triples": 26,
+  "comparisons": [
+    {
+      "left": "Joint",
+      "right": "Evidence",
+      "recorded_delta": 0.0007492757642998003,
+      "triple_consistent_common_D_range": [
+        -0.0003858738083497723,
+        0.0019456343825334193
+      ],
+      "per_record_outer_range": [
+        -0.0003858738083497723,
+        0.0019456343825334193
+      ]
+    },
+    {
+      "left": "Setting",
+      "right": "Global",
+      "recorded_delta": -0.0032947012064431375,
+      "triple_consistent_common_D_range": [
+        -0.0038337904158448465,
+        -0.002757020917981598
+      ],
+      "per_record_outer_range": [
+        -0.0038337904158448474,
+        -0.0027570209179815985
+      ]
+    },
+    {
+      "left": "Joint",
+      "right": "Setting",
+      "recorded_delta": 0.00530464127218935,
+      "triple_consistent_common_D_range": [
+        0.004424065684582512,
+        0.006247817020052598
+      ],
+      "per_record_outer_range": [
+        0.00436981221236029,
+        0.00630207049227482
+      ]
+    },
+    {
+      "left": "Joint",
+      "right": "Global",
+      "recorded_delta": 0.0020099400657462114,
+      "triple_consistent_common_D_range": [
+        0.0008518204076265532,
+        0.0032292509631821095
+      ],
+      "per_record_outer_range": [
+        0.0008423118606180062,
+        0.0032387595101906566
+      ]
+    },
+    {
+      "left": "Evidence",
+      "right": "Global",
+      "recorded_delta": 0.0012606643014464116,
+      "triple_consistent_common_D_range": [
+        0.0005794677202498299,
+        0.0019418430763751856
+      ],
+      "per_record_outer_range": [
+        0.0005794677202498299,
+        0.001941843076375186
+      ]
+    }
+  ],
+  "scope": "All agreed D labels assumed correct. Each ambiguous triple has one hypothetical D shared across observers and exact duplicates. This is an algebraic envelope, not a confidence interval or adjudication."
+}

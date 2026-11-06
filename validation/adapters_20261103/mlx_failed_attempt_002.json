@@ -1,0 +1,6 @@
+{
+  "failed_utc": "2026-11-03T07:14:44.466252+00:00",
+  "error_type": "AttributeError",
+  "message": "'str' object has no attribute '__module__'",
+  "records_written": 0
+}

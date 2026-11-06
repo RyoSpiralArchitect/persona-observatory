@@ -1,0 +1,36 @@
+{
+  "status": "VERIFIED",
+  "archive": {
+    "status": "VERIFIED",
+    "sha256": "65b7927bde72ec225acff1540bec2d88725ca810d1b58b82b79749b2d2a19909",
+    "bytes": 6574553,
+    "root": "persona_shrinkage_pilot",
+    "members": 177,
+    "manifest_entries": 176,
+    "verified_payload_bytes": 49188804,
+    "embedded_archives": [
+      {
+        "member": "persona_shrinkage_pilot/provenance/source_v8.zip",
+        "verification": {
+          "status": "VERIFIED",
+          "sha256": "0538ed94a04a2fa5f51195c56b66a4eabeb2ae56c0aa1cddb12787d0db8b77c8",
+          "bytes": 1867282,
+          "root": "persona_topic_budget_pilot",
+          "members": 175,
+          "manifest_entries": 174,
+          "verified_payload_bytes": 15140394,
+          "embedded_archives": []
+        }
+      },
+      {
+        "member": "persona_shrinkage_pilot/source_snapshots/target/provenance/source_v8.zip",
+        "verification": {
+          "sha256": "0538ed94a04a2fa5f51195c56b66a4eabeb2ae56c0aa1cddb12787d0db8b77c8",
+          "already_verified": true
+        }
+      }
+    ]
+  },
+  "browsable_copies": 19,
+  "scope": "Byte and membership integrity only; no model download, inference, or semantic reannotation."
+}

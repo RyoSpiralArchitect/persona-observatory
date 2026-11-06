@@ -1,0 +1,74 @@
+{
+  "status": "POST_HOC_AUTHOR_INFORMED_READING_NOT_ADJUDICATION",
+  "recorded_utc": "2026-11-03T10:10:27.747953+00:00",
+  "source_sha256": "38d7d7e66cef88bbf567d8b5177e79ae2583e179f5590ac2cb52f24dfee35b25",
+  "method": "The coordinator read the full question, completion and both original labels/notes for all 28 D-disagreement records. The groups below were explicitly assigned after that reading; no text classifier or keyword annotation was used. These are explanatory themes, not replacement outcome labels.",
+  "groups": [
+    {
+      "theme": "leading_yes_and_third_person_report",
+      "count": 10,
+      "sample_ids": [
+        "01f7986a1eb809ce009b",
+        "0934642d83cae6b824fb",
+        "4c48e7ce1f360cb0fcc4",
+        "4d6452e235846e554d04",
+        "704a8a29fad65b95acbe",
+        "987b78fe963302722007",
+        "ba4946d70a61368503d5",
+        "cfa3b84cd8f3dd40ab20",
+        "d0d1bf86dfddc052e965",
+        "f91353d227563439cbf8"
+      ],
+      "interpretation_boundary": "冒頭のYesを独立した直接判断にも数えるか、後続の第三人称報告の導入と読むか。"
+    },
+    {
+      "theme": "answer_heading_or_projected_answer",
+      "count": 7,
+      "sample_ids": [
+        "1982ad55b8461b64bb92",
+        "1cbb9a942e30623545c7",
+        "24d7a657355ce6f222a8",
+        "29dfb95843f9101d8526",
+        "407dfe0ed544863c9290",
+        "9afc970a6b75196d0d6e",
+        "ea4bc533df7ae89f471e"
+      ],
+      "interpretation_boundary": "Morganの回答は、回答なら、回答すべき内容は、という見出し・提示を直接発話か報告として読むか。"
+    },
+    {
+      "theme": "scope_of_reporting_frame",
+      "count": 5,
+      "sample_ids": [
+        "0865a1945cb01e6a850c",
+        "56682624b837e9e981bb",
+        "8f822a971dc4baebc424",
+        "dac14e9642be547f3281",
+        "e071a9f2b480fd721520"
+      ],
+      "interpretation_boundary": "報告枠の後続文・引用外の文・分詞節が独立した直接判断になるか。"
+    },
+    {
+      "theme": "instruction_heading_vs_executed_answer",
+      "count": 5,
+      "sample_ids": [
+        "6e11c5fa22d3394085c4",
+        "8bfc4d52daeb534a4ada",
+        "d7fc81cc93a992643cc0",
+        "e70c0fbe5a7f00ca9455",
+        "e81e116a0235956282e5"
+      ],
+      "interpretation_boundary": "Active response instructionという再掲見出しの下の文を、指示内容か実行された回答かと読むか。"
+    },
+    {
+      "theme": "target_judgment_vs_character_description",
+      "count": 1,
+      "sample_ids": [
+        "ce79db64c75e54ef7b8a"
+      ],
+      "interpretation_boundary": "編集者の勤勉さへの記述が、原問の同期性能への判断も含むか。"
+    }
+  ],
+  "finding": "27 of 28 disagreements primarily concern attribution or whether a heading/report presents an executed direct answer; one primarily concerns the target of the judgment. Counts describe this selected disagreement set, not prevalence across all outputs.",
+  "labels_changed": false,
+  "scope": "The coordinator knows the study design and outcomes; this reading is not blinded, independent construct validation or a human gold standard."
+}

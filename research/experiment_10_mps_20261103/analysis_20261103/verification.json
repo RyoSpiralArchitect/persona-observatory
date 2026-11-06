@@ -1,0 +1,30 @@
+{
+  "status": "POST_HOC_RECOMPUTATION_VERIFIED",
+  "numeric_reproduction": "exact on the same Python environment, excluding timestamps and dependent hashes",
+  "original_disagreement_rows": "byte-identical extraction",
+  "existing_output_rejected": true,
+  "source_inputs": {
+    "research/experiment_10_mps_20261103/fit.json": "3a53912d2abba3966f642b552726d7c0fc48bb64744f99a0b2a20e704cbd0c53",
+    "research/experiment_10_mps_20261103/results_20261103.json": "d74b87a86a77971f91898b5c296539d49f7dffa95169c366e31ab211b1a229a8",
+    "research/experiment_10_mps_20261103/evidence_20261103.zip": "7bf3a69c9e503634c0a738fb99e7aea991527942a83d9ad092f053aab9e4a7bd",
+    "research/experiment_10_mps_20261103/observer_exposure_notice_20261103.json": "bb7626df9f13eeeef2e093e89e97e76a21c77e19e3b6db15477cafd4bef0ff0e"
+  },
+  "checks": [
+    {
+      "check": "core",
+      "exit_code": 0,
+      "log_sha256": "b3e0c51ed586d9e545de876b328c572ea6ec3952217d2011c6eed31783cf36af"
+    },
+    {
+      "check": "archive",
+      "exit_code": 0,
+      "log_sha256": "94e35f8ef7e1e8353b1bfd98fad89fd6517cfb33f49d9fac9fc4d8b143884dea"
+    },
+    {
+      "check": "public_evidence",
+      "exit_code": 0,
+      "log_sha256": "38247d8c4c935f9297c7bfdb7183518674c7a7dcc103f67fe7f746c5698a6060"
+    }
+  ],
+  "scope": "Algebra and reproducibility, not scientific confirmation or new semantic validation."
+}

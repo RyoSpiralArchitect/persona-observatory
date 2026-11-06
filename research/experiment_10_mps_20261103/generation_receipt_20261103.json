@@ -1,0 +1,22 @@
+{
+  "schema_version": "persona-observatory-generation-receipt-v1",
+  "recorded_utc": "2026-11-03T09:06:54.761154+00:00",
+  "status": "COMPLETE_OBSERVATION_PENDING",
+  "run_dir": "runs/exp10-mps-gate-20261103-001",
+  "study_lock_sha256": "69a08a24f7cca0d88f5e7e58e5d4bbfbb8837b08c7900e23d98077d3ac3a9f54",
+  "completion_sha256": "1e198f4159c932df068e05426b358a68abb94a11af46f8dd2e584c46b9fa845f",
+  "generation_sha256": "28b66491030a608cc424ade7d6ed507bc7a783207944a12eb744a322efe8505a",
+  "samples": 1152,
+  "unique_full_triples": 1076,
+  "generated_tokens": 39627,
+  "maximum_generated_tokens": 110592,
+  "stop_reasons": {
+    "eos": 1149,
+    "length": 3
+  },
+  "elapsed_seconds": 472.28622295899913,
+  "study_bindings_unchanged": true,
+  "semantic_labels_complete": false,
+  "scoring_performed": false,
+  "scope": "Generation completion and integrity only. Observers are reading separate blind packets; no semantic or hypothesis verdict yet."
+}

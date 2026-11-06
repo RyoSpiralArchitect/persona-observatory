@@ -1,0 +1,21 @@
+{
+  "status": "PUBLIC_EVIDENCE_VERIFIED",
+  "members": 191,
+  "generations": 1152,
+  "forecast_rows": 9216,
+  "advance": false,
+  "score_float_tolerance": 1e-12,
+  "scope": "File bindings, manual-record expansion, observation consistency and score arithmetic. No certification of semantic validity, actual blind access, original redacted bytes or independent chronology.",
+  "negative_checks": [
+    {
+      "case": "archive_bytes_changed",
+      "rejected": true,
+      "reason": "Archive differs from receipt"
+    },
+    {
+      "case": "score_changed_with_rebound_file_hashes",
+      "rejected": true,
+      "reason": "Recomputed scores differ"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "persona-observatory-agent-observation-receipt-v1",
+  "recorded_utc": "2026-11-03T09:34:25.301748+00:00",
+  "status": "BOTH_OBSERVATIONS_LOCKED_BEFORE_SCORING",
+  "generation_sha256": "28b66491030a608cc424ade7d6ed507bc7a783207944a12eb744a322efe8505a",
+  "observers": {
+    "observer_a": {
+      "status": "passed",
+      "observer": "observer_a",
+      "records": 1152,
+      "unique_triples": 1076,
+      "locked": true,
+      "generations_sha256": "28b66491030a608cc424ade7d6ed507bc7a783207944a12eb744a322efe8505a",
+      "manifest_sha256": "054e16d1fb16377e1f0bcd7d9793600af78f045900f07d7d3bebc9580755b35e",
+      "labels_sha256": "3cd0c24ad6a7e90c15d92ff8fdea2a54385df6909e6f965056e85330bf4791da",
+      "rubric_sha256": "7a28b5f7101c3e9de0367c064bec34f60154b7e7a4c9934c4685eff381d601a6",
+      "observations_sha256": "6a5107661d024daee9f28ccc763cab090757fc730caf8641def88e7dd588d451",
+      "discovery_blind_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "validation_blind_sha256": "0d45b1ca0b211586ad3b1eaff6a8938ac8531d5a0adcd78eb23a1630313e9382",
+      "labels_template_sha256": "66edfd297b4135eedda8b8387951abc40c45eb7e3e3fdd702c79c5a35e8cdfbd"
+    },
+    "observer_b": {
+      "status": "passed",
+      "observer": "observer_b",
+      "records": 1152,
+      "unique_triples": 1076,
+      "locked": true,
+      "generations_sha256": "28b66491030a608cc424ade7d6ed507bc7a783207944a12eb744a322efe8505a",
+      "manifest_sha256": "1e3c4c235be654a1e809e142220927033666648ce24f4c9423931ed79661668f",
+      "labels_sha256": "27e8dc85e39d984d502b32254b74717bb2280637c2ea045d80727efa3d3698e6",
+      "rubric_sha256": "7a28b5f7101c3e9de0367c064bec34f60154b7e7a4c9934c4685eff381d601a6",
+      "observations_sha256": "7d33d4004174369c5b36126de7fd11e081fc934a1d1c0f8e916141c918ccb6b2",
+      "discovery_blind_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "validation_blind_sha256": "6dd8f299ecff3e00f2c62f6037445cb221fdd74e540d6db64854f86f9cb6199b",
+      "labels_template_sha256": "80ad6cdf9d53ae970a13977a1d639fa1fcfabd91e7faea66527da3fa4501d3fc"
+    }
+  },
+  "stable_batch_monitor_sha256": "fedb1416ece0aca48c16b47459678b8e926a63e3624d452bf160e06e1d52a51b",
+  "scope": "Full manual inventories and file consistency verified. Observer identity, access limits and ambiguity are declared in the assignment and individual notes; mechanical checks do not certify semantic validity."
+}

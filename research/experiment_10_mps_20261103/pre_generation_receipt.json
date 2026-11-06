@@ -1,0 +1,14 @@
+{
+  "status": "PREPARED_NOT_GENERATED",
+  "run": "runs/exp10-mps-gate-20261103-001",
+  "samples": 1152,
+  "max_prompt_tokens": 129,
+  "run_lock_sha256": "39d345903441d433d9d1d56849d5f0785a54d76ede679673178295ba6da330a3",
+  "fit_lock_sha256": "fcf532ddee78b9e96994ae76a12930e983194459e44791c63c90a597bcb2e6d9",
+  "forecasts_sha256": "f60927e51f19cec64aa869b9620f18f4e8c0837c257dfb3426c127d55364996d",
+  "same_forecasts_as_fit_stage": true,
+  "prepared_utc": "2026-11-03T07:29:39.784754+00:00",
+  "generation_absent": true,
+  "pending": "Blinded observer arrangement and final study lock before evaluation generation.",
+  "note": "Local integrity record. No new evaluation outputs or semantic labels exist."
+}

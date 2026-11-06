@@ -1,0 +1,33 @@
+{
+  "schema_version": "persona-observatory-public-evidence-receipt-v1",
+  "archive": "evidence_20261103.zip",
+  "sha256": "7bf3a69c9e503634c0a738fb99e7aea991527942a83d9ad092f053aab9e4a7bd",
+  "bytes": 2014607,
+  "members": 191,
+  "manifest_sha256": "19db47c4bc76d55b833134b1d1a0663119fcdd5d35934ddb522d8559062c8a35",
+  "source_generation_sha256": "28b66491030a608cc424ade7d6ed507bc7a783207944a12eb744a322efe8505a",
+  "source_score_lock_sha256": "a1678c03e9be3ca1c9ed7f4245c3c49b927c722bfea75eb65290576ff0d4caa4",
+  "public_redactions": {
+    "run/observers/observer_a/observations.public.md": {
+      "text_region": "One unrelated research topic name in the initial-context exposure paragraph",
+      "replacement": "[別研究の話題名を省略]",
+      "reason": "Unrelated private context is outside the public study. Exposure disclosure and all substantive observations remain."
+    },
+    "run/run_lock.public.json": {
+      "field": "model_path",
+      "replacement": "<local model directory omitted>",
+      "reason": "Host-local path excluded from public artifacts; original record remains untouched locally."
+    },
+    "run/attempt.public.json": {
+      "field": "model_path",
+      "replacement": "<local model directory omitted>",
+      "reason": "Host-local path excluded from public artifacts; original record remains untouched locally."
+    },
+    "agent_a/observations.public.md": {
+      "text_region": "One unrelated research topic name in the initial-context exposure paragraph",
+      "replacement": "[別研究の話題名を省略]",
+      "reason": "Unrelated private context is outside the public study. Exposure disclosure and all substantive observations remain."
+    }
+  },
+  "scope": "Selected research evidence. Model-path and unrelated-topic redactions are separate public derivatives, never changes to the original local locks. Exact source hashes remain in this manifest; original bytes of the redacted records cannot be verified from the public derivatives alone. No weights, environment or credentials included. Hash and arithmetic checks do not establish semantic validity or independent timestamping."
+}

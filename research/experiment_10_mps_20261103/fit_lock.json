@@ -1,0 +1,50 @@
+{
+  "schema_version": "persona-observatory-fit-lock-v1",
+  "locked_utc": "2026-11-03T07:28:18.522024+00:00",
+  "archive_sha256": "65b7927bde72ec225acff1540bec2d88725ca810d1b58b82b79749b2d2a19909",
+  "source_inputs": {
+    "development/records.jsonl": "223e69a12cc288feb37ff6f8c62baab6144bd8ba4f5d681a272d7aff7f268425",
+    "data/target_generations.jsonl": "6e898c134a007a05f179cb4c65caf64a3aed5c50bd46d89f119a1a8842873441",
+    "development/source_question_bank.json": "abed838438f4752b44e51cc625c7c045918312a05cba0bc5615a5849284da818",
+    "question_bank.json": "0922edd10ec964e51fce3b4a45dcc728a152f0834be0375e623aa348bf2c49c9",
+    "development/labels_observer_a.jsonl": "41a61ee28541dab7acbb82634bc8bfe43d32457b5febe25fa9bf6ab92ebc61d9",
+    "observers/target/observer_a/labels.jsonl": "99dbc2a8c03356a78e9d11204c450faa33f850bc8943d9bf774358b3c5cee3bd",
+    "development/labels_observer_b.jsonl": "2e20c1382bb2bb726de5a46421d6bf5a43889bcf0bd9cf9ba231b935ddeb5d0a",
+    "observers/target/observer_b/labels.jsonl": "0c716251c341b985745feb9d1ecba5574a19bc9ee28b628a4fa0e24604c511d8"
+  },
+  "source_hashes": {
+    "src/persona_observatory/backend.py": "b6b8029e8f759b2b74a5b8b5657e84931637a3fe9622a82a493012481e281749",
+    "src/persona_observatory/predictors.py": "657365713b6f65b52e0a764e965efa5d64d95f237049da134ad2fccf3655d5e5",
+    "src/persona_observatory/models.py": "69945b42604ca5193c6479d8aa6e2ea68c8f21a953ae57d9816d8553bd0e77b1",
+    "src/persona_observatory/observations.py": "109f965611df5d0b20d74af53c41c8acab3ea1f54afddd765395f8aed0dce627",
+    "src/persona_observatory/evaluation.py": "3aedcc51f361fcd5b84c7f7d81f0763a7c180b57ef8a8dec5f3d2a43e5bd4c81",
+    "src/persona_observatory/mlx_backend.py": "d7b029137e0bc9f497edda855f15cdfd2470c4c2f88e7eab2cdba8ea903a0687",
+    "src/persona_observatory/__init__.py": "829cc5d3d96ded8e3b3454558c2b72125306a2fc2ff3062a1d947b97502a9e22",
+    "src/persona_observatory/cli.py": "5f21b2373f7977309054c74d4d8f37aa4bb645ce7a9653bfa6e905c11e70b7aa",
+    "src/persona_observatory/storage.py": "59a2bffd3ce45860c0938230afbf2c65208242759b94a7d0635e60a586e737b9",
+    "src/persona_observatory/runs.py": "edabe03547406d52689b4477f80c0a585996ed41c52985746eb99972222cb90d",
+    "src/persona_observatory/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "src/persona_observatory/study.py": "9633a888cfdfb741584fc380b65633bef68da611a4c1443a205b8206da25751b",
+    "src/persona_observatory/adapters.py": "79e9c86e52357fbeef58770cb3984e1bdd223c15527f07282e94f4a4c1c9ca08",
+    "scripts/prepare_gate_study.py": "c28f23f97181cc5205adcde0292c888dcbf666d09479459659b0152c11426615"
+  },
+  "original_protocol_sha256": "9f6c36b662c689e81197d3f30744dc8a8a76779ef7aa7ec9920f76463d1e1bd9",
+  "output_hashes": {
+    "forecasts.jsonl": "f60927e51f19cec64aa869b9620f18f4e8c0837c257dfb3426c127d55364996d",
+    "settings.json": "704da0f0fda6a048116dcced85d9b83cac32168c153656312383b9216417d7a5",
+    "config.json": "d33943eb8b8be2056a97169ad497527227e870e92c73cacf762a6b298b5c6b4a",
+    "targets.jsonl": "eed53b731128d87d1243b1ca95272f1b2ad1320a928a74df4a723cea2cbb74df",
+    "questions.json": "7f4a04f8e7083027fd487f78edb3f39fe4d52ead561fa5dac616cf72de4209e6",
+    "fit.json": "3a53912d2abba3966f642b552726d7c0fc48bb64744f99a0b2a20e704cbd0c53",
+    "labels_observer_a.jsonl": "5a6016319a3596064910b036148462006b724be08e7c8bcb916a18f619a99b94",
+    "protocol.json": "9f6c36b662c689e81197d3f30744dc8a8a76779ef7aa7ec9920f76463d1e1bd9",
+    "development.jsonl": "69f42f393da82069ca9280f647435c595c78c12559cc058967df02268cf491f4",
+    "labels_observer_b.jsonl": "7d0a77a8193f13c0693ebfd1026f75cd89082dc94d82b9462633e1adca295821",
+    "model_manifest.json": "7b33b285a2ebcda77f72bb67e30c4d70b653c8651d332a3b119acd92a45b9c67"
+  },
+  "generation_performed": false,
+  "development_outputs": 624,
+  "target_outputs": 1152,
+  "forecast_rows": 9216,
+  "scope": "Development selection and fixed forecasts; no semantic novelty guarantee or new subject inference."
+}
