@@ -46,7 +46,7 @@ def main():
         p = sd / rel if not rel.is_absolute() else rel
         if not p.is_file():
             raise SystemExit("Missing freeze input: " + str(p))
-        items[name] = {"path": str(p.relative_to(REPO)) if p.is_relative_to(REPO) else str(p),
+        items[name] = {"path": str(p.resolve().relative_to(REPO)) if p.is_relative_to(REPO) else str(p),
                        "sha256": sha_file(p)}
 
     add("protocol", Path("PROTOCOL.md"))

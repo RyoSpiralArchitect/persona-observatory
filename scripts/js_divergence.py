@@ -15,8 +15,6 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 from persona_observatory.storage import sha_file, write_json_exclusive
 
 CATS = ["support", "reject", "withhold", "mixed", "no_direct"]
-FAMS = ["neutral", "cautious", "confident", "deferral", "gatekeeper",
-        "lexswap_cautious", "lexswap_confident", "gloss_cautious", "role_alex"]
 PAIRS = [("lexswap_cautious", "cautious"), ("lexswap_confident", "confident"),
          ("gloss_cautious", "cautious"), ("gloss_cautious", "confident"),
          ("role_alex", "neutral"), ("cautious", "confident")]

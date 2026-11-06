@@ -125,9 +125,13 @@ def main():
                  "question": q["evidence"] + "\n\n" + CLAIM_TEMPLATE.format(claim=q["claim"])}
                 for q in raw["dev_bank"] + raw["eval_bank"] if q["question_id"] in seen_q]
 
-    OUT.mkdir(parents=True, exist_ok=False) if not OUT.exists() else None
+    OUT.mkdir(parents=True)
+    import os as _os
     def _xw(name, text):
-        (OUT / name).open("x", encoding="utf-8").write(text)
+        f = (OUT / name).open("x", encoding="utf-8")
+        with f:
+            f.write(text)
+            f.flush(); _os.fsync(f.fileno())
     _xw("dev_pool.jsonl","".join(json.dumps(r, ensure_ascii=False) + "\n" for r in pool))
     _xw("dev_question_bank.json", json.dumps(dev_bank, ensure_ascii=False, indent=2) + "\n")
     _xw("fold_map.json", json.dumps(fold_map, indent=2) + "\n")
